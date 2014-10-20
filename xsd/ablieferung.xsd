@@ -6,7 +6,7 @@
   <xs:include schemaLocation="base.xsd"/>
   <xs:simpleType name="ablieferungsnummer">
     <xs:annotation>
-      <xs:documentation>Die Ablieferungsnummer dient zur Identifizierung der Ablieferung im Bundesarchiv. Sie besteht aus dem Ablieferungsjahr und einer Laufnummer innerhalb dieses Jahres.</xs:documentation>
+      <xs:documentation>Die Ablieferungsnummer dient zur Identifizierung der Ablieferung im Archiv. Sie besteht in der Regel aus dem Ablieferungsjahr und einer Laufnummer innerhalb dieses Jahres. Die Ablieferungsnummer kann auch Buchstaben enthalten.</xs:documentation>
     </xs:annotation>
     <xs:restriction base="text1"/>
   </xs:simpleType>
@@ -23,7 +23,7 @@
 
   <xs:simpleType name="angebotsnummer">
     <xs:annotation>
-      <xs:documentation>Die vom BAR vergebene Nummer des Angebots, auf welches sich die Ablieferung stützt.</xs:documentation>
+      <xs:documentation>Die vom Archiv vergebene Nummer des Angebots, auf welches sich die Ablieferung stützt.</xs:documentation>
     </xs:annotation>
     <xs:restriction base="text1"/>
   </xs:simpleType>
@@ -37,7 +37,7 @@
 
   <xs:simpleType name="referenzBewertungsentscheid">
     <xs:annotation>
-      <xs:documentation>Aktenzeichen Bewertungsentscheid(e) BAR, welches die Ablieferung betreffen.</xs:documentation>
+      <xs:documentation>Aktenzeichen Bewertungsentscheid(e) Archiv, welches die Ablieferung betreffen.</xs:documentation>
     </xs:annotation>
     <xs:restriction base="text1"/>
   </xs:simpleType>
@@ -51,16 +51,18 @@
 
   <xs:simpleType name="schutzfristenkategorieAblieferung">
     <xs:annotation>
-      <xs:documentation>Artikel des BGA, der die Schutzfrist festhält, die das Amt im Formular „Meldung von Unterlagen mit besonderer Schutzfrist und öffentlich zugänglichen Unterlagen“ gemeldet hat und vom BAR auf ihre formale Korrektheit und Vollständigkeit kontrolliert worden ist.</xs:documentation>
+      <xs:documentation>Artikel des Gesetztes, der die Schutzfrist festhält, die das Amt im Formular „Meldung von Unterlagen mit besonderer Schutzfrist und öffentlich zugänglichen Unterlagen“ gemeldet hat und vom Archiv auf ihre formale Korrektheit und Vollständigkeit kontrolliert worden ist.</xs:documentation>
     </xs:annotation>
     <xs:restriction base="text1"/>
   </xs:simpleType>
 
   <xs:simpleType name="schutzfristAblieferung">
     <xs:annotation>
-      <xs:documentation>Dauer der Schutzfrist in Jahren, die das Amt im Formular „Meldung von Unterlagen mit besonderer Schutzfrist und öffentlich zugänglichen Unterlagen“ gemeldet hat und vom BAR auf ihre formale Korrektheit und Vollständigkeit kontrolliert worden ist.</xs:documentation>
+      <xs:documentation>Dauer der Schutzfrist in Jahren, die das Amt im Formular „Meldung von Unterlagen mit besonderer Schutzfrist und öffentlich zugänglichen Unterlagen“ gemeldet hat und vom Archiv auf ihre formale Korrektheit und Vollständigkeit kontrolliert worden ist.</xs:documentation>
     </xs:annotation>
-    <xs:restriction base="xs:nonNegativeInteger"/>
+    <xs:restriction base="text1">
+      <xs:pattern value="[0-9]*"/>
+    </xs:restriction>
   </xs:simpleType>
 
   <xs:simpleType name="ablieferungsteile">

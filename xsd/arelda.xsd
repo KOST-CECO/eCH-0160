@@ -18,6 +18,7 @@
   <xs:include schemaLocation="archivischerVorgang.xsd"/>
   <xs:include schemaLocation="archivischeNotiz.xsd"/>
   <xs:include schemaLocation="zusatzDaten.xsd"/>
+
   <xs:element name="paket" type="paket"/>
   <xs:complexType name="paket" abstract="true">
     <xs:sequence>

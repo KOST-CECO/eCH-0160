@@ -27,7 +27,7 @@
 
   <xs:simpleType name="referenzUebernahmedossier">
     <xs:annotation>
-      <xs:documentation>Aktenzeichen des Übernahmedossiers in der GEVER Anwendung des Bundesarchiv.</xs:documentation>
+      <xs:documentation>Aktenzeichen des Übernahmedossiers in der GEVER Anwendung des Archiv.</xs:documentation>
     </xs:annotation>
     <xs:restriction base="text1"/>
   </xs:simpleType>
