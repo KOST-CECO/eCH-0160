@@ -19,7 +19,22 @@
   <xs:include schemaLocation="archivischeNotiz.xsd"/>
   <xs:include schemaLocation="zusatzDaten.xsd"/>
 
-  <xs:element name="paket" type="paket"/>
+  <xs:element name="paket" type="paket">
+    <xs:unique name="vorgangOrderKey">
+      <xs:annotation>
+        <xs:documentation>Das Attribut Order in der Entität Vorgang muss eindeutig sein.</xs:documentation>
+      </xs:annotation>
+      <xs:selector xpath=".//arelda:vorgang"/>
+      <xs:field xpath="@order"/>
+    </xs:unique>
+    <xs:unique name="aktivitaetOrderKey">
+      <xs:annotation>
+        <xs:documentation>Das Attribut Order in der Entität Aktivität muss eindeutig sein.</xs:documentation>
+      </xs:annotation>
+      <xs:selector xpath=".//arelda:aktivitaet"/>
+      <xs:field xpath="@order"/>
+    </xs:unique>
+  </xs:element>
   <xs:complexType name="paket" abstract="true">
     <xs:sequence>
       <xs:element name="paketTyp" type="paketTyp"/>
@@ -594,7 +609,13 @@
               <xs:documentation>Zeitpunkt, an dem das Dossier abgeschlossen worden ist.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="vorgang" type="vorgang" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="vorgang" type="vorgangAktivitaet" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Vorgangsobjekte repräsentieren einzelne, abgrenzbare Geschäftsfälle. 
+Der Vorgang wird durchgeführt über eine Folge von einzelnen Aktivitäten. 
+Einer einzelnen Aktivität sind in der Regel ein federführender Akteur zugewiesen.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -743,6 +764,30 @@
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="vorgangAktivitaet" mixed="true">
+    <xs:sequence minOccurs="0">
+      <xs:element name="titel" type="titelVorgang"/>
+      <xs:element name="arbeitsanweisung" type="arbeitsanweisungVorgang" minOccurs="0"/>
+      <xs:element name="verweis" type="verweisVorgang" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="aktivitaet" type="aktivitaet" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="order" type="orderVorgang" use="optional"/>
+  </xs:complexType>
+
+  <xs:complexType name="aktivitaet">
+    <xs:sequence>
+      <xs:sequence>
+        <xs:element name="vorschreibung" type="vorschreibungAktivitaet"/>
+        <xs:element name="akteur" type="akteurAktivitaet" minOccurs="0"/>
+        <xs:element name="abschlussvermerk" type="abschlussvermerkAktivitaet" minOccurs="0"/>
+        <xs:element name="abschlussdatum" type="abschlussdatumAktivitaet" minOccurs="0"/>
+        <xs:element name="verweis" type="verweisAktivitaet" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="bemerkung" type="bemerkungAktivitaet" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:sequence>
+    <xs:attribute name="order" type="orderAktivitaet" use="optional"/>
   </xs:complexType>
 
   <xs:simpleType name="dateiRef">
