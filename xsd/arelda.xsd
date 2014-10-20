@@ -18,37 +18,7 @@
   <xs:include schemaLocation="archivischerVorgang.xsd"/>
   <xs:include schemaLocation="archivischeNotiz.xsd"/>
   <xs:include schemaLocation="zusatzDaten.xsd"/>
-
-  <xs:element name="paket" type="paket">
-    <xs:key name="ordnungssystempositionIdKey">
-      <xs:annotation>
-        <xs:documentation>Das Element id in der Entität Ordnungssystemposition muss eindeutig sein.</xs:documentation>
-      </xs:annotation>
-      <xs:selector xpath=".//arelda:ordnungssystemposition"/>
-      <xs:field xpath="@id"/>
-    </xs:key>
-    <xs:key name="dossierIdKey">
-      <xs:annotation>
-        <xs:documentation>Das Element id in der Entität Dossier muss eindeutig sein.</xs:documentation>
-      </xs:annotation>
-      <xs:selector xpath=".//arelda:dossier"/>
-      <xs:field xpath="@id"/>
-    </xs:key>
-    <xs:key name="dokumentIdKey">
-      <xs:annotation>
-        <xs:documentation>Das Element id in der Entität Dokument muss eindeutig sein.</xs:documentation>
-      </xs:annotation>
-      <xs:selector xpath=".//arelda:dokument"/>
-      <xs:field xpath="@id"/>
-    </xs:key>
-    <xs:key name="archivischeNotizIdKey">
-      <xs:annotation>
-        <xs:documentation>Das Element id in der Entität ArchivischeNotiz muss eindeutig sein.</xs:documentation>
-      </xs:annotation>
-      <xs:selector xpath=".//arelda:archivischeNotiz"/>
-      <xs:field xpath="@id"/>
-    </xs:key>
-  </xs:element>
+  <xs:element name="paket" type="paket"/>
   <xs:complexType name="paket" abstract="true">
     <xs:sequence>
       <xs:element name="paketTyp" type="paketTyp"/>
