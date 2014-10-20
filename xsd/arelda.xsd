@@ -19,22 +19,7 @@
   <xs:include schemaLocation="archivischeNotiz.xsd"/>
   <xs:include schemaLocation="zusatzDaten.xsd"/>
 
-  <xs:element name="paket" type="paket">
-    <xs:unique name="vorgangOrderKey">
-      <xs:annotation>
-        <xs:documentation>Das Attribut Order in der Entität Vorgang muss eindeutig sein.</xs:documentation>
-      </xs:annotation>
-      <xs:selector xpath=".//arelda:vorgang"/>
-      <xs:field xpath="@order"/>
-    </xs:unique>
-    <xs:unique name="aktivitaetOrderKey">
-      <xs:annotation>
-        <xs:documentation>Das Attribut Order in der Entität Aktivität muss eindeutig sein.</xs:documentation>
-      </xs:annotation>
-      <xs:selector xpath=".//arelda:aktivitaet"/>
-      <xs:field xpath="@order"/>
-    </xs:unique>
-  </xs:element>
+  <xs:element name="paket" type="paket"/>
   <xs:complexType name="paket" abstract="true">
     <xs:sequence>
       <xs:element name="paketTyp" type="paketTyp"/>
