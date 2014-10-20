@@ -6,7 +6,10 @@
   <xs:include schemaLocation="base.xsd"/>
   <xs:simpleType name="idArchivischeNotiz">
     <xs:annotation>
-      <xs:documentation>Paketweit eindeutige ID.</xs:documentation>
+      <xs:documentation xml:lang="de">Paketweit eindeutige ID.</xs:documentation>
+      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="fr"/>
+      <xs:documentation xml:lang="it"/>
     </xs:annotation>
     <xs:restriction base="xs:ID">
       <xs:minLength value="1"/>

@@ -6,7 +6,10 @@
   <xs:include schemaLocation="base.xsd"/>
   <xs:simpleType name="nameSIP">
     <xs:annotation>
-      <xs:documentation>Name des SIP zum Zeitpunkt der Ablieferung.</xs:documentation>
+      <xs:documentation xml:lang="de">Name des SIP zum Zeitpunkt der Ablieferung.</xs:documentation>
+      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="fr"/>
+      <xs:documentation xml:lang="it"/>
     </xs:annotation>
     <xs:restriction base="text1">
       <xs:pattern value="[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}"/>
@@ -15,28 +18,40 @@
 
   <xs:simpleType name="globaleAIPId">
     <xs:annotation>
-      <xs:documentation>Über die Gesamtheit der AIP eindeutige ID. Wird im AIS verzeichnet.</xs:documentation>
+      <xs:documentation xml:lang="de">Über die Gesamtheit der AIP eindeutige ID. Wird im AIS verzeichnet.</xs:documentation>
+      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="fr"/>
+      <xs:documentation xml:lang="it"/>
     </xs:annotation>
     <xs:restriction base="text1"/>
   </xs:simpleType>
 
   <xs:simpleType name="lokaleAIPId">
     <xs:annotation>
-      <xs:documentation>Über die Gesamtheit der AIP eindeutige ID im Zusammenhang mit Paketmigrationen. Entsteht zum ersten Mal, wenn ein AIP migriert wird. Wird nicht im AIS verzeichnet.</xs:documentation>
+      <xs:documentation xml:lang="de">Über die Gesamtheit der AIP eindeutige ID im Zusammenhang mit Paketmigrationen. Entsteht zum ersten Mal, wenn ein AIP migriert wird. Wird nicht im AIS verzeichnet.</xs:documentation>
+      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="fr"/>
+      <xs:documentation xml:lang="it"/>
     </xs:annotation>
     <xs:restriction base="text1"/>
   </xs:simpleType>
 
   <xs:simpleType name="fruehereLokaleAIPId">
     <xs:annotation>
-      <xs:documentation>Zeigt auf das "Vater-AIP" zurück, also dasjenige AIP, aus welchem das vorliegende hervorgegangen ist.</xs:documentation>
+      <xs:documentation xml:lang="de">Zeigt auf das "Vater-AIP" zurück, also dasjenige AIP, aus welchem das vorliegende hervorgegangen ist.</xs:documentation>
+      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="fr"/>
+      <xs:documentation xml:lang="it"/>
     </xs:annotation>
     <xs:restriction base="text1"/>
   </xs:simpleType>
 
   <xs:simpleType name="paketTyp">
     <xs:annotation>
-      <xs:documentation>Klassierung des Pakets.</xs:documentation>
+      <xs:documentation xml:lang="de">Klassierung des Pakets.</xs:documentation>
+      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="fr"/>
+      <xs:documentation xml:lang="it"/>
     </xs:annotation>
     <xs:restriction base="xs:token">
       <xs:enumeration value="SIP"/>
@@ -47,14 +62,20 @@
 
   <xs:simpleType name="schemaVersion">
     <xs:annotation>
-      <xs:documentation>Angabe, mit welcher XSD-Version das Paket erstellt wurde.</xs:documentation>
+      <xs:documentation xml:lang="de">Angabe, mit welcher XSD-Version das Paket erstellt wurde.</xs:documentation>
+      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="fr"/>
+      <xs:documentation xml:lang="it"/>
     </xs:annotation>
     <xs:restriction base="text1"/>
   </xs:simpleType>
 
   <xs:simpleType name="version">
     <xs:annotation>
-      <xs:documentation>Die Versionierung des Pakets. Aus der Version ist schnell ersichtlich, wie oft ein AIP bereits migriert wurde.</xs:documentation>
+      <xs:documentation xml:lang="de">Die Versionierung des Pakets. Aus der Version ist schnell ersichtlich, wie oft ein AIP bereits migriert wurde.</xs:documentation>
+      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="fr"/>
+      <xs:documentation xml:lang="it"/>
     </xs:annotation>
     <xs:restriction base="xs:nonNegativeInteger"/>
   </xs:simpleType>

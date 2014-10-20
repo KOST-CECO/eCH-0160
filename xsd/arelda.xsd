@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 U (http://www.xmlspy.com) by XMLSPY 2005 Professional Ed., Installed for 5 users (Schweiz Landesbibliothek) -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
         xmlns:arelda="http://bar.admin.ch/arelda/v4"
         xmlns="http://bar.admin.ch/arelda/v4"
@@ -18,7 +19,6 @@
   <xs:include schemaLocation="archivischerVorgang.xsd"/>
   <xs:include schemaLocation="archivischeNotiz.xsd"/>
   <xs:include schemaLocation="zusatzDaten.xsd"/>
-
   <xs:element name="paket" type="paket"/>
   <xs:complexType name="paket" abstract="true">
     <xs:sequence>
@@ -82,7 +82,10 @@
       <xs:element name="beschreibung" type="beschreibung"/>
       <xs:element name="datum" type="zeitraum">
         <xs:annotation>
-          <xs:documentation>Zeitpunkt, zu welchem der archivische Vorgang durchgeführt wurde.</xs:documentation>
+          <xs:documentation xml:lang="de">Zeitpunkt, zu welchem der archivische Vorgang durchgeführt wurde.</xs:documentation>
+          <xs:documentation xml:lang="en"/>
+          <xs:documentation xml:lang="fr"/>
+          <xs:documentation xml:lang="it"/>
         </xs:annotation>
       </xs:element>
       <xs:element name="bearbeiter" type="bearbeiter"/>
@@ -95,7 +98,10 @@
       <xs:element name="ablieferndeStelle" type="ablieferndeStelle"/>
       <xs:element name="entstehungszeitraum" type="historischerZeitraum" minOccurs="0">
         <xs:annotation>
-          <xs:documentation>Der Entstehungszeitraum der Ablieferung wird aus dem ältesten Entstehungsdatum und dem jüngsten Datum der Dokumente oder Dateien ermittelt, die der Ablieferung zugeordneten  sind. Der Zeitraum kann auch geschätzt sein.</xs:documentation>
+          <xs:documentation xml:lang="de">Der Entstehungszeitraum der Ablieferung wird aus dem ältesten Entstehungsdatum und dem jüngsten Datum der Dokumente oder Dateien ermittelt, die der Ablieferung zugeordneten  sind. Der Zeitraum kann auch geschätzt sein.</xs:documentation>
+          <xs:documentation xml:lang="en"/>
+          <xs:documentation xml:lang="fr"/>
+          <xs:documentation xml:lang="it"/>
         </xs:annotation>
       </xs:element>
       <xs:element name="ablieferungsteile" type="ablieferungsteile" minOccurs="0"/>
@@ -104,7 +110,10 @@
       <xs:element name="unstrukturierterAnhang" type="unstrukturierterAnhang" minOccurs="0" maxOccurs="unbounded">
         <xs:unique name="uniqueDateiRefUnstrukturierterAnhang">
           <xs:annotation>
-            <xs:documentation>Eine Datei darf nur einmal referenziert werden.</xs:documentation>
+            <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
+            <xs:documentation xml:lang="en"/>
+            <xs:documentation xml:lang="fr"/>
+            <xs:documentation xml:lang="it"/>
           </xs:annotation>
           <xs:selector xpath="./arelda:dateiRef"/>
           <xs:field xpath="."/>
@@ -228,7 +237,10 @@
       <xs:element name="systemBeschreibung" type="systemBeschreibung" minOccurs="0"/>
       <xs:element name="existenzzeitraum" type="historischerZeitraum" minOccurs="0">
         <xs:annotation>
-          <xs:documentation>Zeitraum der Existenz des Aktenbildners.</xs:documentation>
+          <xs:documentation xml:lang="de">Zeitraum der Existenz des Aktenbildners.</xs:documentation>
+          <xs:documentation xml:lang="en"/>
+          <xs:documentation xml:lang="fr"/>
+          <xs:documentation xml:lang="it"/>
         </xs:annotation>
       </xs:element>
       <xs:element name="geschichteAktenbildner" type="geschichteAktenbildner" minOccurs="0"/>
@@ -319,7 +331,10 @@
       <xs:element name="generation" type="generation" minOccurs="0"/>
       <xs:element name="anwendungszeitraum" type="historischerZeitraum" minOccurs="0">
         <xs:annotation>
-          <xs:documentation>Zeitraum, seit/während dem das Ordnungssystem bei der aktenbildenden Stelle eingesetzt wird/wurde.</xs:documentation>
+          <xs:documentation xml:lang="de">Zeitraum, seit/während dem das Ordnungssystem bei der aktenbildenden Stelle eingesetzt wird/wurde.</xs:documentation>
+          <xs:documentation xml:lang="en"/>
+          <xs:documentation xml:lang="fr"/>
+          <xs:documentation xml:lang="it"/>
         </xs:annotation>
       </xs:element>
       <xs:element name="mitbenutzung" type="mitbenutzung" minOccurs="0"/>
@@ -500,7 +515,10 @@
           <xs:element name="dossier" type="dossierFilesSIP" minOccurs="0" maxOccurs="unbounded">
             <xs:unique name="uniqueDateiRefDossierFilesSIP">
               <xs:annotation>
-                <xs:documentation>Eine Datei darf nur einmal referenziert werden.</xs:documentation>
+                <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
+                <xs:documentation xml:lang="en"/>
+                <xs:documentation xml:lang="fr"/>
+                <xs:documentation xml:lang="it"/>
               </xs:annotation>
               <xs:selector xpath="./arelda:dateiRef"/>
               <xs:field xpath="."/>
@@ -523,7 +541,10 @@
           <xs:element name="dossier" type="dossierFilesAIP" minOccurs="0" maxOccurs="unbounded">
             <xs:unique name="uniqueDateiRefDossierFilesAIP">
               <xs:annotation>
-                <xs:documentation>Eine Datei darf nur einmal referenziert werden.</xs:documentation>
+                <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
+                <xs:documentation xml:lang="en"/>
+                <xs:documentation xml:lang="fr"/>
+                <xs:documentation xml:lang="it"/>
               </xs:annotation>
               <xs:selector xpath="./arelda:dateiRef"/>
               <xs:field xpath="."/>
@@ -542,7 +563,10 @@
           <xs:element name="dossier" type="dossierFilesDIP" minOccurs="0" maxOccurs="unbounded">
             <xs:unique name="uniqueDateiRefDossierFilesDIP">
               <xs:annotation>
-                <xs:documentation>Eine Datei darf nur einmal referenziert werden.</xs:documentation>
+                <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
+                <xs:documentation xml:lang="en"/>
+                <xs:documentation xml:lang="fr"/>
+                <xs:documentation xml:lang="it"/>
               </xs:annotation>
               <xs:selector xpath="./arelda:dateiRef"/>
               <xs:field xpath="."/>
@@ -564,7 +588,10 @@
       <xs:element name="federfuehrendeOrganisationseinheit" type="federfuehrendeOrganisationseinheitDossier" minOccurs="0"/>
       <xs:element name="entstehungszeitraum" type="historischerZeitraum">
         <xs:annotation>
-          <xs:documentation>Der Entstehungszeitraum des Dossiers wird aus dem ältesten Entstehungsdatum und dem jüngsten (Änderungs)datum aller dem Dossier zugeordneten Dokumente oder Dateien ermittelt. Der Zeitraum kann auch geschätzt sein.</xs:documentation>
+          <xs:documentation xml:lang="de">Der Entstehungszeitraum des Dossiers wird aus dem ältesten Entstehungsdatum und dem jüngsten (Änderungs)datum aller dem Dossier zugeordneten Dokumente oder Dateien ermittelt. Der Zeitraum kann auch geschätzt sein.</xs:documentation>
+          <xs:documentation xml:lang="en"/>
+          <xs:documentation xml:lang="fr"/>
+          <xs:documentation xml:lang="it"/>
         </xs:annotation>
       </xs:element>
       <xs:element name="entstehungszeitraumAnmerkung" type="entstehungszeitraumAnmerkung" minOccurs="0"/>
@@ -586,19 +613,28 @@
           <xs:element name="aktenzeichen" type="aktenzeichen"/>
           <xs:element name="eroeffnungsdatum" type="historischerZeitpunkt" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>Zeitpunkt, an dem das Dossier eröffnet worden ist.</xs:documentation>
+              <xs:documentation xml:lang="de">Zeitpunkt, an dem das Dossier eröffnet worden ist.</xs:documentation>
+              <xs:documentation xml:lang="en"/>
+              <xs:documentation xml:lang="fr"/>
+              <xs:documentation xml:lang="it"/>
             </xs:annotation>
           </xs:element>
           <xs:element name="abschlussdatum" type="historischerZeitpunkt" minOccurs="0">
             <xs:annotation>
-              <xs:documentation>Zeitpunkt, an dem das Dossier abgeschlossen worden ist.</xs:documentation>
+              <xs:documentation xml:lang="de">Zeitpunkt, an dem das Dossier abgeschlossen worden ist.</xs:documentation>
+              <xs:documentation xml:lang="en"/>
+              <xs:documentation xml:lang="fr"/>
+              <xs:documentation xml:lang="it"/>
             </xs:annotation>
           </xs:element>
           <xs:element name="vorgang" type="vorgangAktivitaet" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation>Vorgangsobjekte repräsentieren einzelne, abgrenzbare Geschäftsfälle. 
+              <xs:documentation xml:lang="de">Vorgangsobjekte repräsentieren einzelne, abgrenzbare Geschäftsfälle. 
 Der Vorgang wird durchgeführt über eine Folge von einzelnen Aktivitäten. 
 Einer einzelnen Aktivität sind in der Regel ein federführender Akteur zugewiesen.</xs:documentation>
+              <xs:documentation xml:lang="en"/>
+              <xs:documentation xml:lang="fr"/>
+              <xs:documentation xml:lang="it"/>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -667,7 +703,10 @@ Einer einzelnen Aktivität sind in der Regel ein federführender Akteur zugewies
           <xs:element name="dossier" type="dossierFilesSIP" minOccurs="0" maxOccurs="unbounded">
             <xs:unique name="uniqueDateiRefSubdossierFilesSIP">
               <xs:annotation>
-                <xs:documentation>Eine Datei darf nur einmal referenziert werden.</xs:documentation>
+                <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
+                <xs:documentation xml:lang="en"/>
+                <xs:documentation xml:lang="fr"/>
+                <xs:documentation xml:lang="it"/>
               </xs:annotation>
               <xs:selector xpath="./arelda:dateiRef"/>
               <xs:field xpath="."/>
@@ -676,7 +715,10 @@ Einer einzelnen Aktivität sind in der Regel ein federführender Akteur zugewies
           <xs:element name="dokument" type="dokumentFilesSIP" minOccurs="0" maxOccurs="unbounded">
             <xs:unique name="uniqueDateiRefDokumentFilesSIP">
               <xs:annotation>
-                <xs:documentation>Eine Datei darf nur einmal referenziert werden.</xs:documentation>
+                <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
+                <xs:documentation xml:lang="en"/>
+                <xs:documentation xml:lang="fr"/>
+                <xs:documentation xml:lang="it"/>
               </xs:annotation>
               <xs:selector xpath="./arelda:dateiRef"/>
               <xs:field xpath="."/>
@@ -700,7 +742,10 @@ Einer einzelnen Aktivität sind in der Regel ein federführender Akteur zugewies
           <xs:element name="dossier" type="dossierFilesAIP" minOccurs="0" maxOccurs="unbounded">
             <xs:unique name="uniqueDateiRefSubdossierFilesAIP">
               <xs:annotation>
-                <xs:documentation>Eine Datei darf nur einmal referenziert werden.</xs:documentation>
+                <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
+                <xs:documentation xml:lang="en"/>
+                <xs:documentation xml:lang="fr"/>
+                <xs:documentation xml:lang="it"/>
               </xs:annotation>
               <xs:selector xpath="./arelda:dateiRef"/>
               <xs:field xpath="."/>
@@ -709,7 +754,10 @@ Einer einzelnen Aktivität sind in der Regel ein federführender Akteur zugewies
           <xs:element name="dokument" type="dokumentFilesAIP" minOccurs="0" maxOccurs="unbounded">
             <xs:unique name="uniqueDateiRefDokumentFilesAIP">
               <xs:annotation>
-                <xs:documentation>Eine Datei darf nur einmal referenziert werden.</xs:documentation>
+                <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
+                <xs:documentation xml:lang="en"/>
+                <xs:documentation xml:lang="fr"/>
+                <xs:documentation xml:lang="it"/>
               </xs:annotation>
               <xs:selector xpath="./arelda:dateiRef"/>
               <xs:field xpath="."/>
@@ -729,7 +777,10 @@ Einer einzelnen Aktivität sind in der Regel ein federführender Akteur zugewies
           <xs:element name="dossier" type="dossierFilesDIP" minOccurs="0" maxOccurs="unbounded">
             <xs:unique name="uniqueDateiRefSubdossierFilesDIP">
               <xs:annotation>
-                <xs:documentation>Eine Datei darf nur einmal referenziert werden.</xs:documentation>
+                <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
+                <xs:documentation xml:lang="en"/>
+                <xs:documentation xml:lang="fr"/>
+                <xs:documentation xml:lang="it"/>
               </xs:annotation>
               <xs:selector xpath="./arelda:dateiRef"/>
               <xs:field xpath="."/>
@@ -738,7 +789,10 @@ Einer einzelnen Aktivität sind in der Regel ein federführender Akteur zugewies
           <xs:element name="dokument" type="dokumentFilesDIP" minOccurs="0" maxOccurs="unbounded">
             <xs:unique name="uniqueDateiRefDokumentFilesDIP">
               <xs:annotation>
-                <xs:documentation>Eine Datei darf nur einmal referenziert werden.</xs:documentation>
+                <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
+                <xs:documentation xml:lang="en"/>
+                <xs:documentation xml:lang="fr"/>
+                <xs:documentation xml:lang="it"/>
               </xs:annotation>
               <xs:selector xpath="./arelda:dateiRef"/>
               <xs:field xpath="."/>
@@ -789,12 +843,18 @@ Einer einzelnen Aktivität sind in der Regel ein federführender Akteur zugewies
       <xs:element name="dokumenttyp" type="dokumenttyp" minOccurs="0"/>
       <xs:element name="registrierdatum" type="historischerZeitpunkt" minOccurs="0">
         <xs:annotation>
-          <xs:documentation>Zeitpunkt an welchem das Dokument im System einem Dossier zugeordnet worden ist.</xs:documentation>
+          <xs:documentation xml:lang="de">Zeitpunkt an welchem das Dokument im System einem Dossier zugeordnet worden ist.</xs:documentation>
+          <xs:documentation xml:lang="en"/>
+          <xs:documentation xml:lang="fr"/>
+          <xs:documentation xml:lang="it"/>
         </xs:annotation>
       </xs:element>
       <xs:element name="entstehungszeitraum" type="historischerZeitraum" minOccurs="0">
         <xs:annotation>
-          <xs:documentation>Zeitliche Angabe über die Entstehung des Dokuments. Als Entstehung des Dokuments kann das Datum seiner Erstellung angegeben werden, oder den Zeitraum, in dem das Dokument entstanden ist (aus dem ältesten Entstehungsdatum und dem jüngsten Datum des Dokuments ermittelt). Der Zeitraum kann auch geschätzt sein.</xs:documentation>
+          <xs:documentation xml:lang="de">Zeitliche Angabe über die Entstehung des Dokuments. Als Entstehung des Dokuments kann das Datum seiner Erstellung angegeben werden, oder den Zeitraum, in dem das Dokument entstanden ist (aus dem ältesten Entstehungsdatum und dem jüngsten Datum des Dokuments ermittelt). Der Zeitraum kann auch geschätzt sein.</xs:documentation>
+          <xs:documentation xml:lang="en"/>
+          <xs:documentation xml:lang="fr"/>
+          <xs:documentation xml:lang="it"/>
         </xs:annotation>
       </xs:element>
       <xs:element name="klassifizierungskategorie" type="klassifizierungskategorieDokument" minOccurs="0"/>
@@ -928,7 +988,10 @@ Einer einzelnen Aktivität sind in der Regel ein federführender Akteur zugewies
       <xs:element name="pruefsumme" type="pruefsumme"/>
       <xs:element name="eigenschaft" type="eigenschaftDatei" minOccurs="0" maxOccurs="unbounded">
         <xs:annotation>
-          <xs:documentation>Name und Wert von technischen Eigenschaften der Dateien wie z.B. Felddelemiter.</xs:documentation>
+          <xs:documentation xml:lang="de">Name und Wert von technischen Eigenschaften der Dateien wie z.B. Felddelemiter.</xs:documentation>
+          <xs:documentation xml:lang="en"/>
+          <xs:documentation xml:lang="fr"/>
+          <xs:documentation xml:lang="it"/>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
@@ -1006,12 +1069,18 @@ Einer einzelnen Aktivität sind in der Regel ein federführender Akteur zugewies
   <xs:complexType name="unstrukturierterAnhang">
     <xs:sequence>
       <xs:annotation>
-        <xs:documentation>Referenz zu einer Datei im Inhaltsverzeichnis des Pakets.</xs:documentation>
+        <xs:documentation xml:lang="de">Referenz zu einer Datei im Inhaltsverzeichnis des Pakets.</xs:documentation>
+        <xs:documentation xml:lang="en"/>
+        <xs:documentation xml:lang="fr"/>
+        <xs:documentation xml:lang="it"/>
       </xs:annotation>
       <xs:element name="dateiRef" type="dateiRef" minOccurs="0"/>
       <xs:element name="dateiBeschreibung" type="text4">
         <xs:annotation>
-          <xs:documentation>Zusätzliche unstrukturierte Informationen, welche der Ablieferung fakultativ mitgegeben werden können.</xs:documentation>
+          <xs:documentation xml:lang="de">Zusätzliche unstrukturierte Informationen, welche der Ablieferung fakultativ mitgegeben werden können.</xs:documentation>
+          <xs:documentation xml:lang="en"/>
+          <xs:documentation xml:lang="fr"/>
+          <xs:documentation xml:lang="it"/>
         </xs:annotation>
       </xs:element>
     </xs:sequence>

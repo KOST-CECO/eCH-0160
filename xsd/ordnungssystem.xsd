@@ -6,28 +6,40 @@
   <xs:include schemaLocation="base.xsd"/>
   <xs:simpleType name="nameOrdnungssystem">
     <xs:annotation>
-      <xs:documentation>Eindeutige Bezeichnung des Ordnungssystems, welche den Geltungsbereich des Ordnungssystems wiedergibt. Enthält in der Regel als Element die Bezeichnung der Verwaltungseinheit oder des Aufgabenbereichs, in welchem das Ordnungssystem angewandt wird.</xs:documentation>
+      <xs:documentation xml:lang="de">Eindeutige Bezeichnung des Ordnungssystems, welche den Geltungsbereich des Ordnungssystems wiedergibt. Enthält in der Regel als Element die Bezeichnung der Verwaltungseinheit oder des Aufgabenbereichs, in welchem das Ordnungssystem angewandt wird.</xs:documentation>
+      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="fr"/>
+      <xs:documentation xml:lang="it"/>
     </xs:annotation>
     <xs:restriction base="text2"/>
   </xs:simpleType>
 
   <xs:simpleType name="generation">
     <xs:annotation>
-      <xs:documentation>Versionsbezeichnung des Ordnungssystems. Dient zur Verknüpfung und Unterscheidung von zeitlich aufeinander folgenden OS desselben Typs mit demselben Geltungsbereich.</xs:documentation>
+      <xs:documentation xml:lang="de">Versionsbezeichnung des Ordnungssystems. Dient zur Verknüpfung und Unterscheidung von zeitlich aufeinander folgenden OS desselben Typs mit demselben Geltungsbereich.</xs:documentation>
+      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="fr"/>
+      <xs:documentation xml:lang="it"/>
     </xs:annotation>
     <xs:restriction base="text1"/>
   </xs:simpleType>
 
   <xs:simpleType name="mitbenutzung">
     <xs:annotation>
-      <xs:documentation>Weitere Organisationseinheiten, ausserhalb des Aktenbildners, welche das Ordnungssystem mitbenutzen oder mitbenutzt haben.</xs:documentation>
+      <xs:documentation xml:lang="de">Weitere Organisationseinheiten, ausserhalb des Aktenbildners, welche das Ordnungssystem mitbenutzen oder mitbenutzt haben.</xs:documentation>
+      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="fr"/>
+      <xs:documentation xml:lang="it"/>
     </xs:annotation>
     <xs:restriction base="text4"/>
   </xs:simpleType>
 
   <xs:simpleType name="bemerkungOrdnungssysstem">
     <xs:annotation>
-      <xs:documentation>Zusätzliche Informationen, welche das Ordnungssystem betreffen.</xs:documentation>
+      <xs:documentation xml:lang="de">Zusätzliche Informationen, welche das Ordnungssystem betreffen.</xs:documentation>
+      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="fr"/>
+      <xs:documentation xml:lang="it"/>
     </xs:annotation>
     <xs:restriction base="text4"/>
   </xs:simpleType>

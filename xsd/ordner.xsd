@@ -6,14 +6,20 @@
   <xs:include schemaLocation="base.xsd"/>
   <xs:simpleType name="nameOrdner">
     <xs:annotation>
-      <xs:documentation>Das Inhaltsverzeichnis listet alle Dateien und Ordner des Pakets hierarchisch auf. Für die Ordner wird der Ordnername eingesetzt.</xs:documentation>
+      <xs:documentation xml:lang="de">Das Inhaltsverzeichnis listet alle Dateien und Ordner des Pakets hierarchisch auf. Für die Ordner wird der Ordnername eingesetzt.</xs:documentation>
+      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="fr"/>
+      <xs:documentation xml:lang="it"/>
     </xs:annotation>
     <xs:restriction base="xs:string"/>
   </xs:simpleType>
 
   <xs:simpleType name="idOrdner">
     <xs:annotation>
-      <xs:documentation>Paketweit eindeutige ID für den Ordner (technischer Primärschlüssel). Diese ID wird aus dem Dokument heraus referenziert.</xs:documentation>
+      <xs:documentation xml:lang="de">Paketweit eindeutige ID für den Ordner (technischer Primärschlüssel). Diese ID wird aus dem Dokument heraus referenziert.</xs:documentation>
+      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="fr"/>
+      <xs:documentation xml:lang="it"/>
     </xs:annotation>
     <xs:restriction base="xs:ID"/>
   </xs:simpleType>

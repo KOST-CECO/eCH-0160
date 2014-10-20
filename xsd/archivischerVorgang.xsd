@@ -6,28 +6,40 @@
   <xs:include schemaLocation="base.xsd"/>
   <xs:simpleType name="vorgangstyp">
     <xs:annotation>
-      <xs:documentation>Klassifizierung des Vorgangs.</xs:documentation>
+      <xs:documentation xml:lang="de">Klassifizierung des Vorgangs.</xs:documentation>
+      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="fr"/>
+      <xs:documentation xml:lang="it"/>
     </xs:annotation>
     <xs:restriction base="text1"/>
   </xs:simpleType>
 
   <xs:simpleType name="beschreibung">
     <xs:annotation>
-      <xs:documentation>Nachweis und Resultat der durchgeführten Tätigkeit.</xs:documentation>
+      <xs:documentation xml:lang="de">Nachweis und Resultat der durchgeführten Tätigkeit.</xs:documentation>
+      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="fr"/>
+      <xs:documentation xml:lang="it"/>
     </xs:annotation>
     <xs:restriction base="text4"/>
   </xs:simpleType>
 
   <xs:simpleType name="bearbeiter">
     <xs:annotation>
-      <xs:documentation>Name der Person, die den archivischen Vorgang durchgeführt hat.</xs:documentation>
+      <xs:documentation xml:lang="de">Name der Person, die den archivischen Vorgang durchgeführt hat.</xs:documentation>
+      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="fr"/>
+      <xs:documentation xml:lang="it"/>
     </xs:annotation>
     <xs:restriction base="text2"/>
   </xs:simpleType>
 
   <xs:simpleType name="referenzUebernahmedossier">
     <xs:annotation>
-      <xs:documentation>Aktenzeichen des Übernahmedossiers in der GEVER Anwendung des Archiv.</xs:documentation>
+      <xs:documentation xml:lang="de">Aktenzeichen des Übernahmedossiers in der GEVER Anwendung des Archiv.</xs:documentation>
+      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="fr"/>
+      <xs:documentation xml:lang="it"/>
     </xs:annotation>
     <xs:restriction base="text1"/>
   </xs:simpleType>

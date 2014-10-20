@@ -6,7 +6,10 @@
   <xs:include schemaLocation="base.xsd"/>
   <xs:complexType name="zusatzDaten" mixed="false">
     <xs:annotation>
-      <xs:documentation>Merkmal - Werte Gruppen erlaubt das festhalten weiterer Metadaten in tabellarisch strukturierter Form</xs:documentation>
+      <xs:documentation xml:lang="de">Merkmal - Werte Gruppen erlaubt das festhalten weiterer Metadaten in tabellarisch strukturierter Form</xs:documentation>
+      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="fr"/>
+      <xs:documentation xml:lang="it"/>
     </xs:annotation>
     <xs:sequence>
       <xs:element name="merkmal" maxOccurs="unbounded">
@@ -15,7 +18,10 @@
             <xs:extension base="text4">
               <xs:attribute name="name" type="text4" use="required">
                 <xs:annotation>
-                  <xs:documentation>Name des Merkmal - Werte Paares</xs:documentation>
+                  <xs:documentation xml:lang="de">Name des Merkmal - Werte Paares</xs:documentation>
+                  <xs:documentation xml:lang="en"/>
+                  <xs:documentation xml:lang="fr"/>
+                  <xs:documentation xml:lang="it"/>
                 </xs:annotation>
               </xs:attribute>
             </xs:extension>
