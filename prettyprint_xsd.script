@@ -1,0 +1,34 @@
+s#</xs:complexType>#</xs:complexType>\
+#
+# ------------------------------------
+s#</xs:simpleType>#</xs:simpleType>\
+#
+# ------------------------------------
+s#attributeFormDefault="unqualified">#attributeFormDefault="unqualified">\
+#
+# ------------------------------------
+s# xmlns#\
+        xmlns# g
+# ------------------------------------
+s# targetNamespace#\
+        targetNamespace# g
+# ------------------------------------
+s# elementFormDefault#\
+        elementFormDefault# g
+# ------------------------------------
+s# attributeFormDefault#\
+        attributeFormDefault# g
+# ------------------------------------
+s# version#\
+        version# g
+# ------------------------------------
+s#<?xml\
+        version#<?xml version# g
+# ------------------------------------
+s#<xs:schema\
+        xmlns#<xs:schema xmlns# g
+# ------------------------------------
+s#  <xs:element name="paket" type="paket">#\
+  <xs:element name="paket" type="paket">#
+# -------replace tabs by spaces----------------
+s#	#  # g
