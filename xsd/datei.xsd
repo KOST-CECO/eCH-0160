@@ -7,7 +7,7 @@
   <xs:simpleType name="nameDatei">
     <xs:annotation>
       <xs:documentation xml:lang="de">Name der Datei, wie dieser im SIP/AIP/DIP erscheint (z.B. "p000001_Machbarkeitsanaly.pdf").</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Name of the file as it appears in the SIP/AIP/DIP (e.g. "p000001_Feasibility_Study.pdf").</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -17,7 +17,7 @@
   <xs:simpleType name="physischerName">
     <xs:annotation>
       <xs:documentation xml:lang="de">Name der Datei im Filesystem.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Name of the file in the file system.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -27,7 +27,7 @@
   <xs:simpleType name="originalName">
     <xs:annotation>
       <xs:documentation xml:lang="de">Name des Ordners oder der Datei, wie diese in der Originalstruktur (im GEVER-System, in der Dateiablage) beim Aktenbildner geheissen hat (z.B. "Arbeitspaket" oder "Bericht.doc").</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Name of the folder or file as it was called in the original structure (in the GEVER system, in the file archive) at the records creator (e.g. "work package" or "Report.doc".</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -37,7 +37,7 @@
   <xs:simpleType name="idDatei">
     <xs:annotation>
       <xs:documentation xml:lang="de">Paketweit eindeutige ID für die Datei (technischer Primärschlüssel). Diese ID wird aus dem Dokument heraus referenziert.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Unambiguous ID for the file throughout the package (technical primary key). This ID is referenced out of the document.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -47,7 +47,7 @@
   <xs:simpleType name="pruefalgorithmus">
     <xs:annotation>
       <xs:documentation xml:lang="de">Bezeichnung des verwendeten Prüfalgorithmus.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Designation of the checksum algorithm used.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -62,7 +62,7 @@
   <xs:simpleType name="pruefsumme">
     <xs:annotation>
       <xs:documentation xml:lang="de">Prüfsummenwert (abhängig vom verwendeten Prüfalgorithmus).</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Checksum value (depending on the checksum algorithm used).</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -72,7 +72,7 @@
   <xs:simpleType name="eigenschaft">
     <xs:annotation>
       <xs:documentation xml:lang="de">Generisches Attribut, welches im Zusammenhang mit Wert verwendet wird. Wird bspw. eine CSV-Datei abgeliefert, dann können mittels Attributpaar "eigenschaft" und "wert" Feld- und Zeilendelemiter, Texterkennungszeichen oder Spaltennamen angegeben werden.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Generic attribute used in connection with value. For example, if a CSV file is submitted, the "property" and "value" pair of attributes can be used to indicate field and line delimiters, text recognition symbols or column names.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>

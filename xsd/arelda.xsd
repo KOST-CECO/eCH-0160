@@ -83,7 +83,7 @@
       <xs:element name="datum" type="zeitraum">
         <xs:annotation>
           <xs:documentation xml:lang="de">Zeitpunkt, zu welchem der archivische Vorgang durchgeführt wurde.</xs:documentation>
-          <xs:documentation xml:lang="en"/>
+          <xs:documentation xml:lang="en">Time point at which the archival process was carried out.</xs:documentation>
           <xs:documentation xml:lang="fr"/>
           <xs:documentation xml:lang="it"/>
         </xs:annotation>
@@ -99,7 +99,7 @@
       <xs:element name="entstehungszeitraum" type="historischerZeitraum" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="de">Der Entstehungszeitraum der Ablieferung wird aus dem ältesten Entstehungsdatum und dem jüngsten Datum der Dokumente oder Dateien ermittelt, die der Ablieferung zugeordneten  sind. Der Zeitraum kann auch geschätzt sein.</xs:documentation>
-          <xs:documentation xml:lang="en"/>
+          <xs:documentation xml:lang="en">The creation period of the submission is calculated from the earliest creation date and the most recent date of the documents or files allocated to the submission. The period may also be estimated.</xs:documentation>
           <xs:documentation xml:lang="fr"/>
           <xs:documentation xml:lang="it"/>
         </xs:annotation>
@@ -111,7 +111,7 @@
         <xs:unique name="uniqueDateiRefUnstrukturierterAnhang">
           <xs:annotation>
             <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
-            <xs:documentation xml:lang="en"/>
+            <xs:documentation xml:lang="en">A file may only be referenced once.</xs:documentation>
             <xs:documentation xml:lang="fr"/>
             <xs:documentation xml:lang="it"/>
           </xs:annotation>
@@ -238,7 +238,7 @@
       <xs:element name="existenzzeitraum" type="historischerZeitraum" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="de">Zeitraum der Existenz des Aktenbildners.</xs:documentation>
-          <xs:documentation xml:lang="en"/>
+          <xs:documentation xml:lang="en">Period of existence of the records creator.</xs:documentation>
           <xs:documentation xml:lang="fr"/>
           <xs:documentation xml:lang="it"/>
         </xs:annotation>
@@ -332,7 +332,7 @@
       <xs:element name="anwendungszeitraum" type="historischerZeitraum" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="de">Zeitraum, seit/während dem das Ordnungssystem bei der aktenbildenden Stelle eingesetzt wird/wurde.</xs:documentation>
-          <xs:documentation xml:lang="en"/>
+          <xs:documentation xml:lang="en">Period since/during which the classification system has been / was used by the records-creating authority.</xs:documentation>
           <xs:documentation xml:lang="fr"/>
           <xs:documentation xml:lang="it"/>
         </xs:annotation>
@@ -516,7 +516,7 @@
             <xs:unique name="uniqueDateiRefDossierFilesSIP">
               <xs:annotation>
                 <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
-                <xs:documentation xml:lang="en"/>
+                <xs:documentation xml:lang="en">A file may only be referenced once.</xs:documentation>
                 <xs:documentation xml:lang="fr"/>
                 <xs:documentation xml:lang="it"/>
               </xs:annotation>
@@ -542,7 +542,7 @@
             <xs:unique name="uniqueDateiRefDossierFilesAIP">
               <xs:annotation>
                 <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
-                <xs:documentation xml:lang="en"/>
+                <xs:documentation xml:lang="en">A file may only be referenced once.</xs:documentation>
                 <xs:documentation xml:lang="fr"/>
                 <xs:documentation xml:lang="it"/>
               </xs:annotation>
@@ -564,7 +564,7 @@
             <xs:unique name="uniqueDateiRefDossierFilesDIP">
               <xs:annotation>
                 <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
-                <xs:documentation xml:lang="en"/>
+                <xs:documentation xml:lang="en">A file may only be referenced once.</xs:documentation>
                 <xs:documentation xml:lang="fr"/>
                 <xs:documentation xml:lang="it"/>
               </xs:annotation>
@@ -589,7 +589,7 @@
       <xs:element name="entstehungszeitraum" type="historischerZeitraum">
         <xs:annotation>
           <xs:documentation xml:lang="de">Der Entstehungszeitraum des Dossiers wird aus dem ältesten Entstehungsdatum und dem jüngsten (Änderungs)datum aller dem Dossier zugeordneten Dokumente oder Dateien ermittelt. Der Zeitraum kann auch geschätzt sein.</xs:documentation>
-          <xs:documentation xml:lang="en"/>
+          <xs:documentation xml:lang="en">The creation period of the dossier is calculated from the earliest creation date and the most recent (change) date of all the documents or files allocated to the dossier. The period may also be estimated.</xs:documentation>
           <xs:documentation xml:lang="fr"/>
           <xs:documentation xml:lang="it"/>
         </xs:annotation>
@@ -614,7 +614,7 @@
           <xs:element name="eroeffnungsdatum" type="historischerZeitpunkt" minOccurs="0">
             <xs:annotation>
               <xs:documentation xml:lang="de">Zeitpunkt, an dem das Dossier eröffnet worden ist.</xs:documentation>
-              <xs:documentation xml:lang="en"/>
+              <xs:documentation xml:lang="en">Time point at which the dossier was opened.</xs:documentation>
               <xs:documentation xml:lang="fr"/>
               <xs:documentation xml:lang="it"/>
             </xs:annotation>
@@ -622,17 +622,15 @@
           <xs:element name="abschlussdatum" type="historischerZeitpunkt" minOccurs="0">
             <xs:annotation>
               <xs:documentation xml:lang="de">Zeitpunkt, an dem das Dossier abgeschlossen worden ist.</xs:documentation>
-              <xs:documentation xml:lang="en"/>
+              <xs:documentation xml:lang="en">Time point at which the dossier was opened.</xs:documentation>
               <xs:documentation xml:lang="fr"/>
               <xs:documentation xml:lang="it"/>
             </xs:annotation>
           </xs:element>
           <xs:element name="vorgang" type="vorgangAktivitaet" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation xml:lang="de">Vorgangsobjekte repräsentieren einzelne, abgrenzbare Geschäftsfälle. 
-Der Vorgang wird durchgeführt über eine Folge von einzelnen Aktivitäten. 
-Einer einzelnen Aktivität sind in der Regel ein federführender Akteur zugewiesen.</xs:documentation>
-              <xs:documentation xml:lang="en"/>
+              <xs:documentation xml:lang="de">Vorgangsobjekte repräsentieren einzelne, abgrenzbare Geschäftsfälle. Der Vorgang wird durchgeführt über eine Folge von einzelnen Aktivitäten. Einer einzelnen Aktivität sind in der Regel ein federführender Akteur zugewiesen.</xs:documentation>
+              <xs:documentation xml:lang="en">Process representing separately identifiable business cases . A process is performed through a sequence of individual operations. To each single activity is usually leading actorassigned.</xs:documentation>
               <xs:documentation xml:lang="fr"/>
               <xs:documentation xml:lang="it"/>
             </xs:annotation>
@@ -704,7 +702,7 @@ Einer einzelnen Aktivität sind in der Regel ein federführender Akteur zugewies
             <xs:unique name="uniqueDateiRefSubdossierFilesSIP">
               <xs:annotation>
                 <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
-                <xs:documentation xml:lang="en"/>
+                <xs:documentation xml:lang="en">A file may only be referenced once.</xs:documentation>
                 <xs:documentation xml:lang="fr"/>
                 <xs:documentation xml:lang="it"/>
               </xs:annotation>
@@ -716,7 +714,7 @@ Einer einzelnen Aktivität sind in der Regel ein federführender Akteur zugewies
             <xs:unique name="uniqueDateiRefDokumentFilesSIP">
               <xs:annotation>
                 <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
-                <xs:documentation xml:lang="en"/>
+                <xs:documentation xml:lang="en">A file may only be referenced once.</xs:documentation>
                 <xs:documentation xml:lang="fr"/>
                 <xs:documentation xml:lang="it"/>
               </xs:annotation>
@@ -743,7 +741,7 @@ Einer einzelnen Aktivität sind in der Regel ein federführender Akteur zugewies
             <xs:unique name="uniqueDateiRefSubdossierFilesAIP">
               <xs:annotation>
                 <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
-                <xs:documentation xml:lang="en"/>
+                <xs:documentation xml:lang="en">A file may only be referenced once.</xs:documentation>
                 <xs:documentation xml:lang="fr"/>
                 <xs:documentation xml:lang="it"/>
               </xs:annotation>
@@ -755,7 +753,7 @@ Einer einzelnen Aktivität sind in der Regel ein federführender Akteur zugewies
             <xs:unique name="uniqueDateiRefDokumentFilesAIP">
               <xs:annotation>
                 <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
-                <xs:documentation xml:lang="en"/>
+                <xs:documentation xml:lang="en">A file may only be referenced once.</xs:documentation>
                 <xs:documentation xml:lang="fr"/>
                 <xs:documentation xml:lang="it"/>
               </xs:annotation>
@@ -778,7 +776,7 @@ Einer einzelnen Aktivität sind in der Regel ein federführender Akteur zugewies
             <xs:unique name="uniqueDateiRefSubdossierFilesDIP">
               <xs:annotation>
                 <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
-                <xs:documentation xml:lang="en"/>
+                <xs:documentation xml:lang="en">A file may only be referenced once.</xs:documentation>
                 <xs:documentation xml:lang="fr"/>
                 <xs:documentation xml:lang="it"/>
               </xs:annotation>
@@ -790,7 +788,7 @@ Einer einzelnen Aktivität sind in der Regel ein federführender Akteur zugewies
             <xs:unique name="uniqueDateiRefDokumentFilesDIP">
               <xs:annotation>
                 <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
-                <xs:documentation xml:lang="en"/>
+                <xs:documentation xml:lang="en">A file may only be referenced once.</xs:documentation>
                 <xs:documentation xml:lang="fr"/>
                 <xs:documentation xml:lang="it"/>
               </xs:annotation>
@@ -844,7 +842,7 @@ Einer einzelnen Aktivität sind in der Regel ein federführender Akteur zugewies
       <xs:element name="registrierdatum" type="historischerZeitpunkt" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="de">Zeitpunkt an welchem das Dokument im System einem Dossier zugeordnet worden ist.</xs:documentation>
-          <xs:documentation xml:lang="en"/>
+          <xs:documentation xml:lang="en">Time point at which a document was added to the dossier.</xs:documentation>
           <xs:documentation xml:lang="fr"/>
           <xs:documentation xml:lang="it"/>
         </xs:annotation>
@@ -852,7 +850,7 @@ Einer einzelnen Aktivität sind in der Regel ein federführender Akteur zugewies
       <xs:element name="entstehungszeitraum" type="historischerZeitraum" minOccurs="0">
         <xs:annotation>
           <xs:documentation xml:lang="de">Zeitliche Angabe über die Entstehung des Dokuments. Als Entstehung des Dokuments kann das Datum seiner Erstellung angegeben werden, oder den Zeitraum, in dem das Dokument entstanden ist (aus dem ältesten Entstehungsdatum und dem jüngsten Datum des Dokuments ermittelt). Der Zeitraum kann auch geschätzt sein.</xs:documentation>
-          <xs:documentation xml:lang="en"/>
+          <xs:documentation xml:lang="en">Period of the origin of the document. As creation time of the document the date of its creation can be specified, or the period in which the document was created (determined from the oldest creation date and the most recent date of the document) . The period can also be estimated.</xs:documentation>
           <xs:documentation xml:lang="fr"/>
           <xs:documentation xml:lang="it"/>
         </xs:annotation>
@@ -989,7 +987,7 @@ Einer einzelnen Aktivität sind in der Regel ein federführender Akteur zugewies
       <xs:element name="eigenschaft" type="eigenschaftDatei" minOccurs="0" maxOccurs="unbounded">
         <xs:annotation>
           <xs:documentation xml:lang="de">Name und Wert von technischen Eigenschaften der Dateien wie z.B. Felddelemiter.</xs:documentation>
-          <xs:documentation xml:lang="en"/>
+          <xs:documentation xml:lang="en">Name and value of technical properties of the files such as field delimiters.</xs:documentation>
           <xs:documentation xml:lang="fr"/>
           <xs:documentation xml:lang="it"/>
         </xs:annotation>
@@ -1070,7 +1068,7 @@ Einer einzelnen Aktivität sind in der Regel ein federführender Akteur zugewies
     <xs:sequence>
       <xs:annotation>
         <xs:documentation xml:lang="de">Referenz zu einer Datei im Inhaltsverzeichnis des Pakets.</xs:documentation>
-        <xs:documentation xml:lang="en"/>
+        <xs:documentation xml:lang="en">Reference to a file in the table of contents of the package.</xs:documentation>
         <xs:documentation xml:lang="fr"/>
         <xs:documentation xml:lang="it"/>
       </xs:annotation>
@@ -1078,7 +1076,7 @@ Einer einzelnen Aktivität sind in der Regel ein federführender Akteur zugewies
       <xs:element name="dateiBeschreibung" type="text4">
         <xs:annotation>
           <xs:documentation xml:lang="de">Zusätzliche unstrukturierte Informationen, welche der Ablieferung fakultativ mitgegeben werden können.</xs:documentation>
-          <xs:documentation xml:lang="en"/>
+          <xs:documentation xml:lang="en">Additional unstructured information that may optionally be included with the submission.</xs:documentation>
           <xs:documentation xml:lang="fr"/>
           <xs:documentation xml:lang="it"/>
         </xs:annotation>

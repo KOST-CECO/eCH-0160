@@ -7,7 +7,7 @@
   <xs:simpleType name="vorgangstyp">
     <xs:annotation>
       <xs:documentation xml:lang="de">Klassifizierung des Vorgangs.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Classification of the process.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -17,7 +17,7 @@
   <xs:simpleType name="beschreibung">
     <xs:annotation>
       <xs:documentation xml:lang="de">Nachweis und Resultat der durchgeführten Tätigkeit.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Confirmation and result of the activity carried out.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -27,7 +27,7 @@
   <xs:simpleType name="bearbeiter">
     <xs:annotation>
       <xs:documentation xml:lang="de">Name der Person, die den archivischen Vorgang durchgeführt hat.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Name of the person who carried out the archival process.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -37,7 +37,7 @@
   <xs:simpleType name="referenzUebernahmedossier">
     <xs:annotation>
       <xs:documentation xml:lang="de">Aktenzeichen des Übernahmedossiers in der GEVER Anwendung des Archiv.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">File reference of the ingest dossier in the GEVER application.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>

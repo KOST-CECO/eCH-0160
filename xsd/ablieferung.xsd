@@ -7,7 +7,7 @@
   <xs:simpleType name="ablieferungsnummer">
     <xs:annotation>
       <xs:documentation xml:lang="de">Die Ablieferungsnummer dient zur Identifizierung der Ablieferung im Archiv. Sie besteht in der Regel aus dem Ablieferungsjahr und einer Laufnummer innerhalb dieses Jahres. Die Ablieferungsnummer kann auch Buchstaben enthalten.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">The submission number serves to identify the submission. It consists of the submission year and a consecutive number within that year.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -17,7 +17,7 @@
   <xs:simpleType name="ablieferungstyp">
     <xs:annotation>
       <xs:documentation xml:lang="de">Angabe darüber, aus welcher Umgebung die Ablieferung stammt.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Indication of the environment from which the submission comes.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -30,7 +30,7 @@
   <xs:simpleType name="angebotsnummer">
     <xs:annotation>
       <xs:documentation xml:lang="de">Die vom Archiv vergebene Nummer des Angebots, auf welches sich die Ablieferung stützt.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">The number, allocated by the archive, of the offering on which the submission is based.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -40,7 +40,7 @@
   <xs:simpleType name="ablieferndeStelle">
     <xs:annotation>
       <xs:documentation xml:lang="de">Organisationseinheit, welche die abzuliefernden Unterlagen aufbereitet (der Name wird ausgeschrieben, keine Abkürzung), und Name der Person, die für die Ablieferung zuständig ist.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Organisational unit that prepares the documents to be submitted (name written out in full, no abbreviations) and name of the person responsible for the submission.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -50,7 +50,7 @@
   <xs:simpleType name="referenzBewertungsentscheid">
     <xs:annotation>
       <xs:documentation xml:lang="de">Aktenzeichen Bewertungsentscheid(e) Archiv, welches die Ablieferung betreffen.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">File reference of the appraisal decision(s) relating to the submission.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -60,7 +60,7 @@
   <xs:simpleType name="referenzSchutzfristenFormular">
     <xs:annotation>
       <xs:documentation xml:lang="de">Aktenzeichen des Formulars „Meldung von Unterlagen mit besonderer Schutzfrist und öffentlich zugänglichen Unterlagen“, in dem die für die Ablieferung vereinbarten Schutzfristen festgehalten sind.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">File reference of the "Notification of documents subject to a special closure period and publicly accessible documents" form in which the closure periods agreed for the submission are set down.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -70,7 +70,7 @@
   <xs:simpleType name="schutzfristenkategorieAblieferung">
     <xs:annotation>
       <xs:documentation xml:lang="de">Artikel des Gesetztes, der die Schutzfrist festhält, die das Amt im Formular „Meldung von Unterlagen mit besonderer Schutzfrist und öffentlich zugänglichen Unterlagen“ gemeldet hat und vom Archiv auf ihre formale Korrektheit und Vollständigkeit kontrolliert worden ist.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Article of the law stipulating the closure period reported by the authority in the "Notification of documents subject to a special closure period and publicly accessible documents" form and checked for formal correctness and completeness by the archive.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -80,7 +80,7 @@
   <xs:simpleType name="schutzfristAblieferung">
     <xs:annotation>
       <xs:documentation xml:lang="de">Dauer der Schutzfrist in Jahren, die das Amt im Formular „Meldung von Unterlagen mit besonderer Schutzfrist und öffentlich zugänglichen Unterlagen“ gemeldet hat und vom Archiv auf ihre formale Korrektheit und Vollständigkeit kontrolliert worden ist.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Length of the closure period in years reported by the authority in the "Notification of documents subject to a special closure period and publicly accessible documents" form and checked for formal correctness and completeness by the archive.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -92,7 +92,7 @@
   <xs:simpleType name="ablieferungsteile">
     <xs:annotation>
       <xs:documentation xml:lang="de">Angabe über den gesamten Inhalt der Ablieferung (sowohl der digitalen als auch der nicht digitalen Teile).</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Indication of the full content of the submission (both digital and non-digital components).</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -102,7 +102,7 @@
   <xs:simpleType name="bemerkungAblieferung">
     <xs:annotation>
       <xs:documentation xml:lang="de">Zusätzliche Informationen, welche die Ablieferung und ihre Entstehung betreffen. Wenn die Unterlagen in der Ablieferung aus einer periodisierten Registratur stammen, kann hier die Registraturperiode angegeben werden.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Additional information relating to the submission and its creation. If the documents in the submission come from a periodised registry, the registry period can be indicated here.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>

@@ -44,7 +44,13 @@
         ca.2004
         keine Angabe
       </xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">"Time points: the following values are possible by date type 1 regular expression
+        legacy application
+        31.01.2004
+        approx.31.01.2004
+        2004
+        approx.2004
+        not indicated</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -85,7 +91,26 @@
         * ss indicates the second
         Note: All components are required!
       </xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">"Time points: the following values are possible by date type 3 regular expression
+        technical application
+        Date Data Type (xs:date)
+        The date is specified in the following form ""YYYY-MM-DD"" where:
+        * YYYY indicates the year
+        * MM indicates the month
+        * DD indicates the day
+        Note: All components are required!
+        
+        DateTime Data Type (xs:dateTime)
+        The dateTime data type is used to specify a date and a time.
+        The dateTime is specified in the following form ""YYYY-MM-DDThh:mm:ss"" where:
+        * YYYY indicates the year
+        * MM indicates the month
+        * DD indicates the day
+        * T indicates the start of the required time section
+        * hh indicates the hour
+        * mm indicates the minute
+        * ss indicates the second
+        Note: All components are required!"</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -95,7 +120,7 @@
   <xs:simpleType name="notizDatum">
     <xs:annotation>
       <xs:documentation xml:lang="de">Datum, an welchem die Notiz erfasst wurde. Datums-Tagengenauigkeit reicht (keine Std. und Sek.). Zwingendes Feld.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Date on which the note was created. Date and day are sufficient (no hours and seconds). Compulsory field.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -105,7 +130,7 @@
   <xs:simpleType name="notizErfasser">
     <xs:annotation>
       <xs:documentation xml:lang="de">Benutzer, welcher die Notiz erfasst hat. Optionales Feld.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">User who created the note. Optional field.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -115,7 +140,7 @@
   <xs:simpleType name="notizBeschreibung">
     <xs:annotation>
       <xs:documentation xml:lang="de">Notiz i.e.S, d.h. Beschreibung. Zwingendes Feld.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Notice in narrower sense, i.e. description. Compulsory field.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>

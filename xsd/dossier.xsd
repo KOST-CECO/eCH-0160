@@ -7,7 +7,7 @@
   <xs:simpleType name="aktenzeichen">
     <xs:annotation>
       <xs:documentation xml:lang="de">Identifikation und Ordnungsmerkmal des Dossiers. Das Aktenzeichen erlaubt es, das Dossier innerhalb eines bestimmten Ablagesystems einer eindeutigen Position (Rubrik) des OS zuzuordnen.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Identification and classification feature of the dossier. The file reference allows the dossier to be assigned to an unambiguous position (rubric) of the CS within a specific archive system.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -17,7 +17,7 @@
   <xs:simpleType name="zusatzmerkmal">
     <xs:annotation>
       <xs:documentation xml:lang="de">Angaben über zusätzliche Merkmale, welche das Dossier identifizieren. Hier kann z.B. die Bandnummer eines Dossiers vermerkt werden, als Unterscheidungs- und Reihungsmerkmal von Fortsetzungsdossiers mit demselben Dossier-Titel und mit demselben Aktenzeichen erfasst.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Information on additional characteristics that identify the dossier. For example the volume number of a dossier can be indicated here to differentiate and sequence in respect of consecutive dossiers with the same dossier title and the same file reference.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -29,7 +29,9 @@
       <xs:documentation xml:lang="de">Bezeichnung des Dossiers.
         GEVER: Kurzbeschreibung des Geschäftsfalls (bei Seriendossierbildung) oder des Sachbetreffs (bei Sachdossierbildung) zu welchem Dokumente im Dossier abgelegt werden. 
         FILES: Kurzbeschreibung des Inhalts der Datensammlung und der Dokumentation (falls vorhanden)</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">"Designation of the dossier.
+        GEVER: Brief description of the business event (when creating serial dossiers) or matter (when creating dossiers for specific matters) in respect of which documents are archived in the dossier. 
+        FILES: Brief description of the content of the data collection and the documentation (if present)"</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -39,7 +41,7 @@
   <xs:simpleType name="inhalt">
     <xs:annotation>
       <xs:documentation xml:lang="de">Inhaltlicher Schwerpunkt der Datensammlung sofern dies nicht aus dem Feld "Titel" hervorgeht.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Main content focus of the data collection, if not clear from the "title" field.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -49,7 +51,7 @@
   <xs:simpleType name="formInhalt">
     <xs:annotation>
       <xs:documentation xml:lang="de">Angabe des Mediums (Fotos, Tondokumente, schriftliche Unterlagen usw.)</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Indication of the medium (photos, sound documents, written documents, etc.)</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -59,7 +61,7 @@
   <xs:simpleType name="umfang">
     <xs:annotation>
       <xs:documentation xml:lang="de">Anzahl der Dateien des Dossiers und Umfang in MBytes zum Zeitpunkt der Ablieferung. Bei Datenbanken: Anzahl Datensätze der vorliegenden Datensammlung zum Zeitpunkt der Ablieferung. Als Datensatz gilt das Ensemble von Zeilen einer oder mehrerer miteinander verknüpften Tabellen (zentrale logische Einheit). Die Anzahl Datensätze ist zusammen mit der Bezeichnung der zentralen logischen Einheit zu nennen. Diese hängt vom Hauptfokus der Datensammlung ab. Bei Unklarheit muss mit einem Zusatztext erklärt werden, wie viele Datensätze welchen Typs vorliegen.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Number of files in the dossier and size in MBytes at the time of submission. For databases: number of datasets in the present data collection at the time of submission. A dataset is a set of lines of one or more interlinked tables (central logical unit). The number of datasets must be named along with the designation of the central logical unit. This depends on the main focus of the data collection. Where there is uncertainty, an additional text must be supplied to explain how many datasets of which type are present.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -69,7 +71,7 @@
   <xs:simpleType name="idDossier">
     <xs:annotation>
       <xs:documentation xml:lang="de">Paketweit eindeutige ID. Sie wird im AIS im Modul Verzeichnungseinheiten auf Dossierstufe verzeichnet.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Unambiguous ID for the whole package. It is described in the units of description module of the AIS at dossier level.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -81,7 +83,7 @@
   <xs:simpleType name="erscheinungsformDossier">
     <xs:annotation>
       <xs:documentation xml:lang="de">Angaben darüber, ob das Dossier digitale, nicht-digitale (Papier, audiovisuell) oder sowohl digitale als auch nicht-digitale Dokumente enthält.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Indication of whether the dossier contains digital, non-digital (paper, audiovisual) or both digital and non-digital documents.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -96,7 +98,7 @@
   <xs:simpleType name="federfuehrendeOrganisationseinheitDossier">
     <xs:annotation>
       <xs:documentation xml:lang="de">Bestimmung der für die Erledigung des Geschäftes zuständigen federführenden Organisationseinheit.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Name of the lead organisational unit responsible for dealing with the business matter.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -106,7 +108,7 @@
   <xs:simpleType name="entstehungszeitraumAnmerkung">
     <xs:annotation>
       <xs:documentation xml:lang="de">Zusätzliche Informationen, welche für die Ermittlung des Entstehungszeitraums relevant sind. Hier können Angaben über allfällige Löschungen und Mutationen an der Datensammlung eingetragen werden (für FILES relevant). Falls der Entstehungszeitraum geschätzt wurde, ist hier das Kriterium für die Schätzung zu nennen.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Additional information relevant for determining the creation period. Information on any deletions and changes in the data collection can be entered here (relevant for FILES). If the creation period has been estimated, the criterion for the estimate is to be named here.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -116,7 +118,7 @@
   <xs:simpleType name="schutzfristenkategorieDossier">
     <xs:annotation>
       <xs:documentation xml:lang="de">Artikel des Gesetzes, der die Schutzfrist festhält, die das Amt im Formular „Meldung von Unterlagen mit besonderer Schutzfrist und öffentlich zugänglichen Unterlagen“ gemeldet hat und vom Archiv auf ihre formale Korrektheit und Vollständigkeit kontrolliert worden ist.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Article of the law stipulating the closure period reported by the authority in the "Notification of documents subject to a special closure period and publicly accessible documents" form and checked for formal correctness and completeness by the archive.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -126,7 +128,7 @@
   <xs:simpleType name="schutzfristDossier">
     <xs:annotation>
       <xs:documentation xml:lang="de">Dauer der Schutzfrist in Jahren, die das Amt im Formular „Meldung von Unterlagen mit besonderer Schutzfrist und öffentlich zugänglichen Unterlagen“ gemeldet hat und vom Archiv auf ihre formale Korrektheit und Vollständigkeit kontrolliert worden ist.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Length of the closure period in years reported by the authority in the "Notification of documents subject to a special closure period and publicly accessible documents" form and checked for formal correctness and completeness by the archive.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -138,7 +140,7 @@
   <xs:simpleType name="schutzfristenBegruendungDossier">
     <xs:annotation>
       <xs:documentation xml:lang="de">Erläuterung der Begründung für eine verlängerte Schutzfrist für Unterlagen, die nach Personennamen erschlossen sind und schützenswerte Personendaten gemäss DSG enthalten (z.B. Art. 11 BGA), und für bestimmte Kategorien oder für einzelne Dossiers, die überwiegend schutzwürdige öffentliche oder private Interessen tangieren (z.B. Art. 12 Abs. 1 BGA und Art. 12 Abs. 2 BGA).</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Explanation of the reasons for an extended closure period for documents that are catalogued by individuals"™ names and contain sensitive personal data in accordance with the DPA (Art. 11 ArchA) and for certain categories or individual dossiers that touch on matters where there is an overriding public or private interest in preventing consultation (Art. 12 para. 1 ArchA and Art. 12 para. 2 ArchA).</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -148,7 +150,7 @@
   <xs:simpleType name="klassifizierungskategorieDossier">
     <xs:annotation>
       <xs:documentation xml:lang="de">Grad, in dem das Dossier und die enthaltenen Dokumente und Dateien vor unberechtigter Einsicht geschützt werden müssen. Referenz: Verordnung vom 10.12.1990 über die Klassifizierung und Behandlung von Informationen im zivilen Verwaltungsbereich ([SR 172.015]) und Verordnung vom 1.5.1990 über den Schutz militärischer Informationen ([SR 510.411]).</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Degree to which the dossier and the documents and files it contains must be protected against unauthorised access. Reference: Ordinance of 10.12.1990 on the Classification and Treatment of Information in the Civil Administration ([SR 172.015]) and Ordinance of 1.5.1990 on the Protection of Military Information ([SR 510.411]).</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -158,7 +160,7 @@
   <xs:simpleType name="datenschutzDossier">
     <xs:annotation>
       <xs:documentation xml:lang="de">Markierung, die angibt, ob sich in den Dokumenten des Dossiers besonders schützenswerten Personendaten oder Persönlichkeitsprofilen gemäss Datenschutzrecht.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Marking indicating whether documents in the dossier contain sensitive personal data or personal profiles under the Data Protection Act.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -168,7 +170,7 @@
   <xs:simpleType name="oeffentlichkeitsstatusDossier">
     <xs:annotation>
       <xs:documentation xml:lang="de">Angabe, ob das Dossier gemäss [BGÖ] schützenswerte Dokumente oder Dateien enthält oder nicht.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Indication of whether or not the dossier contains sensitive documents or files.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -178,7 +180,7 @@
   <xs:simpleType name="oeffentlichkeitsstatusBegruendungDossier">
     <xs:annotation>
       <xs:documentation xml:lang="de">Argumente gegen die öffentliche Zugänglichkeit gemäss [BGÖ]. Gemäss Entwurf [BGÖ] muss begründet werden, warum Unterlagen nicht öffentlich zugänglich gemacht werden können.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Arguments against public access. Reasons why documents cannot be made publicly accessible must be stated.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -188,7 +190,7 @@
   <xs:simpleType name="sonstigeBestimmungenDossier">
     <xs:annotation>
       <xs:documentation xml:lang="de">Angaben über sonstige rechtliche Auflagen, denen das Dossier unterstellt ist.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Indication of other legal conditions to which the dossier is subject.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -198,7 +200,7 @@
   <xs:simpleType name="vorgang">
     <xs:annotation>
       <xs:documentation xml:lang="de">Angaben über Tätigkeiten, die an Dokumenten des Dossiers durchgeführt wurden. Es können z.B. Angaben zu Tätigkeiten sein, die im Rahmen eines Auftragssubdossiers durchgeführt wurden.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Information on activities that have been carried out on the documents in the dossier. These may include e.g. information on activities carried out as part of a mandate subdossier.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -208,7 +210,7 @@
   <xs:simpleType name="bemerkungDossier">
     <xs:annotation>
       <xs:documentation xml:lang="de">Zusätzliche Informationen, welche das Dossier oder die Datensammlung betreffen. Hier können nähere Angaben zur Sprache und zu speziellen technischen Anforderungen eingetragen werden, welche den Zugang der Daten einschränken könnten.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Additional information relating to the dossier or the data collection. Further information on the language and special technical requirements that may restrict access to the data may be entered here.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -218,7 +220,7 @@
   <xs:simpleType name="orderVorgang">
     <xs:annotation>
       <xs:documentation xml:lang="de">Ordnungszahl welche die Reihenfolge von Vorgängen innerhalb eines Dossiers festlegt, muss innerhalb des selben Dossier eindeutig sein.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Atomic number which defines the sequence of operations within a dossier, must be unique within the same dossier.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -228,7 +230,7 @@
   <xs:simpleType name="titelVorgang">
     <xs:annotation>
       <xs:documentation xml:lang="de">Benennung von Tätigkeit und Gegenstand des Geschäftsvorfalles.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Description of activity and object of the transaction.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -238,7 +240,7 @@
   <xs:simpleType name="arbeitsanweisungVorgang">
     <xs:annotation>
       <xs:documentation xml:lang="de">Arbeitsanweisung, bzw.Auftragsbeschreibung: Vorgaben und Hinweise für die Durchführung und Erledigung.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Instruction,  guidelines and suggestions for implementation and completion.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -248,7 +250,7 @@
   <xs:simpleType name="verweisVorgang">
     <xs:annotation>
       <xs:documentation xml:lang="de">Referenz auf andere Ordnungssystempositionen, Dossiers oder Vorgänge, die in enger Beziehung mit dem Vorgang stehen ohne direkt mit ihm verknüpft zu sein.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Reference to other classification system positions, dossier or processes that are directly linked  or in close relationship with the process.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -258,7 +260,7 @@
   <xs:simpleType name="orderAktivitaet">
     <xs:annotation>
       <xs:documentation xml:lang="de">Ordnungszahl welche die Reihenfolge der Aktivitäten innerhalb eines Vorgangs festlegt, muss innerhalb des selben Vorgangs eindeutig sein.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Atomic number which defines the sequence of activities within a process, must be unique within the same process.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -268,7 +270,7 @@
   <xs:simpleType name="vorschreibungAktivitaet">
     <xs:annotation>
       <xs:documentation xml:lang="de">Beschreibung der Tätigkeit, die ausgeführt werden soll.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Description of the activity to be performed.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -278,7 +280,7 @@
   <xs:simpleType name="akteurAktivitaet">
     <xs:annotation>
       <xs:documentation xml:lang="de">Akteur, welcher die Aktivität durchführt. Im Organigramm bzw. den Organisationsvorschriften der Verwaltungseinheit aufgeführte Rollen bzw. Personen.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Player which performs the activity. In the organization or the organizational rules of the administrative unit specified roles or persons.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -288,7 +290,7 @@
   <xs:simpleType name="abschlussvermerkAktivitaet">
     <xs:annotation>
       <xs:documentation xml:lang="de">Kurze Beschreibung des Ergebnisses der Aktivität.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Short description of the outcome of the activity.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -298,7 +300,7 @@
   <xs:simpleType name="abschlussdatumAktivitaet">
     <xs:annotation>
       <xs:documentation xml:lang="de">Tag, an dem die Aktivität abgeschlossen worden ist.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Day on which the activity has been completed.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -308,7 +310,7 @@
   <xs:simpleType name="verweisAktivitaet">
     <xs:annotation>
       <xs:documentation xml:lang="de">Referenz auf andere Ordnungssystempositionen, Dossiers, Vorgänge oder Aktivitäten, die in enger Beziehung zu der Aktivität stehen ohne direkt mit ihr verknüpft zu sein.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Reference to other classification system positions, dossier or processes that are directly linked  or in close relationship with the process.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -318,7 +320,7 @@
   <xs:simpleType name="bemerkungAktivitaet">
     <xs:annotation>
       <xs:documentation xml:lang="de">Informationen, die für die Aktivität von Bedeutung sind.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Information of significance for the activity.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>

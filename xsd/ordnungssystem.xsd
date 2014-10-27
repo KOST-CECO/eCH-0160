@@ -7,7 +7,7 @@
   <xs:simpleType name="nameOrdnungssystem">
     <xs:annotation>
       <xs:documentation xml:lang="de">Eindeutige Bezeichnung des Ordnungssystems, welche den Geltungsbereich des Ordnungssystems wiedergibt. Enthält in der Regel als Element die Bezeichnung der Verwaltungseinheit oder des Aufgabenbereichs, in welchem das Ordnungssystem angewandt wird.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Unambiguous designation of the classification system indicating the scope of validity of the classification system. Generally contains as an element the designation of the administrative unit or area of responsibility in which the classification system is used.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -17,7 +17,7 @@
   <xs:simpleType name="generation">
     <xs:annotation>
       <xs:documentation xml:lang="de">Versionsbezeichnung des Ordnungssystems. Dient zur Verknüpfung und Unterscheidung von zeitlich aufeinander folgenden OS desselben Typs mit demselben Geltungsbereich.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">version of the classification system. Serves to link and differentiate chronologically sequential CSs of the same type with the same scope of validity.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -27,7 +27,7 @@
   <xs:simpleType name="mitbenutzung">
     <xs:annotation>
       <xs:documentation xml:lang="de">Weitere Organisationseinheiten, ausserhalb des Aktenbildners, welche das Ordnungssystem mitbenutzen oder mitbenutzt haben.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Further organisational units outside the records creator that also use or have used the classification system.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
@@ -37,7 +37,7 @@
   <xs:simpleType name="bemerkungOrdnungssysstem">
     <xs:annotation>
       <xs:documentation xml:lang="de">Zusätzliche Informationen, welche das Ordnungssystem betreffen.</xs:documentation>
-      <xs:documentation xml:lang="en"/>
+      <xs:documentation xml:lang="en">Additional information relating to the classification system.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
