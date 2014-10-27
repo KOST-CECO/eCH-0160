@@ -1,19 +1,21 @@
 @ECHO OFF
 SETLOCAL
 
+SET GNUDIR=C:\Software\PCUnixUtils
+
 IF [%1]==[] (
         ECHO usage: %0 path\SIP...
         EXIT /B
 )
 
 IF NOT EXIST %1 (
-        ECHO SIP path %1 not found
+        ECHO SIP path "%1" not found
         ECHO usage: %0 path\SIP...
         EXIT /B
 )
 
-IF NOT EXIST %1\header\metadata.xml (
-        ECHO %1\header\metadata.xml not found
+IF NOT EXIST "%1\header\metadata.xml" (
+        ECHO "%1\header\metadata.xml" not found
         ECHO usage: %0 path\SIP...
         EXIT /B
 )
@@ -24,7 +26,7 @@ SET arelda=%%G
 ECHO .
 ECHO Version: %arelda%
 ECHO .
-xmllint.exe -noout -schema %1\header\xsd\%arelda% %1\header\metadata.xml
+%GNUDIR%\xmllint.exe -noout -schema "%1\header\xsd\%arelda%" "%1\header\metadata.xml"
 ECHO .
 
-PAUSE
+EXIT /B

@@ -1,6 +1,8 @@
 @ECHO OFF
 SETLOCAL
 
+SET GNUDIR=C:\Software\PCUnixUtils
+
 IF [%1]==[] (
     ECHO "usage: <input folder> <new output folder>"
     EXIT /B
@@ -23,9 +25,11 @@ IF EXIST %2 (
 )
 
 SET OUT=%CD%\%2
-IF NOT EXIST %OUT% (
+
+
+IF NOT EXIST "%OUT%" (
     ECHO output folder "%OUT%" created
-    MKDIR %OUT%
+    MKDIR "%OUT%"
 )
 
 SET CWD=%CD%
@@ -33,10 +37,10 @@ CD %1
 
 FOR %%I IN (*.xsd) DO (
     REM pretty print
-    xmllint.exe --format %%I >%OUT%\%%I_pp
+    %GNUDIR%\xmllint.exe --format %%I > "%OUT%\%%I_pp"
     REM insert new line
-    sed.exe -f %CWD%\prettyprint_xsd.script %OUT%\%%I_pp > %OUT%\%%I
-    DEL %OUT%\%%I_pp
+    %GNUDIR%\sed.exe -f "%CWD%\prettyprint_xsd.script" "%OUT%\%%I_pp" > "%OUT%\%%I"
+    DEL "%OUT%\%%I_pp"
     ECHO file processed: "%OUT%\%%I"
 )
 
