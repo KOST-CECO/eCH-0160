@@ -36,11 +36,15 @@ SET CWD=%CD%
 CD %1
 
 FOR %%I IN (*.xsd) DO (
+    REM fix newline at end of documentation text
+    %GNUDIR%\sed.exe ":a;N;$!ba;s#\n</xs:documentation>#</xs:documentation>#g" "%%I" > "%OUT%\%%I_tmp1"
     REM pretty print
-    %GNUDIR%\xmllint.exe --format %%I > "%OUT%\%%I_pp"
+    %GNUDIR%\xmllint.exe --format "%OUT%\%%I_tmp1" > "%OUT%\%%I_tmp2"
     REM insert new line
-    %GNUDIR%\sed.exe -f "%CWD%\prettyprint_xsd.script" "%OUT%\%%I_pp" > "%OUT%\%%I"
-    DEL "%OUT%\%%I_pp"
+    %GNUDIR%\sed.exe -f "%CWD%\prettyprint_xsd.script" "%OUT%\%%I_tmp2" > "%OUT%\%%I"
+    REM remove tmp files
+    DEL "%OUT%\%%I_tmp1"
+    DEL "%OUT%\%%I_tmp2"
     ECHO file processed: "%OUT%\%%I"
 )
 
