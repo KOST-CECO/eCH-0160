@@ -36,8 +36,8 @@
 
   <xs:simpleType name="referenzUebernahmedossier">
     <xs:annotation>
-      <xs:documentation xml:lang="de">Aktenzeichen des Übernahmedossiers in der GEVER Anwendung des Archiv.</xs:documentation>
-      <xs:documentation xml:lang="en">File reference of the ingest dossier in the GEVER application.</xs:documentation>
+      <xs:documentation xml:lang="de">Aktenzeichen des Übernahmedossiers des Archivs.</xs:documentation>
+      <xs:documentation xml:lang="en">File reference of the ingest dossier in the archive application.</xs:documentation>
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>

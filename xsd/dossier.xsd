@@ -234,7 +234,7 @@
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
-    <xs:restriction base="text2"/>
+    <xs:restriction base="text3"/>
   </xs:simpleType>
 
   <xs:simpleType name="arbeitsanweisungVorgang">
@@ -254,7 +254,7 @@
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
-    <xs:restriction base="text2"/>
+    <xs:restriction base="text3"/>
   </xs:simpleType>
 
   <xs:simpleType name="orderAktivitaet">
@@ -274,7 +274,7 @@
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
-    <xs:restriction base="text2"/>
+    <xs:restriction base="text3"/>
   </xs:simpleType>
 
   <xs:simpleType name="akteurAktivitaet">
@@ -284,7 +284,7 @@
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
-    <xs:restriction base="text2"/>
+    <xs:restriction base="text3"/>
   </xs:simpleType>
 
   <xs:simpleType name="abschlussvermerkAktivitaet">
@@ -314,7 +314,7 @@
       <xs:documentation xml:lang="fr"/>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
-    <xs:restriction base="text2"/>
+    <xs:restriction base="text4"/>
   </xs:simpleType>
 
   <xs:simpleType name="bemerkungAktivitaet">
