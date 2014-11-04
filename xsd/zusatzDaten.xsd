@@ -8,7 +8,7 @@
     <xs:annotation>
       <xs:documentation xml:lang="de">Merkmal - Werte Gruppen erlaubt das festhalten weiterer Metadaten in tabellarisch strukturierter Form</xs:documentation>
       <xs:documentation xml:lang="en">Key-value pairs allow further metadata to be recorded in structured table form</xs:documentation>
-      <xs:documentation xml:lang="fr"/>
+      <xs:documentation xml:lang="fr">Le groupe caractéristique-valeur admet d'autres métadonnées sous la forme d'un tableau structuré.</xs:documentation>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
     <xs:sequence>
@@ -20,7 +20,7 @@
                 <xs:annotation>
                   <xs:documentation xml:lang="de">Name des Merkmal - Werte Paares</xs:documentation>
                   <xs:documentation xml:lang="en">Name of the key-value pair</xs:documentation>
-                  <xs:documentation xml:lang="fr"/>
+                  <xs:documentation xml:lang="fr">Nom de la paire caractéristique-valeur</xs:documentation>
                   <xs:documentation xml:lang="it"/>
                 </xs:annotation>
               </xs:attribute>

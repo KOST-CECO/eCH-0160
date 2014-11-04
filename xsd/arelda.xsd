@@ -84,7 +84,7 @@
         <xs:annotation>
           <xs:documentation xml:lang="de">Zeitpunkt, zu welchem der archivische Vorgang durchgeführt wurde.</xs:documentation>
           <xs:documentation xml:lang="en">Time point at which the archival process was carried out.</xs:documentation>
-          <xs:documentation xml:lang="fr"/>
+          <xs:documentation xml:lang="fr">Moment où l'activité archivistique a été effectuée.</xs:documentation>
           <xs:documentation xml:lang="it"/>
         </xs:annotation>
       </xs:element>
@@ -100,7 +100,7 @@
         <xs:annotation>
           <xs:documentation xml:lang="de">Der Entstehungszeitraum der Ablieferung wird aus dem ältesten Entstehungsdatum und dem jüngsten Datum der Dokumente oder Dateien ermittelt, die der Ablieferung zugeordneten  sind. Der Zeitraum kann auch geschätzt sein.</xs:documentation>
           <xs:documentation xml:lang="en">The creation period of the submission is calculated from the earliest creation date and the most recent date of the documents or files allocated to the submission. The period may also be estimated.</xs:documentation>
-          <xs:documentation xml:lang="fr"/>
+          <xs:documentation xml:lang="fr">La période de création du versement est déterminée par la date de création la plus ancienne et par la date la plus récente des documents ou des fichiers , qui sont attribués au versement. La période peut aussi être estimée</xs:documentation>
           <xs:documentation xml:lang="it"/>
         </xs:annotation>
       </xs:element>
@@ -112,7 +112,7 @@
           <xs:annotation>
             <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
             <xs:documentation xml:lang="en">A file may only be referenced once.</xs:documentation>
-            <xs:documentation xml:lang="fr"/>
+            <xs:documentation xml:lang="fr">Un fichier ne peut être référencé qu'une seule fois.</xs:documentation>
             <xs:documentation xml:lang="it"/>
           </xs:annotation>
           <xs:selector xpath="./arelda:dateiRef"/>
@@ -239,7 +239,7 @@
         <xs:annotation>
           <xs:documentation xml:lang="de">Zeitraum der Existenz des Aktenbildners.</xs:documentation>
           <xs:documentation xml:lang="en">Period of existence of the records creator.</xs:documentation>
-          <xs:documentation xml:lang="fr"/>
+          <xs:documentation xml:lang="fr">Période d'existence du producteur de dossiers.</xs:documentation>
           <xs:documentation xml:lang="it"/>
         </xs:annotation>
       </xs:element>
@@ -333,7 +333,7 @@
         <xs:annotation>
           <xs:documentation xml:lang="de">Zeitraum, seit/während dem das Ordnungssystem bei der aktenbildenden Stelle eingesetzt wird/wurde.</xs:documentation>
           <xs:documentation xml:lang="en">Period since/during which the classification system has been / was used by the records-creating authority.</xs:documentation>
-          <xs:documentation xml:lang="fr"/>
+          <xs:documentation xml:lang="fr">Période depuis/pendant laquelle le système de classement a été/est employé chez le service producteur de dossiers.</xs:documentation>
           <xs:documentation xml:lang="it"/>
         </xs:annotation>
       </xs:element>
@@ -517,7 +517,7 @@
               <xs:annotation>
                 <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
                 <xs:documentation xml:lang="en">A file may only be referenced once.</xs:documentation>
-                <xs:documentation xml:lang="fr"/>
+                <xs:documentation xml:lang="fr">Un fichier ne peut être référencé qu'une seule fois.</xs:documentation>
                 <xs:documentation xml:lang="it"/>
               </xs:annotation>
               <xs:selector xpath="./arelda:dateiRef"/>
@@ -543,7 +543,7 @@
               <xs:annotation>
                 <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
                 <xs:documentation xml:lang="en">A file may only be referenced once.</xs:documentation>
-                <xs:documentation xml:lang="fr"/>
+                <xs:documentation xml:lang="fr">Un fichier ne peut être référencé qu'une seule fois.</xs:documentation>
                 <xs:documentation xml:lang="it"/>
               </xs:annotation>
               <xs:selector xpath="./arelda:dateiRef"/>
@@ -565,7 +565,7 @@
               <xs:annotation>
                 <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
                 <xs:documentation xml:lang="en">A file may only be referenced once.</xs:documentation>
-                <xs:documentation xml:lang="fr"/>
+                <xs:documentation xml:lang="fr">Un fichier ne peut être référencé qu'une seule fois.</xs:documentation>
                 <xs:documentation xml:lang="it"/>
               </xs:annotation>
               <xs:selector xpath="./arelda:dateiRef"/>
@@ -590,7 +590,7 @@
         <xs:annotation>
           <xs:documentation xml:lang="de">Der Entstehungszeitraum des Dossiers wird aus dem ältesten Entstehungsdatum und dem jüngsten (Änderungs)datum aller dem Dossier zugeordneten Dokumente oder Dateien ermittelt. Der Zeitraum kann auch geschätzt sein.</xs:documentation>
           <xs:documentation xml:lang="en">The creation period of the dossier is calculated from the earliest creation date and the most recent (change) date of all the documents or files allocated to the dossier. The period may also be estimated.</xs:documentation>
-          <xs:documentation xml:lang="fr"/>
+          <xs:documentation xml:lang="fr">La période de création du dossier est déterminée par la date de création la plus ancienne et par la date (de modification) la plus récente de tous les documents ou fichiers attribués au dossier. La période peut aussi être estimée.</xs:documentation>
           <xs:documentation xml:lang="it"/>
         </xs:annotation>
       </xs:element>
@@ -615,7 +615,7 @@
             <xs:annotation>
               <xs:documentation xml:lang="de">Zeitpunkt, an dem das Dossier eröffnet worden ist.</xs:documentation>
               <xs:documentation xml:lang="en">Time point at which the dossier was opened.</xs:documentation>
-              <xs:documentation xml:lang="fr"/>
+              <xs:documentation xml:lang="fr">Moment où le dossier a été ouvert.</xs:documentation>
               <xs:documentation xml:lang="it"/>
             </xs:annotation>
           </xs:element>
@@ -623,7 +623,7 @@
             <xs:annotation>
               <xs:documentation xml:lang="de">Zeitpunkt, an dem das Dossier abgeschlossen worden ist.</xs:documentation>
               <xs:documentation xml:lang="en">Time point at which the dossier was opened.</xs:documentation>
-              <xs:documentation xml:lang="fr"/>
+              <xs:documentation xml:lang="fr">Moment où le dossier a été clos.</xs:documentation>
               <xs:documentation xml:lang="it"/>
             </xs:annotation>
           </xs:element>
@@ -631,7 +631,7 @@
             <xs:annotation>
               <xs:documentation xml:lang="de">Vorgangsobjekte repräsentieren einzelne, abgrenzbare Geschäftsfälle. Der Vorgang wird durchgeführt über eine Folge von einzelnen Aktivitäten. Einer einzelnen Aktivität sind in der Regel ein federführender Akteur zugewiesen.</xs:documentation>
               <xs:documentation xml:lang="en">Process representing separately identifiable business cases . A process is performed through a sequence of individual operations. To each single activity is usually leading actorassigned.</xs:documentation>
-              <xs:documentation xml:lang="fr"/>
+              <xs:documentation xml:lang="fr">Les objets du processus représentent des cas particuliers délimitables</xs:documentation>
               <xs:documentation xml:lang="it"/>
             </xs:annotation>
           </xs:element>
@@ -703,7 +703,7 @@
               <xs:annotation>
                 <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
                 <xs:documentation xml:lang="en">A file may only be referenced once.</xs:documentation>
-                <xs:documentation xml:lang="fr"/>
+                <xs:documentation xml:lang="fr">Un fichier ne peut être référencé qu'une seule fois.</xs:documentation>
                 <xs:documentation xml:lang="it"/>
               </xs:annotation>
               <xs:selector xpath="./arelda:dateiRef"/>
@@ -715,7 +715,7 @@
               <xs:annotation>
                 <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
                 <xs:documentation xml:lang="en">A file may only be referenced once.</xs:documentation>
-                <xs:documentation xml:lang="fr"/>
+                <xs:documentation xml:lang="fr">Un fichier ne peut être référencé qu'une seule fois.</xs:documentation>
                 <xs:documentation xml:lang="it"/>
               </xs:annotation>
               <xs:selector xpath="./arelda:dateiRef"/>
@@ -742,7 +742,7 @@
               <xs:annotation>
                 <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
                 <xs:documentation xml:lang="en">A file may only be referenced once.</xs:documentation>
-                <xs:documentation xml:lang="fr"/>
+                <xs:documentation xml:lang="fr">Un fichier ne peut être référencé qu'une seule fois.</xs:documentation>
                 <xs:documentation xml:lang="it"/>
               </xs:annotation>
               <xs:selector xpath="./arelda:dateiRef"/>
@@ -754,7 +754,7 @@
               <xs:annotation>
                 <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
                 <xs:documentation xml:lang="en">A file may only be referenced once.</xs:documentation>
-                <xs:documentation xml:lang="fr"/>
+                <xs:documentation xml:lang="fr">Un fichier ne peut être référencé qu'une seule fois.</xs:documentation>
                 <xs:documentation xml:lang="it"/>
               </xs:annotation>
               <xs:selector xpath="./arelda:dateiRef"/>
@@ -777,7 +777,7 @@
               <xs:annotation>
                 <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
                 <xs:documentation xml:lang="en">A file may only be referenced once.</xs:documentation>
-                <xs:documentation xml:lang="fr"/>
+                <xs:documentation xml:lang="fr">Un fichier ne peut être référencé qu'une seule fois.</xs:documentation>
                 <xs:documentation xml:lang="it"/>
               </xs:annotation>
               <xs:selector xpath="./arelda:dateiRef"/>
@@ -789,7 +789,7 @@
               <xs:annotation>
                 <xs:documentation xml:lang="de">Eine Datei darf nur einmal referenziert werden.</xs:documentation>
                 <xs:documentation xml:lang="en">A file may only be referenced once.</xs:documentation>
-                <xs:documentation xml:lang="fr"/>
+                <xs:documentation xml:lang="fr">Un fichier ne peut être référencé qu'une seule fois.</xs:documentation>
                 <xs:documentation xml:lang="it"/>
               </xs:annotation>
               <xs:selector xpath="./arelda:dateiRef"/>
@@ -843,7 +843,7 @@
         <xs:annotation>
           <xs:documentation xml:lang="de">Zeitpunkt an welchem das Dokument im System einem Dossier zugeordnet worden ist.</xs:documentation>
           <xs:documentation xml:lang="en">Time point at which a document was added to the dossier.</xs:documentation>
-          <xs:documentation xml:lang="fr"/>
+          <xs:documentation xml:lang="fr">Moment où le document est attribué à un dossier dans le système.</xs:documentation>
           <xs:documentation xml:lang="it"/>
         </xs:annotation>
       </xs:element>
@@ -851,7 +851,7 @@
         <xs:annotation>
           <xs:documentation xml:lang="de">Zeitliche Angabe über die Entstehung des Dokuments. Als Entstehung des Dokuments kann das Datum seiner Erstellung angegeben werden, oder den Zeitraum, in dem das Dokument entstanden ist (aus dem ältesten Entstehungsdatum und dem jüngsten Datum des Dokuments ermittelt). Der Zeitraum kann auch geschätzt sein.</xs:documentation>
           <xs:documentation xml:lang="en">Period of the origin of the document. As creation time of the document the date of its creation can be specified, or the period in which the document was created (determined from the oldest creation date and the most recent date of the document) . The period can also be estimated.</xs:documentation>
-          <xs:documentation xml:lang="fr"/>
+          <xs:documentation xml:lang="fr">Indications temporelles sur la création du document. Comme création du document peut être indiquée la date de son élaboration ou la période durant laquelle le document a été créé (déterminée par la date de création la plus ancienne et par la date du document le plus récent). La période peut aussi être estimée.</xs:documentation>
           <xs:documentation xml:lang="it"/>
         </xs:annotation>
       </xs:element>
@@ -988,7 +988,7 @@
         <xs:annotation>
           <xs:documentation xml:lang="de">Name und Wert von technischen Eigenschaften der Dateien wie z.B. Felddelemiter.</xs:documentation>
           <xs:documentation xml:lang="en">Name and value of technical properties of the files such as field delimiters.</xs:documentation>
-          <xs:documentation xml:lang="fr"/>
+          <xs:documentation xml:lang="fr">Nom et valeur des propriétés techniques des fichiers, p. ex.:séparateur de champs.</xs:documentation>
           <xs:documentation xml:lang="it"/>
         </xs:annotation>
       </xs:element>
@@ -1069,7 +1069,7 @@
       <xs:annotation>
         <xs:documentation xml:lang="de">Referenz zu einer Datei im Inhaltsverzeichnis des Pakets.</xs:documentation>
         <xs:documentation xml:lang="en">Reference to a file in the table of contents of the package.</xs:documentation>
-        <xs:documentation xml:lang="fr"/>
+        <xs:documentation xml:lang="fr">Référence à un fichier dans la table des matières du paquet.</xs:documentation>
         <xs:documentation xml:lang="it"/>
       </xs:annotation>
       <xs:element name="dateiRef" type="dateiRef" minOccurs="0"/>
@@ -1077,7 +1077,7 @@
         <xs:annotation>
           <xs:documentation xml:lang="de">Zusätzliche unstrukturierte Informationen, welche der Ablieferung fakultativ mitgegeben werden können.</xs:documentation>
           <xs:documentation xml:lang="en">Additional unstructured information that may optionally be included with the submission.</xs:documentation>
-          <xs:documentation xml:lang="fr"/>
+          <xs:documentation xml:lang="fr">Informations non structurées complémentaires facultatives qui peuvent accompagner le versement.</xs:documentation>
           <xs:documentation xml:lang="it"/>
         </xs:annotation>
       </xs:element>
