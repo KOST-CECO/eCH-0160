@@ -807,7 +807,10 @@
     <xs:sequence minOccurs="0">
       <xs:element name="titel" type="titelVorgang"/>
       <xs:element name="arbeitsanweisung" type="arbeitsanweisungVorgang" minOccurs="0"/>
+      <xs:element name="federfuehrung" type="federfuehrungVorgang" minOccurs="0"/>
       <xs:element name="verweis" type="verweisVorgang" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="bemerkung" type="bemerkungVorgang" minOccurs="0"/>
+      <xs:element name="zusatzDaten" type="zusatzDaten" minOccurs="0"/>
       <xs:element name="aktivitaet" type="aktivitaet" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
     <xs:attribute name="order" type="orderVorgang" use="optional"/>
@@ -817,11 +820,12 @@
     <xs:sequence>
       <xs:sequence>
         <xs:element name="vorschreibung" type="vorschreibungAktivitaet"/>
-        <xs:element name="akteur" type="akteurAktivitaet" minOccurs="0"/>
-        <xs:element name="abschlussvermerk" type="abschlussvermerkAktivitaet" minOccurs="0"/>
+        <xs:element name="anweisung" type="anweisungAktivitaet" minOccurs="0"/>
+        <xs:element name="bearbeiter" type="bearbeiterAktivitaet" minOccurs="0"/>
         <xs:element name="abschlussdatum" type="abschlussdatumAktivitaet" minOccurs="0"/>
         <xs:element name="verweis" type="verweisAktivitaet" minOccurs="0" maxOccurs="unbounded"/>
         <xs:element name="bemerkung" type="bemerkungAktivitaet" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="zusatzDaten" type="zusatzDaten" minOccurs="0"/>
       </xs:sequence>
     </xs:sequence>
     <xs:attribute name="order" type="orderAktivitaet" use="optional"/>

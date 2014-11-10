@@ -233,7 +233,7 @@
     <xs:annotation>
       <xs:documentation xml:lang="de">Benennung von Tätigkeit und Gegenstand des Geschäftsvorfalles.</xs:documentation>
       <xs:documentation xml:lang="en">Description of activity and object of the transaction.</xs:documentation>
-      <xs:documentation xml:lang="fr">Dénomination de l'activité et de l'objet du processus de l'activité</xs:documentation>
+      <xs:documentation xml:lang="fr">Dénomination de l'activité et de l'objet du processus de l'activité.</xs:documentation>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
     <xs:restriction base="text3"/>
@@ -249,6 +249,16 @@
     <xs:restriction base="text4"/>
   </xs:simpleType>
 
+  <xs:simpleType name="federfuehrungVorgang">
+    <xs:annotation>
+      <xs:documentation xml:lang="de">Akteur, der für die korrekte Durchführung des Geschäftsvorfalls verantwortlich ist.</xs:documentation>
+      <xs:documentation xml:lang="en">Player who is responsible for the correct execution of the transaction.</xs:documentation>
+      <xs:documentation xml:lang="fr">Acteur qui est responsable de la bonne exécution du processus de l'activité.</xs:documentation>
+      <xs:documentation xml:lang="it"/>
+    </xs:annotation>
+    <xs:restriction base="text3"/>
+  </xs:simpleType>
+
   <xs:simpleType name="verweisVorgang">
     <xs:annotation>
       <xs:documentation xml:lang="de">Referenz auf andere Ordnungssystempositionen, Dossiers oder Vorgänge, die in enger Beziehung mit dem Vorgang stehen ohne direkt mit ihm verknüpft zu sein.</xs:documentation>
@@ -256,7 +266,17 @@
       <xs:documentation xml:lang="fr">Référence à d'autres positions de système de classement, dossiers ou processus qui sont en relation étroite avec le processus sans être en ligne hiérarchique directe avec lui.</xs:documentation>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
-    <xs:restriction base="text3"/>
+    <xs:restriction base="text4"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="bemerkungVorgang">
+    <xs:annotation>
+      <xs:documentation xml:lang="de">Ergänzende Information zum Vorgang.</xs:documentation>
+      <xs:documentation xml:lang="en">Supplementary information of the transaction.</xs:documentation>
+      <xs:documentation xml:lang="fr">Des renseignements supplémentaires du processus de l'activité.</xs:documentation>
+      <xs:documentation xml:lang="it"/>
+    </xs:annotation>
+    <xs:restriction base="text4"/>
   </xs:simpleType>
 
   <xs:simpleType name="orderAktivitaet">
@@ -271,15 +291,25 @@
 
   <xs:simpleType name="vorschreibungAktivitaet">
     <xs:annotation>
-      <xs:documentation xml:lang="de">Beschreibung der Tätigkeit, die ausgeführt werden soll.</xs:documentation>
-      <xs:documentation xml:lang="en">Description of the activity to be performed.</xs:documentation>
-      <xs:documentation xml:lang="fr">Description de l'activité qui doit être effectuée.</xs:documentation>
+      <xs:documentation xml:lang="de">Beschreibung der Tätigkeit, die ausgeführt werden soll (Standardanweisungen).</xs:documentation>
+      <xs:documentation xml:lang="en">Description of the activity to be performed (standard instructions).</xs:documentation>
+      <xs:documentation xml:lang="fr">Description de l'activité qui doit être effectuée (Instructions standard).</xs:documentation>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
     <xs:restriction base="text3"/>
   </xs:simpleType>
 
-  <xs:simpleType name="akteurAktivitaet">
+  <xs:simpleType name="anweisungAktivitaet">
+    <xs:annotation>
+      <xs:documentation xml:lang="de">Freitext für die Eingabe der Anweisung zu einer Aktivität.</xs:documentation>
+      <xs:documentation xml:lang="en">Detailed description of the activity to be performed.</xs:documentation>
+      <xs:documentation xml:lang="fr">Description détaillée de l'activité qui doit être effectuée.</xs:documentation>
+      <xs:documentation xml:lang="it"/>
+    </xs:annotation>
+    <xs:restriction base="text4"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="bearbeiterAktivitaet">
     <xs:annotation>
       <xs:documentation xml:lang="de">Akteur, welcher die Aktivität durchführt. Im Organigramm bzw. den Organisationsvorschriften der Verwaltungseinheit aufgeführte Rollen bzw. Personen.</xs:documentation>
       <xs:documentation xml:lang="en">Player which performs the activity. In the organization or the organizational rules of the administrative unit specified roles or persons.</xs:documentation>
@@ -287,16 +317,6 @@
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
     <xs:restriction base="text3"/>
-  </xs:simpleType>
-
-  <xs:simpleType name="abschlussvermerkAktivitaet">
-    <xs:annotation>
-      <xs:documentation xml:lang="de">Kurze Beschreibung des Ergebnisses der Aktivität.</xs:documentation>
-      <xs:documentation xml:lang="en">Short description of the outcome of the activity.</xs:documentation>
-      <xs:documentation xml:lang="fr">Brève description du résultat de l'activité.</xs:documentation>
-      <xs:documentation xml:lang="it"/>
-    </xs:annotation>
-    <xs:restriction base="text4"/>
   </xs:simpleType>
 
   <xs:simpleType name="abschlussdatumAktivitaet">

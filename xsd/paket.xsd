@@ -63,10 +63,8 @@
   <xs:simpleType name="schemaVersion">
     <xs:annotation>
       <xs:documentation xml:lang="de">Angabe, mit welcher XSD-Version das Paket erstellt wurde.</xs:documentation>
-      <xs:documentation xml:lang="en">Indication of which XSD
-        version the package was created with.</xs:documentation>
-      <xs:documentation xml:lang="fr">Indication de la
-        version du XSD employée pour créer le paquet.</xs:documentation>
+      <xs:documentation xml:lang="en">Indication of which XSD version the package was created with.</xs:documentation>
+      <xs:documentation xml:lang="fr">Indication de la version du XSD employée pour créer le paquet.</xs:documentation>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
     <xs:restriction base="text1"/>
@@ -76,9 +74,7 @@
     <xs:annotation>
       <xs:documentation xml:lang="de">Die Versionierung des Pakets. Aus der Version ist schnell ersichtlich, wie oft ein AIP bereits migriert wurde.</xs:documentation>
       <xs:documentation xml:lang="en">Version the package was created with. Version is a rapid way to determine how often an AIP has already been migrated.</xs:documentation>
-      <xs:documentation xml:lang="fr">La gestion des
-        versions du paquet. Grâce à la
-        version, il est facile de voir combien de fois un AIP a déjà été migré.</xs:documentation>
+      <xs:documentation xml:lang="fr">La gestion des versions du paquet. Grâce à la version, il est facile de voir combien de fois un AIP a déjà été migré.</xs:documentation>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
     <xs:restriction base="xs:nonNegativeInteger"/>
