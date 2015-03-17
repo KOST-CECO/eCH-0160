@@ -18,9 +18,7 @@
     <xs:annotation>
       <xs:documentation xml:lang="de">Versionsbezeichnung des Ordnungssystems. Dient zur Verknüpfung und Unterscheidung von zeitlich aufeinander folgenden OS desselben Typs mit demselben Geltungsbereich.</xs:documentation>
       <xs:documentation xml:lang="en">version of the classification system. Serves to link and differentiate chronologically sequential CSs of the same type with the same scope of validity.</xs:documentation>
-      <xs:documentation xml:lang="fr">Désignation de la
-       
-        version du système de classement. Sert à relier et à différencier des systèmes de classement du même type qui se suivent dans le temps avec le même domaine d’application.</xs:documentation>
+      <xs:documentation xml:lang="fr">Désignation de la version du système de classement. Sert à relier et à différencier des systèmes de classement du même type qui se suivent dans le temps avec le même domaine d’application.</xs:documentation>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
     <xs:restriction base="text1"/>
