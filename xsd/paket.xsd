@@ -68,6 +68,8 @@
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
     <xs:restriction base="text1"/>
+      <xs:enumeration value="4.1"/>
+    </xs:restriction>
   </xs:simpleType>
 
   <xs:simpleType name="version">
