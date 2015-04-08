@@ -67,7 +67,7 @@
       <xs:documentation xml:lang="fr">Indication de la version du XSD employée pour créer le paquet.</xs:documentation>
       <xs:documentation xml:lang="it"/>
     </xs:annotation>
-    <xs:restriction base="text1"/>
+    <xs:restriction base="text1">
       <xs:enumeration value="4.1"/>
     </xs:restriction>
   </xs:simpleType>
