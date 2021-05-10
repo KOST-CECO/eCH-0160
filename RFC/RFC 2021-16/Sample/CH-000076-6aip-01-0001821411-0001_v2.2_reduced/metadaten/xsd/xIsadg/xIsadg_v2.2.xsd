@@ -1,0 +1,1401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:isad="ISADG" targetNamespace="ISADG" elementFormDefault="qualified" version="2.1">
+	<!--xIsadg_v2.1 (minor version d)-->
+	<xs:annotation>
+		<xs:documentation xml:lang="en">isad.xsd: XML Schema based on ISAD(G): General International Standard Archival Description, Stockholm, 19-22 September 1999, represented in XML bei Filip Boudrez - eDAVID - April, 19th 2005</xs:documentation>
+	</xs:annotation>
+	<xs:annotation>
+		<xs:documentation xml:lang="de">extendedDI_v1.1: Erweiterung des eDAVID Schemas isad.xsd durch die KOST-Geschäftsstelle, Martin Kaiser im KOST Projekt bentō: Schnittstellenspezifikation für die digitale Langzeitarchivierung als Schnittstellenspezifikation für Descriptive Information</xs:documentation>
+	</xs:annotation>
+	<xs:annotation>
+		<xs:documentation xml:lang="de">xIsadg_v1-6: Erweiterung des KOST Projekt bentō XML Schemas durch das Staatsarchiv Basel-Stadt, Lambert Kansy: Ergänzung zusätzlicher Metadatenelemente sowie Vereinheitlichung der Elementbezeichnungen und Typen-Definitionen. Das Schema wird verwendet, um in einem Archival Information Package die beschreibenden Metadaten zu erfassen. Komplementär hierzu wird immer premis oder lmer für die Erfassung der technischen Metadaten eines AIP und zur Abbildung von Aktivitäten während des Ingests und von  Massnahmen der Bestandserhaltung eingesetzt.</xs:documentation>
+	</xs:annotation>
+	<xs:annotation>
+		<xs:documentation xml:lang="de">xIsadg_v2.0: Konsolidierung, Erweiterung und Integration aller Änderungen seit Version 1.6 im Rahmen der Arbeitsgruppe Mapping-Workshop  (Stadtarchiv Zürich und Staatsarchive Appenzell Ausserrhoden, Basel-Stadt, Bern, Luzern, St.Gallen und Thurgau)</xs:documentation>
+	</xs:annotation>
+	<!--global element for a full/minimal/extended ISADG-description -->
+	<xs:element name="archivalDescription">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Globales Element für die Beschreibung einer Verzeichnungseinheit</xs:documentation>
+			<xs:documentation xml:lang="en">global element for an ISADG-description of an description unit</xs:documentation>
+			<xs:documentation xml:lang="fr">élement globale pour la description d'une unité de description</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="identity" type="isad:identityType">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">Identifikation</xs:documentation>
+						<xs:documentation xml:lang="en">identity statement area</xs:documentation>
+						<xs:documentation xml:lang="fr">Zone d'identification </xs:documentation>
+						<xs:documentation xml:lang="it">Area dell'identificazione</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="context" type="isad:contextType" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">Kontext</xs:documentation>
+						<xs:documentation xml:lang="en">context area</xs:documentation>
+						<xs:documentation xml:lang="fr">Zone du contexte</xs:documentation>
+						<xs:documentation xml:lang="it">Area delle informazioni sul contesto</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="contentStructure" type="isad:contentStructureType" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">Inhalt und innere Ordnung</xs:documentation>
+						<xs:documentation xml:lang="en">content and structure area</xs:documentation>
+						<xs:documentation xml:lang="fr">Zone du contenu et de la structure</xs:documentation>
+						<xs:documentation xml:lang="it">Area delle informazioni relative al contenuto e alla struttura</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="conditionsAccessUse" type="isad:conditionsAccessUseType" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">Zugangs- und Benutzungsbestimmungen</xs:documentation>
+						<xs:documentation xml:lang="en">conditions of access and use area</xs:documentation>
+						<xs:documentation xml:lang="fr">Zone des conditions d'accès et d'utilisation</xs:documentation>
+						<xs:documentation xml:lang="it">Area delle informazioni relative alle condizioni di accesso ed utilizzazione</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="alliedMaterials" type="isad:alliedMaterialsType" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">Sachverwandte Unterlagen</xs:documentation>
+						<xs:documentation xml:lang="en">allied materials area</xs:documentation>
+						<xs:documentation xml:lang="fr">Zone des sources complémentaires</xs:documentation>
+						<xs:documentation xml:lang="it">Area delle informazioni relative a documentazione collegata</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="notes" type="isad:notesType" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">Anmerkungen</xs:documentation>
+						<xs:documentation xml:lang="en">notes area</xs:documentation>
+						<xs:documentation xml:lang="fr">Zone des notes</xs:documentation>
+						<xs:documentation xml:lang="it">Area delle note</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="descriptionControl" type="isad:descriptionControlType" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">Verzeichnungskontrolle</xs:documentation>
+						<xs:documentation xml:lang="en">description control area</xs:documentation>
+						<xs:documentation xml:lang="fr">Zone du contrôle de la description</xs:documentation>
+						<xs:documentation xml:lang="it">Area di controllo della descrizione</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="additionalReference" type="isad:additionalReferenceType" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">Zusätzliche Referenzierungen und Identifikatoren</xs:documentation>
+						<xs:documentation xml:lang="en">additional reference area</xs:documentation>
+						<xs:documentation xml:lang="fr">Zone des réferences supplémentaires</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="additionalData" type="isad:additionalDataType" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">Zusatzdaten</xs:documentation>
+						<xs:documentation xml:lang="en">additional data area</xs:documentation>
+						<xs:documentation xml:lang="fr">Zone des données supplémentaires</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:sequence>
+					<xs:element ref="isad:archivalDescription" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!--complexType decclarations of ISAD(G) description groups-->
+	<xs:complexType name="identityType">
+		<xs:sequence>
+			<xs:element ref="isad:referenceCode"/>
+			<xs:element ref="isad:title" maxOccurs="unbounded"/>
+			<xs:element ref="isad:dates" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:descriptionLevel"/>
+			<xs:element ref="isad:extentMedium" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="isadId" type="xs:string" use="optional" fixed="1"/>
+	</xs:complexType>
+	<xs:complexType name="contextType">
+		<xs:sequence>
+			<xs:element ref="isad:creator" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:adminBioHistory" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:archivalHistory" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:acqInfo" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="isadId" type="xs:string" use="optional" fixed="2"/>
+	</xs:complexType>
+	<xs:complexType name="contentStructureType">
+		<xs:sequence>
+			<xs:element ref="isad:scopeContent" minOccurs="0"/>
+			<xs:element ref="isad:appraisalDestruction" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:accruals" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:arrangement" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="isadId" type="xs:string" use="optional" fixed="3"/>
+	</xs:complexType>
+	<xs:complexType name="conditionsAccessUseType">
+		<xs:sequence>
+			<xs:element ref="isad:accessConditions" minOccurs="0"/>
+			<xs:element ref="isad:reproConditions" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:languageScripts" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:physTech" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:findingAids" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="isadId" type="xs:string" use="optional" fixed="4"/>
+	</xs:complexType>
+	<xs:complexType name="alliedMaterialsType">
+		<xs:sequence>
+			<xs:element ref="isad:existenceLocationOriginals" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:existenceLocationCopies" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:relatedUnits" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:publication" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="isadId" type="xs:string" use="optional" fixed="5"/>
+	</xs:complexType>
+	<xs:complexType name="notesType">
+		<xs:sequence>
+			<xs:element ref="isad:note" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="isadId" type="xs:string" use="optional" fixed="6"/>
+	</xs:complexType>
+	<xs:complexType name="descriptionControlType">
+		<xs:sequence>
+			<xs:element ref="isad:archivistsNote" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:rulesConventions" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:descriptionDates" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="isadId" type="xs:string" use="optional" fixed="7"/>
+	</xs:complexType>
+	<!--complexType decclarations of additional description groups -->
+	<xs:complexType name="additionalReferenceType">
+		<xs:sequence>
+			<xs:element ref="isad:recordReference" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:aipReference" minOccurs="0"/>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="isad:primaryDataLocator" minOccurs="0"/>
+				<xs:element ref="isad:secondaryDataLocator" minOccurs="0"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="additionalDataType">
+		<xs:sequence>
+			<xs:element ref="isad:mdWrap" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:xmlData" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!--definitions of the individual ISAD(G) elements -->
+	<xs:element name="referenceCode">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Signatur(en): Identifizierung des Archivs und Verknüpfung des Archivguts mit der zugehörigen Verzeichnung</xs:documentation>
+			<xs:documentation xml:lang="en">Reference code(s): To identify uniquely the unit of description and to provide a link to the description that represents it.</xs:documentation>
+			<xs:documentation xml:lang="fr">Référence: identifier de manière unique l'unité de description et établir un lien avec la description qui la représente</xs:documentation>
+			<xs:documentation xml:lang="it">Segnatura/e o codice/i identificativo/i: Identificare univocamente l'unità di descrizione e stabilire un collegamento con la descrizione che la rappresenta</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:annotation>
+					<xs:documentation>DEPRECATED: Attribute "archivalOrigin" (Rückwärtskompatibilität mit Version 1.6)</xs:documentation>
+				</xs:annotation>
+				<xs:extension base="isad:uriType">
+					<xs:attribute name="isadId" type="xs:string" use="optional" fixed="1.1"/>
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="inherited"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional" default="ingest"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="title">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Titel: Benennung der Verzeichnungseinheit</xs:documentation>
+			<xs:documentation xml:lang="en">Title: To name the unit of description</xs:documentation>
+			<xs:documentation xml:lang="fr">Intitulé / analyse: Dénommer l'unité de description</xs:documentation>
+			<xs:documentation xml:lang="it">Denominazione o titolo: Denominare l'unità di descrizione</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:stringType">
+					<xs:attribute name="isadId" type="xs:string" use="optional" fixed="1.2"/>
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="mandatory"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="dates" type="isad:datesType">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Entstehungszeitraum / Laufzeit: Identifizierung des Entstehungsdatums bzw. -zeitraums der in der Verzeichnungseinheit enthaltenen Unterlagen</xs:documentation>
+			<xs:documentation xml:lang="en">Date(s): To identify and record the date(s) of the unit of description</xs:documentation>
+			<xs:documentation xml:lang="fr">Date: Identifier et donner la (les) date(s) de lunité de description</xs:documentation>
+			<xs:documentation xml:lang="it">Data/e: Identificare e segnalare la/e data/e dell'unità di descrizione</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="descriptionLevel">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Verzeichnungsstufe: Identifizierung der Verzeichnungsstufe</xs:documentation>
+			<xs:documentation xml:lang="en">Level of description: To identify the level of arrangement of the unit of description</xs:documentation>
+			<xs:documentation xml:lang="fr">Niveau de description: Identifier le niveau de classement auquel se situe l'unité de description</xs:documentation>
+			<xs:documentation xml:lang="it">Livello di descrizione: Identificare il livello dell'unità di descrizione all'interno dell'ordinamento del fondo</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:levelType">
+					<xs:attribute name="isadId" type="xs:string" use="optional" fixed="1.4"/>
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="mandatory"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional" default="ingest"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="extentMedium" type="isad:extentMediumType">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Umfang (Menge oder Abmessungen): Identifizierung (a) des physischen Umfangs und (b) der Art des Materials der Verzeichnungseinheit</xs:documentation>
+			<xs:documentation xml:lang="en">Extent and medium of the unit of description (quantity, bulk, or size): To identify and describe (a) the physical or logical extent and (b) the medium of the unit of description</xs:documentation>
+			<xs:documentation xml:lang="fr">Importance matérielle et support de l'unité de description (quantité, volume ou dimensions): Déterminer et donner (a) l'importance matérielle de l'unité de description, (b) le support de l'unité de description</xs:documentation>
+			<xs:documentation xml:lang="it">Consistenza e supporto dell'unità di descrizione (quantità, volume, dimensione fisica): Identificare e descrivere (a) la consistenza materiale o logica, (b) il supporto dell'unità di descrizione</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="creator">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Name der Provenienzstelle: Identifizierung der Provenienzstelle(n), bei der (denen) die Verzeichnungseinheit entstanden ist</xs:documentation>
+			<xs:documentation xml:lang="en">Name of creator(s): To identify the creator (or creators) of the unit of description</xs:documentation>
+			<xs:documentation xml:lang="fr">Nom du producteur: Identifier le ou les producteurs de l'unité de description</xs:documentation>
+			<xs:documentation xml:lang="it">Denominazione del/dei soggetto/i produttore/i: Identificare il soggetto (o i soggetti) produttori dell'unità di descrizione</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:stringType">
+					<xs:attribute name="isadId" type="xs:string" use="optional" fixed="2.1"/>
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="inherited"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="adminBioHistory">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Verwaltungsgeschichte/Biographische Angaben: Information über Verwaltungsgeschichte der Provenienzstelle bzw. die Biographie, wenn es sich um natürliche Personen handelt, zum besseren Verständnis des zur Verzeichnungseinheit gehörenden Kontextes</xs:documentation>
+			<xs:documentation xml:lang="en">Administrative / Biographical history: To provide an administrative history of, or biographical details on, the creator (or creators) of the unit of description to place the material in context and make it better understood</xs:documentation>
+			<xs:documentation xml:lang="fr">Histoire administrative / Notice biographique: Fournir un historique ou une biographie de ou des producteurs de l'unité de description afin de situer les documents dans leur contexte et de les rendre plus intelligibles</xs:documentation>
+			<xs:documentation xml:lang="it">Stori istituzionale/amministrativa, nota biografica: Fornire una storia istituzionale/amministrativa o un profilo biografico del soggetto produttore (o i soggetti produttori), per collocare la documentazione nel proprio contesto e facilitarne la comprensione</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:choice minOccurs="0">
+				<xs:sequence>
+					<xs:element name="fromDate" type="isad:dateType"/>
+					<xs:element name="toDate" type="isad:dateType"/>
+					<xs:element name="commentDate" type="xs:string" minOccurs="0"/>
+				</xs:sequence>
+				<xs:sequence>
+					<xs:element name="pointofTime" type="isad:dateType"/>
+					<xs:element name="commentDate" type="xs:string" minOccurs="0"/>
+				</xs:sequence>
+				<xs:sequence>
+					<xs:annotation>
+						<xs:documentation>DEPRECATED: Elemente Paar "fromYear" - "toYear" (Rückwärtskompatibilität mit Version 1.6)</xs:documentation>
+					</xs:annotation>
+					<xs:element name="fromYear" type="xs:gYear"/>
+					<xs:element name="toYear" type="xs:gYear"/>
+				</xs:sequence>
+			</xs:choice>
+			<xs:attribute name="isadId" type="xs:string" use="optional" fixed="2.2"/>
+			<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
+			<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+			<xs:attribute name="origin" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="archivalHistory">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Bestandesgeschichte: Information über den Wechsel der Eigentums- und Besitzverhältnisse der Verzeichnungseinheit, die für deren Authentizität, Integrität, Vollständigkeit und Interpretation von wesentlicher Bedeutung sind</xs:documentation>
+			<xs:documentation xml:lang="en">Archival history: To provide information on the unit of description that is significant for its authenticity, integrity and interpretation</xs:documentation>
+			<xs:documentation xml:lang="fr">Historique de la conservation: Fournir sur l'histoire de l'nité de description les renseignements importants qui contribuent à son interprétation et qui prouvent son authenticité et sont intégrité</xs:documentation>
+			<xs:documentation xml:lang="it">Storia archivistica: Fornire le informazioni sulla storia dell'unità di descrizione che sono significative ai fini dell'autenticità, integrità e interpretazione della documentazione</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:stringType">
+					<xs:attribute name="isadId" type="xs:string" use="optional" fixed="2.3"/>
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional" default="archival"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="acqInfo">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Abgebende Stelle: Darstellung der Umstände, die mit der direkten Übernahme der Verzeichnungseinheit von der abgebenden Stelle verbunden sind</xs:documentation>
+			<xs:documentation xml:lang="en">Immediate source of acquisition or transfer: To identify the immediate source of acquisition or transfer</xs:documentation>
+			<xs:documentation xml:lang="fr">Modalités d'entrée: Identifier les circonstances de l'entrée dans les archives</xs:documentation>
+			<xs:documentation xml:lang="it">Modalità di acquisizione o versamento: Identificare il soggetto dal quale è stata acquisita o che ha versato la documentazione</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:stringType">
+					<xs:attribute name="isadId" type="xs:string" use="optional" fixed="2.4"/>
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="inherited"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="scopeContent" type="isad:scopeContentType">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Form und Inhalt: Feststellung von Hauptgegenstand und Form der Verzeichnungseinheit, um Benutzern eine Beurteilung ihrer Relevanz zu ermöglichen</xs:documentation>
+			<xs:documentation xml:lang="en">Scope and content: To enable users to judge the potential relevance of the unit of description</xs:documentation>
+			<xs:documentation xml:lang="fr">Présentation du contenu: Permettre aux usagers d'apprécier l'intérêt de l'unité de description</xs:documentation>
+			<xs:documentation xml:lang="it">Ambiti e contenuto: Permettere agli utenti di valutare la potenziale rilevanza dell'unità di descrizione</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="appraisalDestruction">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Bewertung und Kassation: Bereitstellung von Informationen über jede vorgenommene Bewertung und Kassation.</xs:documentation>
+			<xs:documentation xml:lang="en">Appraisal, destruction and scheduling information: To provide information on any appraisal, destruction and scheduling action</xs:documentation>
+			<xs:documentation xml:lang="fr">Evaluation, tris et éliminations, sort final: Fournir des resneignements sur l'évaluation, les oprérations detri ou d'élimination et le sort final des documents</xs:documentation>
+			<xs:documentation xml:lang="it">Procedure, tempi e criteri di valutazione e scarto: Fornire le informazioni relative a tutte le operazioni e di valutazione e di scarto e alle relative epoche</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:stringType">
+					<xs:attribute name="isadId" type="xs:string" use="optional" fixed="3.2"/>
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional" default="archival"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="accruals">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Neuzugänge: Angaben für den Benutzer über mögliche Veränderungen im Umfang der Verzeichnungseinheit</xs:documentation>
+			<xs:documentation xml:lang="en">Accruals: To inform the user of foreseen additions to the unit of description</xs:documentation>
+			<xs:documentation xml:lang="fr">Accroissements: Informer l'usager de possibles entrées complétant l'unité de description</xs:documentation>
+			<xs:documentation xml:lang="it">Incrementi previsti: Informare l'utente su previsti accrescimenti dell'unità di descrizione</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:stringType">
+					<xs:attribute name="isadId" type="xs:string" use="optional" fixed="3.3"/>
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional" default="archival"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="arrangement">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Ordnung und Klassifikation: Bereitstellung von Informationen über die Ordnung und Klassifikation der Verzeichnungseinheit</xs:documentation>
+			<xs:documentation xml:lang="en">System of arrangement: To provide information on the internal structure, the order and/or the system of classification of the unit of description</xs:documentation>
+			<xs:documentation xml:lang="fr">Mode de classement: Fournir des renseignements sur la structure, l'ordre ou le plan de classement de l'unité de description</xs:documentation>
+			<xs:documentation xml:lang="it">Criteri di ordinamento: Fornire informazioni sulla struttura interna, l'organizzazione e/o il sistema di classificazione dell'unità di descrizione</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:choice minOccurs="0">
+				<xs:sequence>
+					<xs:element name="fromDate" type="isad:dateType"/>
+					<xs:element name="toDate" type="isad:dateType"/>
+					<xs:element name="commentDate" type="xs:string" minOccurs="0"/>
+				</xs:sequence>
+				<xs:sequence>
+					<xs:element name="pointofTime" type="isad:dateType"/>
+					<xs:element name="commentDate" type="xs:string" minOccurs="0"/>
+				</xs:sequence>
+				<xs:sequence>
+					<xs:annotation>
+						<xs:documentation>DEPRECATED: Elemente Paar "fromYear" - "toYear" (Rückwärtskompatibilität mit Version 1.6)</xs:documentation>
+					</xs:annotation>
+					<xs:element name="fromYear" type="xs:gYear"/>
+					<xs:element name="toYear" type="xs:gYear"/>
+				</xs:sequence>
+			</xs:choice>
+			<xs:attribute name="xpointer" type="isad:xpointerType" use="optional"/>
+			<xs:attribute name="isadId" type="xs:string" use="optional" fixed="3.4"/>
+			<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
+			<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+			<xs:attribute name="origin" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="accessConditions">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Zugangsbestimmungen: Angabe derjenigen Bestimmungen, die den Zugang zur Verzeichnungseinheit einschränken oder beeinflussen</xs:documentation>
+			<xs:documentation xml:lang="en">Conditions governing access: To provide information on the legal status or other regulations that restrict or affect access to the unit of description</xs:documentation>
+			<xs:documentation xml:lang="fr">Conditions d'accès: Fournir des renseignements sur le statut juridique et sur les autres dispositions de toute nature qui restreignent ou affectent l'accès à l'unité des descriptions</xs:documentation>
+			<xs:documentation xml:lang="it">Condizioni che regolano l'accesso: Fornire informazioni sulla condizione giuridica e su altre forme di regolamentazione che limitano o condizionano l'acesso all'unità di descrizione</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="isad:accessConditionsType"/>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="reproConditions">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Reproduktionsbestimmungen: Information über Beschränkungen bei der Reproduktion der Verzeichnungseinheit.</xs:documentation>
+			<xs:documentation xml:lang="en">Conditions governing reproduction: To identify any restrictions on reproduction of the unit of description</xs:documentation>
+			<xs:documentation xml:lang="fr">Conditions de reproduction: Signaler toute restriction relative à la reproduction de l'unité de description</xs:documentation>
+			<xs:documentation xml:lang="it">Condizioni che regolano la riproduzione: Segnalare tutte le limitazioni alla riproduzione dell'unità di descrizione</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:stringType">
+					<xs:attribute name="isadId" type="xs:string" use="optional" fixed="4.2"/>
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional" default="archival"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="languageScripts">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Sprache/Schrift: Identifizierung der in der Verzeichnungseinheit enthaltenen Sprache(n), Schriftarten und Zeichensysteme</xs:documentation>
+			<xs:documentation xml:lang="en">Language / scripts of material: To identify the language(s), script(s) and symbol systems employed in the unit of description</xs:documentation>
+			<xs:documentation xml:lang="fr">Langue et écriture des documents: Identifier la ou les langues, les systèmes d'écriture et de symboles utilisés dans l'unité de description</xs:documentation>
+			<xs:documentation xml:lang="it">Lingua/scrittura della documentazione: Segnalare la/le lingua/e, la/le scrittura/e o i sistemi di simboli utilizzati nell'unità di descrizione</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:stringType">
+					<xs:attribute name="isadId" type="xs:string" use="optional" fixed="4.3"/>
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional" default="archival"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="physTech">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Physische Beschaffenheit und technische Anforderungen: Bereitstellung von Informationen über wichtige physische Besonderheiten oder technische Anforderungen, die die Benutzung der Verzeichnungseinheit beeinflussen</xs:documentation>
+			<xs:documentation xml:lang="en">Physical characteristics and technical requirements: To provide information about any important physical characteristics or technical requirements that affect the use of the unit of description</xs:documentation>
+			<xs:documentation xml:lang="fr">Caractéristique matérielles et contraintes techniques: Fournir des renseignements sur toute caractéristique matérielle ou contrainte techniques importante qui a des conséquences sur l'utilisation de l'unité de description</xs:documentation>
+			<xs:documentation xml:lang="it">Caratteristiche materiali e requisiti technici: Fornire informazioni su tutte le caratteristiche materiali e i requisiti technici che siano rilevanti ai fini dell'utilizzazione dell'unità di descrizione</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:formType">
+					<xs:attribute name="isadId" type="xs:string" use="optional" fixed="4.4"/>
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="aggregated"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="findingAids">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Findhilfsmittel: Identifizierung aller für die Verzeichnungseinheit vorhandenen Findhilfsmittel</xs:documentation>
+			<xs:documentation xml:lang="en">Findng Aids: To identify any finding aids to the unit of description</xs:documentation>
+			<xs:documentation xml:lang="fr">Instruments de recherche: Signaler tout instrument de recherche intéressant l'unité de description</xs:documentation>
+			<xs:documentation xml:lang="it">Strumenti di ricera: Segnalare tutti gli strumenti di ricera relativi all'unità di descrizione</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:stringType">
+					<xs:attribute name="isadId" type="xs:string" use="optional" fixed="4.5"/>
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional" default="archival"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="existenceLocationOriginals">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Aufbewahrungsort der Orginale: Nachweise über die aufbewahrende Institution, die Zugänglichkeit oder die Vernichtung der Originale, falls es sich bei der Verzeichnungseinheit um eine Reproduktion handelt</xs:documentation>
+			<xs:documentation xml:lang="en">Existence and location of originals: To indicate the existence, location, availability and/or destruction of originals where the unit of description consists of copies</xs:documentation>
+			<xs:documentation xml:lang="fr">Existence et lieu de conservation des originaux: Quand l'unité de description est une reproduction, indiquer si les documents originaux existent encore, et s'il y a lieu, leur lieu de conservation et leurs conditions d'accès </xs:documentation>
+			<xs:documentation xml:lang="it">Esistenza e localizzazione degli originali: Indicare l'esistenza, la localizzazione, la disponibilità e/o la distruzione degli originali nel caso in cui l'unità di descrizione consista di copie</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:stringType">
+					<xs:attribute name="isadId" type="xs:string" use="optional" fixed="5.1"/>
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional" default="archival"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="existenceLocationCopies">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Kopien bzw. Reproduktionen: Verweis auf Kopien bzw. Reproduktionen der Verzeichnungseinheit und ihre Verfügbarkeit</xs:documentation>
+			<xs:documentation xml:lang="en">Existence and location of copies: To indicate the existence, location and availbility of copies of the unit of desciption</xs:documentation>
+			<xs:documentation xml:lang="fr">Existence et lieu de conservation de copies: Signaler l'existence, le lieu de conservation et la disponibilité de copies de l'unité de description</xs:documentation>
+			<xs:documentation xml:lang="it">Esistenza e localizzazione di copie: Indicare l'esistenza, la localizzazione e la disponibilità di copie dell'unità di descrizione</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:stringType">
+					<xs:attribute name="isadId" type="xs:string" use="optional" fixed="5.2"/>
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional" default="archival"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="relatedUnits">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Verwandte Verzeichnungseinheiten: Ermittlung von verwandten Verzeichnungseinheiten im selben Archiv oder in anderen Archiven.</xs:documentation>
+			<xs:documentation xml:lang="en">Related units of description: To identify related units of description</xs:documentation>
+			<xs:documentation xml:lang="fr">Sources complémentaires: Signaler les sources complémentaires</xs:documentation>
+			<xs:documentation xml:lang="it">Unità di descrizione collegate: Segnalare l'esistenza di unità di descrizione collgeate</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:stringType">
+					<xs:attribute name="isadId" type="xs:string" use="optional" fixed="5.3"/>
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional" default="archival"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="publication">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Veröffentlichungen: Ermittlung von Veröffentlichungen, die unter Benutzung oder Auswertung der Verzeichnungseinheit entstanden sind</xs:documentation>
+			<xs:documentation xml:lang="en">Publication Note: To identify any publications that are about or are based on the use, study, or analysis of the unit of descripton</xs:documentation>
+			<xs:documentation xml:lang="fr">Bibliographie: Identifier toutes les publications qui sont relatives à l'unité de description, qui l'utilisent ou qui l'étudient</xs:documentation>
+			<xs:documentation xml:lang="it">Bibliografia: Identificare tutte le publicazioni che si riferiscano all'unità di descrizione o siano basate sullo studio, l'analisi od una qualche altra forma di utilizzazione die essa</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:stringType">
+					<xs:attribute name="isadId" type="xs:string" use="optional" fixed="5.4"/>
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional" default="archival"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="note">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Allgemeine Anmerkungen: Bereitstellung von Spezialinformationen und Angaben, die in keinem der anderen Bereiche angebracht werden können</xs:documentation>
+			<xs:documentation xml:lang="en">Note: To provide information that cannot be accommodated in any of the other areas</xs:documentation>
+			<xs:documentation xml:lang="fr">Notes: Fournir des renseignements qui ne peuvent pas être donnés dans aucune des autres zones</xs:documentation>
+			<xs:documentation xml:lang="it">Note: Fornire informazioni particolari ed informazioni che non possono essere inserite in nessuna delle altre aree</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:stringType">
+					<xs:attribute name="isadId" type="xs:string" use="optional" fixed="6.1"/>
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="archivistsNote">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Informationen des Bearbeiters: Erläuterungen zur Verzeichnung und über den oder die Bearbeiter</xs:documentation>
+			<xs:documentation xml:lang="en">Archivist's note: To explain how the description was prepared and by whom</xs:documentation>
+			<xs:documentation xml:lang="fr">Notes de l'archiviste: Expliquer comment et par qui la description a été établie</xs:documentation>
+			<xs:documentation xml:lang="it">Nota dell'archivista: Spiegare come e da chi è stata elaborata la descrizione</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:stringType">
+					<xs:attribute name="isadId" type="xs:string" use="optional" fixed="7.1"/>
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional" fixed="archival"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="rulesConventions">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Verzeichnungsgrundsätze: Benennung der bei der Verzeichnung angewandten Normen, Regeln und Grundsätze</xs:documentation>
+			<xs:documentation xml:lang="en">Rules or conventions: To identify the protocols on which the description is based</xs:documentation>
+			<xs:documentation xml:lang="fr">Règles ou conventions: Identifier les règles ou les conventions internationales, nationales ou locales suivies pour établir la description</xs:documentation>
+			<xs:documentation xml:lang="it">Norme o convenzioni: Identificare le regole e le convenzioni sulle quali è basta la descrizione</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:stringType">
+					<xs:attribute name="isadId" type="xs:string" use="optional" fixed="7.2"/>
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional" default="archival"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="descriptionDates">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Datum oder Zeitraum der Verzeichung: Alle Daten, die sich auf die Erstellung oder Veränderung der Verzeichnung beziehen, sind anzugeben</xs:documentation>
+			<xs:documentation xml:lang="en">Date(s) of description: To indicate when this description was prepared and / or revised</xs:documentation>
+			<xs:documentation xml:lang="fr">Date(s) de la description: Indiquer à quelle date la description a été préparée et / ou révisée</xs:documentation>
+			<xs:documentation xml:lang="it">Data/e della descrizione: Indicare la/le data/e nella quale la descrizione è stata elaborata e/o modificata</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="mutationDate" type="xs:date" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="isadId" type="xs:string" use="optional" fixed="7.3"/>
+			<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
+			<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+			<xs:attribute name="origin" type="xs:string" use="optional" default="ingest"/>
+		</xs:complexType>
+	</xs:element>
+	<!--complexType decclarations of ISAD(G) elements -->
+	<xs:complexType name="datesType">
+		<xs:annotation>
+			<xs:documentation>Entstehungszeitraum / Laufzeit: Identifizierung des Entstehungsdatums bzw. -zeitraums der in der Verzeichnungseinheit enthaltenen Unterlagen</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:sequence>
+				<xs:element name="fromDate" type="isad:dateType"/>
+				<xs:element name="toDate" type="isad:dateType"/>
+				<xs:element name="commentDate" type="xs:string" minOccurs="0"/>
+			</xs:sequence>
+			<xs:sequence>
+				<xs:element name="pointofTime" type="isad:dateType"/>
+				<xs:element name="commentDate" type="xs:string" minOccurs="0"/>
+			</xs:sequence>
+			<xs:sequence>
+				<xs:annotation>
+					<xs:documentation>DEPRECATED: Elemente Paar "fromYear" - "toYear" (Rückwärtskompatibilität mit Version 1.6)</xs:documentation>
+				</xs:annotation>
+				<xs:element name="fromYear" type="xs:gYear"/>
+				<xs:element name="toYear" type="xs:gYear"/>
+			</xs:sequence>
+		</xs:choice>
+		<xs:attribute name="obligation" type="xs:string" use="optional" fixed="aggregated"/>
+		<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+		<xs:attribute name="origin" type="xs:string" use="optional"/>
+		<xs:attribute name="isadId" type="xs:string" use="optional" fixed="1.3"/>
+	</xs:complexType>
+	<xs:complexType name="dateType">
+		<xs:annotation>
+			<xs:documentation>Datumsentitäten innerhalb eines Entstehungszeitraum / Laufzeit Eintrages</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="isad:dateType_union">
+				<xs:attribute name="circa" type="xs:boolean" use="optional" default="false"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="extentMediumType">
+		<xs:sequence>
+			<xs:sequence minOccurs="0">
+				<xs:element ref="isad:extent" minOccurs="0"/>
+				<xs:element ref="isad:medium" minOccurs="0"/>
+				<xs:element ref="isad:description" minOccurs="0"/>
+			</xs:sequence>
+		</xs:sequence>
+		<xs:attribute name="isadId" type="xs:string" use="optional" fixed="1.5"/>
+		<xs:attribute name="obligation" type="xs:string" use="optional" fixed="mandatory"/>
+	</xs:complexType>
+	<xs:complexType name="scopeContentType">
+		<xs:sequence>
+			<xs:element ref="isad:scope" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:content" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="isadId" type="xs:string" use="optional" fixed="3.1"/>
+	</xs:complexType>
+	<xs:complexType name="accessConditionsType">
+		<xs:sequence>
+			<xs:element ref="isad:hasPrivacyProtection" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:openToThePublic" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:classification" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:otherAccessConditions" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:accessConditionsNotes" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:retentionPeriod" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:retentionPeriodConditions" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:retentionPeriodNotes" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="isadId" type="xs:string" use="optional" fixed="4.1"/>
+	</xs:complexType>
+	<!--definitions of additional elements -->
+	<xs:element name="accessConditionsNotes">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Bemerkungen zu Zugangs- und Nutzungsbedingungen</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:stringType">
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="aipReference">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">AIP-Referenz: Eindeutiger Identifikator des AIP im digitalen Magazin des Archivs</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:uriType">
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="inherited"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional" fixed="archival"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="classification">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Geheimhaltung: Angabe zur Geheimhaltung/Klassifikation der Verzeichnungseinheit</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:classificationType">
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="aggregated"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="content">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Inhalt: Angabe über die Hauptgegenstände/Inhalte der Verzeichnungseinheit; umfasst  Enthält- oder Darin-Vermerke</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="aggregated"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional"/>
+					<xs:attribute name="contentQualifier" type="isad:contentType" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="description">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Umfang als Freitext (c): wie in eCH-0160 im Element Umfang definiert, kann hier übernommen werden</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="extent">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Umfang (a): Identifizierung des physischen Umfangs (Menge und Abmessung)</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:element name="dataSize" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">Gesamtes Datenvolumen, Laufmeter oder Umfang</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="isad:sizeType">
+								<xs:attribute name="unit" type="isad:unitType" use="required"/>
+							</xs:extension>
+						</xs:simpleContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="dataQuantity" type="xs:integer" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">Anzahl der Dateien oder Anzahl Archivalien gemäss isad:medium</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:choice>
+			<xs:attribute name="obligation" type="xs:string" use="optional" fixed="aggregated"/>
+			<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+			<xs:attribute name="origin" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="hasPrivacyProtection">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Datenschutz: Angabe, ob in der Verzeichnungseinheit besonders schützenswerte Personendaten vorhanden sind oder nicht</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:boolean">
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="aggregated"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="mdWrap" type="isad:mdWrapType">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Zusätzliche Metadaten in Form eines Schlüssel-Werte-Paares.</xs:documentation>
+			<xs:documentation xml:lang="en">property: A wrapper element to contain key - value pair metadata.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="medium">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Archivalienart (b): Identifizierung der Art des Materials der Verzeichnungseinheit</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="aggregated"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="openToThePublic">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Öffentlichkeitsstatus: Angabe über die Zugänglichkeit der Verzeichnungseinheit gemäss den geltenden Informationsfreiheits- resp. Öffentlichkeitsgesetzen</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:openToThePublicType">
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="aggregated"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="otherAccessConditions">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Weitere Zugangs- und Nutzungsbedingungen: Angabe über weitere Zugangs- und Nutzungsbedingungen; NICHT Repro-Bestimmungen</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:stringType">
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="primaryDataLocator">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Referenz auf eine Primärdatei in Form einer URL - auch relativer Pfad ist möglich.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:uriType">
+					<xs:attribute name="uri" type="isad:uriType" use="optional"/>
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="recordReference">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Aktenzeichen: Identifikator der Verzeichnungseinheit im Quellsystem</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:stringType">
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="inherited"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="retentionPeriod">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Schutzfrist: Dauer der Schutzfrist in Jahren</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:integer">
+					<xs:attribute name="obligation" type="xs:string" use="optional" default="aggregated"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional" default="archival"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="retentionPeriodConditions">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Schutzfristenkategorie bzw. Artikel der gesetzlichen Grundlage für die Schutzfrist festhält</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:stringType">
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional" default="archival"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="retentionPeriodNotes">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Weiter Informationen zur Schutzfrist, z.B. Aktenzeichen des Formulars „Meldung von Unterlagen mit besonderer Schutzfrist und öffentlich zugänglichen Unterlagen“, in dem die für die Ablieferung vereinbarten Schutzfristen festgehalten sind</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:stringType">
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional" default="archival"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="scope">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Form: Angabe über die hauptsächliche Form der Verzeichnungseinheit</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:scopeType">
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="aggregated"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	
+	<!--  ++++++++++++++++++++++++++++++++++++++++-->
+	<xs:element name="secondaryDataLocator">
+		<xs:complexType mixed="true">
+			<xs:annotation>
+				<xs:documentation xml:lang="de">Referenz auf einen Objekteintrag in der premis- oder lmerDatei des AIP, damit von dort auf die Primärdatei zugegriffen werden kann, in Form eines xpointer-Eintrags</xs:documentation>
+			</xs:annotation>
+			<xs:sequence minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="mdWrap" type="isad:mdWrapType"/>
+			</xs:sequence>
+			<xs:attribute name="xpointer" type="isad:xpointerType" use="optional"/>
+			<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
+			<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+			<xs:attribute name="origin" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<!--  ++++++++++++++++++++++++++++++++++++++++-->
+	
+	<xs:element name="xmlData" type="isad:xmlDataType">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">zusätzliche Metadaten gemäss einer externen Metadatendefinition in Form eines XML-Schemas.</xs:documentation>
+			<xs:documentation xml:lang="en">special metadata according to an external metadata schema</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!--complexType decclarations of additional elements -->
+	<xs:complexType name="mdWrapType">
+		<xs:sequence>
+			<xs:element name="property" type="isad:propertyType" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+		<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
+	</xs:complexType>
+	<xs:complexType name="propertyType" mixed="true">
+		<xs:annotation>
+			<xs:documentation>DEPRECATED: AttributePaar "key" - "value" statt "origin" (Rückwärtskompatibilität mit Version 1.6)</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="property" type="isad:propertyValue" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="origin" type="xs:string" use="optional"/>
+		<xs:attribute name="key" use="optional"/>
+		<xs:attribute name="value" type="xs:string" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="propertyValue" mixed="true">
+		<xs:sequence>
+			<xs:element name="property" type="isad:propertyKeyValue" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="origin" type="xs:string" use="optional"/>
+		<xs:attribute name="key" type="xs:string" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="propertyKeyValue">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="origin" type="xs:string" use="optional"/>
+				<xs:attribute name="key" type="xs:string" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="xmlDataType">
+		<xs:sequence>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="mdtype" use="required">
+			<xs:simpleType>
+				<xs:union>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="DC"/>
+							<xs:enumeration value="EAD"/>
+							<xs:enumeration value="MARC"/>
+							<xs:enumeration value="MODS"/>
+							<xs:enumeration value="OTHER"/>
+						</xs:restriction>
+					</xs:simpleType>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:pattern value="[A-Z]+"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:union>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
+		<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+		<xs:attribute name="origin" type="xs:string" use="optional"/>
+	</xs:complexType>
+	<!--special datatypes for elements -->
+	<xs:simpleType name="classificationType">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Klassifizierungskategorie: Grad, indem das Dossier und die enthaltenen Unterlagen vor unberechtigter Einsicht geschützt werden müssen.</xs:documentation>
+		</xs:annotation>
+		<xs:union>
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="unclassified"/>
+					<xs:enumeration value="confidential"/>
+					<xs:enumeration value="secret"/>
+					<xs:enumeration value="in_house"/>
+					<xs:enumeration value="other"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:minLength value="1"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:simpleType name="contentType">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Darin/Enthält Vermerk: ab Version xIsadg 2.1 sollen hier die englischen Bezeichnungen als Platzhalter verwendet werden. 
+			Achtung: die Übersetzung ins Englische ist konträr zur Meinung von Frau Angelika Menne-Haritz in 'Schlüsselbegriffe der Archivterminologie' 1999 https://internet.archivschule.uni-marburg.de/datiii/germanterms.htm</xs:documentation>
+		</xs:annotation>
+		<xs:union>
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="includes">
+						<xs:annotation>
+							<xs:documentation xml:lang="de">Der Darin-Vermerk wird verwendet, um auf einzelne Teile der Verzeichnungseinheit  hinzuweisen, die in formaler Hinsicht als Besonderheit anzusehen sind, z. B. Karten, Pläne, Zeichnungen, Fotos, herausragende Einzelstücke und die nicht aufgrund des Titels zu erwarten sind.</xs:documentation>
+						</xs:annotation>
+					</xs:enumeration>
+					<xs:enumeration value="contains">
+						<xs:annotation>
+							<xs:documentation xml:lang="de">Enthält: erläutert den gesamten Inhalt der Verzeichnungseinheit</xs:documentation>
+						</xs:annotation>
+					</xs:enumeration>
+					<xs:enumeration value="contains_inter_alia">
+						<xs:annotation>
+							<xs:documentation xml:lang="de">Enthält u. a. (Enthält unter anderem): hebt einzelne Teile der Verzeichnungseinheit hervor, denen qualitativ besondere Bedeutung zuzumessen ist</xs:documentation>
+						</xs:annotation>
+					</xs:enumeration>
+					<xs:enumeration value="contains_above_all">
+						<xs:annotation>
+							<xs:documentation xml:lang="de">Enthält v. a. (Enthält vor allem): hebt diejenigen inhaltlichen Aspekte hervor, die die Verzeichnungseinheit quantitativ maßgeblich bestimmen</xs:documentation>
+						</xs:annotation>
+					</xs:enumeration>
+					<xs:enumeration value="contains_also">
+						<xs:annotation>
+							<xs:documentation xml:lang="de">Enthält auch: erweitert einen zu eng gefassten Titel der Verzeichnungseinheit</xs:documentation>
+						</xs:annotation>
+					</xs:enumeration>
+					<xs:enumeration value="contains_exclusivley">
+						<xs:annotation>
+							<xs:documentation xml:lang="de">Enthält nur: verengt einen zu weit gefassten Titel der Verzeichnungseinheit</xs:documentation>
+						</xs:annotation>
+					</xs:enumeration>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:minLength value="1"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:simpleType name="dateType_union">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Ausprägung aller vorgesehenen Datumsformate</xs:documentation>
+		</xs:annotation>
+		<xs:union memberTypes="isad:dateType_unknown isad:dateType_century isad:dateType_datetime isad:dateType_reduced"/>
+	</xs:simpleType>
+	<xs:simpleType name="dateType_unknown">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Datumsformat: "unknown"</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="unknown"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="dateType_century">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Datumsformat: CC (Century)</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="((0[1-9])|([1-9][0-9]))"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="dateType_datetime">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Datumsformate:YYYY; YYYY-MM; YYYY-MM-DD; YYYY-MM-DDThh:mm:ss</xs:documentation>
+		</xs:annotation>
+		<xs:union memberTypes="xs:gYear xs:gYearMonth xs:date xs:dateTime"/>
+	</xs:simpleType>
+	<xs:simpleType name="dateType_reduced">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Datumsformat: YYYY-MM-DDThh:mm</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="((000[1-9])|(00[1-9][0-9])|(0[1-9][0-9]{2})|([1-9][0-9]{3}))-((0[1-9])|(1[012]))-((0[1-9])|([12][0-9])|(3[01]))T(([01][0-9])|(2[0-3]))(:[0-5][0-9])"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="formType">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Liste der möglichen Werte im Element physikalische Beschaffenheit und technische Anforderungen</xs:documentation>
+			<xs:documentation xml:lang="de">level: enumeration</xs:documentation>
+		</xs:annotation>
+		<xs:union memberTypes="isad:formTypeEnumeration isad:formTypeString"/>
+	</xs:simpleType>
+	<xs:simpleType name="formTypeEnumeration">
+		<xs:union>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="digital"/>
+					<xs:enumeration value="analog"/>
+					<xs:enumeration value="hybrid"/>
+					<xs:enumeration value="not_defined"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:simpleType name="formTypeString">
+		<xs:restriction base="xs:string">
+			<xs:pattern value=".*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="levelType">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Liste der möglichen Verzeichnungsstufen: ab Version xIsadg 2.1 sollen hier die englischen Bezeichnungen als Platzhalter verwendet werden</xs:documentation>
+			<xs:documentation xml:lang="en">level: enumeration</xs:documentation>
+		</xs:annotation>
+		<xs:union>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="fonds">
+						<xs:annotation>
+							<xs:documentation xml:lang="de">Bestand: Menge aller Ablieferungen einer Provenienz</xs:documentation>
+							<xs:documentation xml:lang="en">Fonds</xs:documentation>
+							<xs:documentation xml:lang="fr">Fonds</xs:documentation>
+							<xs:documentation xml:lang="it">Fondo</xs:documentation>
+						</xs:annotation>
+					</xs:enumeration>
+					<xs:enumeration value="sub-fonds">
+						<xs:annotation>
+							<xs:documentation xml:lang="de">Teilbestand: Ablieferung einer Provenienz</xs:documentation>
+							<xs:documentation xml:lang="en">Sub-fonds</xs:documentation>
+							<xs:documentation xml:lang="fr">Sous-fonds</xs:documentation>
+							<xs:documentation xml:lang="it">Sub-fondo</xs:documentation>
+						</xs:annotation>
+					</xs:enumeration>
+					<xs:enumeration value="series">
+						<xs:annotation>
+							<xs:documentation xml:lang="de">Serie: Entspricht einer Ordnungssystemposition resp. einer Rubrik im Ordnungssystem</xs:documentation>
+							<xs:documentation xml:lang="en">Series</xs:documentation>
+							<xs:documentation xml:lang="fr">Série organique</xs:documentation>
+							<xs:documentation xml:lang="it">Serie</xs:documentation>
+						</xs:annotation>
+					</xs:enumeration>
+					<xs:enumeration value="sub-series">
+						<xs:annotation>
+							<xs:documentation xml:lang="de">Teilserie: Entspricht einer Ordnungssystemposition resp. einer Rubrik im Ordnungssystem, die einer anderen Ordnungssystemposition untergeordnet ist</xs:documentation>
+							<xs:documentation xml:lang="en">Sub-series</xs:documentation>
+							<xs:documentation xml:lang="fr">Sous-série organique</xs:documentation>
+							<xs:documentation xml:lang="it">Sotto-serie</xs:documentation>
+						</xs:annotation>
+					</xs:enumeration>
+					<xs:enumeration value="file">
+						<xs:annotation>
+							<xs:documentation xml:lang="de">Dossier: Einer Rubrik im Ordnungssystem zugeordnete sachliche Einheit, die im Geschäftsgang entstanden ist</xs:documentation>
+							<xs:documentation xml:lang="en">File</xs:documentation>
+							<xs:documentation xml:lang="fr">Dossier</xs:documentation>
+							<xs:documentation xml:lang="it">Fascicolo</xs:documentation>
+						</xs:annotation>
+					</xs:enumeration>
+					<xs:enumeration value="sub-file">
+						<xs:annotation>
+							<xs:documentation xml:lang="de">Teildossier: Bestandteil eines Dossiers und diesem untergeordnet</xs:documentation>
+						</xs:annotation>
+					</xs:enumeration>
+					<xs:enumeration value="item">
+						<xs:annotation>
+							<xs:documentation xml:lang="de">Dokument: Bestandteil eines Dossiers oder Teildossiers und diesem untergeordnet</xs:documentation>
+							<xs:documentation xml:lang="en">Item</xs:documentation>
+							<xs:documentation xml:lang="fr">Pièce</xs:documentation>
+							<xs:documentation xml:lang="it">Unità documentaria</xs:documentation>
+						</xs:annotation>
+					</xs:enumeration>
+					<xs:enumeration value="representation">
+						<xs:annotation>
+							<xs:documentation xml:lang="de">Repräsentation: (Digitale) Erscheinungsform einer Verzeichniseinheit</xs:documentation>
+							<xs:documentation xml:lang="en">Representation</xs:documentation>
+							<xs:documentation xml:lang="fr">Représentation</xs:documentation>
+							<xs:documentation xml:lang="it">Rappresentanza</xs:documentation>
+						</xs:annotation>
+					</xs:enumeration>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:simpleType name="openToThePublicType">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Öffentlichkeitsstatus: Angabe, ob das Dossier / Dokument gemäss den einschlägigen Datenschutzregelungen schützenswerte Informationen enthält oder nicht.</xs:documentation>
+		</xs:annotation>
+		<xs:union>
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:enumeration value="undefined"/>
+					<xs:enumeration value="public"/>
+					<xs:enumeration value="not_public"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType>
+				<xs:restriction base="xs:token">
+					<xs:minLength value="1"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:simpleType name="scopeType">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Liste der möglichen Formen von Unterlagen</xs:documentation>
+			<xs:documentation xml:lang="en">level: enumeration</xs:documentation>
+		</xs:annotation>
+		<xs:union>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="text"/>
+					<xs:enumeration value="image"/>
+					<xs:enumeration value="audio"/>
+					<xs:enumeration value="video"/>
+					<xs:enumeration value="structured_data"/>
+					<xs:enumeration value="hybrid"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:simpleType name="sizeType">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Grösse des Datenvolumens</xs:documentation>
+			<xs:documentation xml:lang="en">size of data volume</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:decimal">
+			<xs:fractionDigits value="3"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="stringType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">no empty strings, whitespace preserved</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:whiteSpace value="preserve"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="unitType">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Einheiten für die Beschreibung des physischen Umfangs</xs:documentation>
+		</xs:annotation>
+		<xs:union>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="kB">
+						<xs:annotation>
+							<xs:documentation xml:lang="de">Kilobyte</xs:documentation>
+						</xs:annotation>
+					</xs:enumeration>
+					<xs:enumeration value="MB">
+						<xs:annotation>
+							<xs:documentation xml:lang="de">Megabyte</xs:documentation>
+						</xs:annotation>
+					</xs:enumeration>
+					<xs:enumeration value="GB">
+						<xs:annotation>
+							<xs:documentation xml:lang="de">Gigabyte</xs:documentation>
+						</xs:annotation>
+					</xs:enumeration>
+					<xs:enumeration value="TB">
+						<xs:annotation>
+							<xs:documentation xml:lang="de">Terabyte</xs:documentation>
+						</xs:annotation>
+					</xs:enumeration>
+					<xs:enumeration value="lfm">
+						<xs:annotation>
+							<xs:documentation xml:lang="de">Laufmeter</xs:documentation>
+						</xs:annotation>
+					</xs:enumeration>
+					<xs:enumeration value="kg">
+						<xs:annotation>
+							<xs:documentation xml:lang="de">Kilogramm</xs:documentation>
+						</xs:annotation>
+					</xs:enumeration>
+					<xs:enumeration value="m3">
+						<xs:annotation>
+							<xs:documentation xml:lang="de">Kubikmeter</xs:documentation>
+						</xs:annotation>
+					</xs:enumeration>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:simpleType name="uriType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">any URI, whitespace collapsed</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:anyURI">
+			<xs:minLength value="1"/>
+			<xs:whiteSpace value="collapse"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="xpointerType">
+		<xs:annotation>
+			<xs:documentation>any xpointer, whitespace collapsed</xs:documentation>
+		</xs:annotation>
+		<xs:union>
+			<xs:simpleType>
+				<xs:restriction base="xs:anyURI">
+					<xs:minLength value="1"/>
+					<xs:whiteSpace value="collapse"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType>
+				<xs:restriction base="isad:emptyType"/>
+			</xs:simpleType>
+		</xs:union>
+	</xs:simpleType>
+	<xs:simpleType name="emptyType">
+		<xs:restriction base="xs:string">
+			<xs:length value="0"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

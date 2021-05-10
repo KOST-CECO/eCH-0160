@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<isadg:archivalDescription xmlns:isadg="ISADG" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ISADG xsd/xIsadgAip/xIsadgAip_v1-10.xsd">
+	<isadg:identity>
+		<isadg:referenceCode>TTT 246</isadg:referenceCode>
+		<isadg:title>Test</isadg:title>
+		<isadg:dates>
+			<isadg:fromDate>2015-05-26</isadg:fromDate>
+			<isadg:toDate>2019-04-15</isadg:toDate>
+		</isadg:dates>
+		<isadg:descriptionLevel>Akzession</isadg:descriptionLevel>
+	</isadg:identity>
+	<isadg:context>
+		<isadg:creator>LiMa</isadg:creator>
+		<isadg:archivalHistory>[scope:block key="TypeOfSubmission"]GEVER[/scope:block][scope:block key="SourceInformationSystem"]CMIAXIOMA, V18.0.14.6639[/scope:block][scope:block key="SourceInformationSystemDescription"][/scope:block][scope:block key="RegistryName"]Registraturplan[/scope:block]</isadg:archivalHistory>
+		<isadg:acqInfo>Dienststelle Handelsregister und Staatsarchiv - QS</isadg:acqInfo>
+	</isadg:context>
+	<isadg:contentStructure>
+		<isadg:arrangement>[scope:block key="ClassificationSystemName"]Registraturplan[/scope:block]</isadg:arrangement>
+	</isadg:contentStructure>
+	<isadg:additionalData>
+		<isadg:mdWrap>
+			<isadg:property key="Initialprocessing" value="ech-0160/gever/dossier"/>
+			<isadg:property key="Initialmetadatafiles" value="metadata.xml"/>
+			<isadg:property key="CreationDatesReadable" value="Von/Bis (&gt;= x und &lt;=y): 2015.05.26 - 2019.04.15"/>
+			<isadg:property key="CreationDatesTechnical" value="&gt;=&lt;= +20150526 +20190415"/>
+			<isadg:property key="PackageType" value="SIP"/>
+			<isadg:property key="SubmissionNumber" value="31"/>
+			<isadg:property key="UsagePeriodReadable" value="Von/Bis (&gt;= x und &lt;=y): 2000.01.01 - 2099.12.31"/>
+			<isadg:property key="UsagePeriodTechnical" value="&gt;=&lt;= +20000101 +20991231"/>
+		</isadg:mdWrap>
+	</isadg:additionalData>
+	<isadg:archivalDescription>
+		<isadg:identity>
+			<isadg:referenceCode>0</isadg:referenceCode>
+			<isadg:title>Allgemeines, Übergreifende und von aussen gesteuerte Aufgaben</isadg:title>
+			<isadg:descriptionLevel>Gruppe</isadg:descriptionLevel>
+		</isadg:identity>
+		<isadg:conditionsAccessUse>
+			<isadg:accessConditions>
+				<isadg:hasPrivacyProtection>false</isadg:hasPrivacyProtection>
+				<isadg:openToThePublic>undefined</isadg:openToThePublic>
+				<isadg:classification>unclassified</isadg:classification>
+			</isadg:accessConditions>
+		</isadg:conditionsAccessUse>
+		<isadg:additionalData>
+			<isadg:mdWrap>
+				<isadg:property key="OriginalId" value="RPPf1c222c392594a478ee3e3f7f56fb71d"/>
+				<isadg:property key="LeadOrganisationalUnit" value="DHS"/>
+				<isadg:property key="AdditionalDataArray" value="AufbewahrungsfristInTagen: 3600###Begriff: Allgemeines, Übergreifende und von aussen gesteuerte Aufgaben"/>
+				<isadg:property key="NoExplicitPrivacyProtection" value="NoExplicitPrivacyProtection"/>
+			</isadg:mdWrap>
+		</isadg:additionalData>
+		<isadg:archivalDescription>
+			<isadg:identity>
+				<isadg:referenceCode>0.0</isadg:referenceCode>
+				<isadg:title>Allgemeines</isadg:title>
+				<isadg:descriptionLevel>Gruppe</isadg:descriptionLevel>
+			</isadg:identity>
+			<isadg:conditionsAccessUse>
+				<isadg:accessConditions>
+					<isadg:hasPrivacyProtection>false</isadg:hasPrivacyProtection>
+					<isadg:openToThePublic>undefined</isadg:openToThePublic>
+					<isadg:classification>unclassified</isadg:classification>
+				</isadg:accessConditions>
+			</isadg:conditionsAccessUse>
+			<isadg:additionalData>
+				<isadg:mdWrap>
+					<isadg:property key="OriginalId" value="RPPc2dc87661dce4d9093689367e5f0bb1f"/>
+					<isadg:property key="LeadOrganisationalUnit" value="DHS"/>
+					<isadg:property key="AdditionalDataArray" value="AufbewahrungsfristInTagen: 3600###Begriff: Allgemeines"/>
+					<isadg:property key="NoExplicitPrivacyProtection" value="NoExplicitPrivacyProtection"/>
+				</isadg:mdWrap>
+			</isadg:additionalData>
+			<isadg:archivalDescription>
+				<isadg:identity>
+					<isadg:referenceCode>0.0.8</isadg:referenceCode>
+					<isadg:title>Testing Lifecycle</isadg:title>
+					<isadg:descriptionLevel>Gruppe</isadg:descriptionLevel>
+				</isadg:identity>
+				<isadg:conditionsAccessUse>
+					<isadg:accessConditions>
+						<isadg:hasPrivacyProtection>false</isadg:hasPrivacyProtection>
+						<isadg:openToThePublic>undefined</isadg:openToThePublic>
+						<isadg:classification>unclassified</isadg:classification>
+					</isadg:accessConditions>
+				</isadg:conditionsAccessUse>
+				<isadg:additionalData>
+					<isadg:mdWrap>
+						<isadg:property key="OriginalId" value="RPPc49db493456b44eb8917f0807112d177"/>
+						<isadg:property key="LeadOrganisationalUnit" value="DHS"/>
+						<isadg:property key="AdditionalDataArray" value="AufbewahrungsfristInTagen: 0###Begriff: Testing Lifecycle"/>
+						<isadg:property key="NoExplicitPrivacyProtection" value="NoExplicitPrivacyProtection"/>
+					</isadg:mdWrap>
+				</isadg:additionalData>
+				<isadg:archivalDescription>
+					<isadg:identity>
+						<isadg:referenceCode>TTT 246/1</isadg:referenceCode>
+						<isadg:title>STALU: Geschäft mit Unterordner und Check-In Kommentaren, 2019.04.15</isadg:title>
+						<isadg:dates>
+							<isadg:fromDate>2015-05-26</isadg:fromDate>
+							<isadg:toDate>2019-04-15</isadg:toDate>
+						</isadg:dates>
+						<isadg:descriptionLevel>Archiveinheit</isadg:descriptionLevel>
+					</isadg:identity>
+					<isadg:conditionsAccessUse>
+						<isadg:accessConditions>
+							<isadg:hasPrivacyProtection>false</isadg:hasPrivacyProtection>
+							<isadg:openToThePublic>undefined</isadg:openToThePublic>
+							<isadg:classification>unclassified</isadg:classification>
+						</isadg:accessConditions>
+					</isadg:conditionsAccessUse>
+					<isadg:additionalReference>
+						<isadg:recordReference>2019-9</isadg:recordReference>
+						<isadg:aipReference>CH-000076-6:aip-01-0001821411-0001</isadg:aipReference>
+					</isadg:additionalReference>
+					<isadg:additionalData>
+						<isadg:mdWrap>
+							<isadg:property key="CreationDatesReadable" value="Von/Bis (&gt;= x und &lt;=y): 2015.05.26 - 2019.04.15"/>
+							<isadg:property key="CreationDatesTechnical" value="&gt;=&lt;= +20150526 +20190415"/>
+							<isadg:property key="LeadOrganisationalUnit" value="STALU Mitarbeitende; S-M"/>
+							<isadg:property key="OriginalId" value="DOS73f4df7a133042099b43b402762339b0"/>
+							<isadg:property key="OpeningDateReadable" value="15.04.2019"/>
+							<isadg:property key="OpeningDateTechnical" value="+20190415"/>
+							<isadg:property key="ClosingDateReadable" value="15.04.2019"/>
+							<isadg:property key="ClosingDateTechnical" value="+20190415"/>
+							<isadg:property key="AdditionalDataArray" value="AufbewahrungsfristInTagen: 0###Ende: 15.04.2019###Beginn: 15.04.2019"/>
+							<isadg:property key="NoExplicitPrivacyProtection" value="NoExplicitPrivacyProtection"/>
+						</isadg:mdWrap>
+					</isadg:additionalData>
+					<isadg:archivalDescription>
+						<isadg:identity>
+							<isadg:referenceCode>TTT 246/1.1</isadg:referenceCode>
+							<isadg:title>1 HofbrückeText Versionen</isadg:title>
+							<isadg:dates>
+								<isadg:fromDate>2015-05-26</isadg:fromDate>
+								<isadg:toDate>2019-04-15</isadg:toDate>
+							</isadg:dates>
+							<isadg:descriptionLevel>Teileinheit</isadg:descriptionLevel>
+						</isadg:identity>
+						<isadg:conditionsAccessUse>
+							<isadg:accessConditions>
+								<isadg:hasPrivacyProtection>false</isadg:hasPrivacyProtection>
+								<isadg:openToThePublic>undefined</isadg:openToThePublic>
+								<isadg:classification>unclassified</isadg:classification>
+							</isadg:accessConditions>
+							<isadg:physTech>digital</isadg:physTech>
+						</isadg:conditionsAccessUse>
+						<isadg:additionalReference>
+							<isadg:secondaryDataLocator xpointer="premis.xml#ID_227FB49F-B0E9-4C16-8BC6-F04857D3C14E"/>
+							<isadg:secondaryDataLocator xpointer="premis.xml#ID_6DDFEB2A-7240-40DE-8576-48FEA9232F19"/>
+							<isadg:secondaryDataLocator xpointer="premis.xml#ID_618C5150-0B34-49FB-A527-339D2D09FC29"/>
+							<isadg:secondaryDataLocator xpointer="premis.xml#ID_E94401C6-B821-41E4-94CF-28F9E066A667"/>
+							<isadg:secondaryDataLocator xpointer="premis.xml#ID_B1079C64-651D-4FC4-B212-5C4ABF76578F"/>
+							<isadg:secondaryDataLocator xpointer="premis.xml#ID_E32CAEC6-3F53-43BC-9728-74B99952B730"/>
+							<isadg:secondaryDataLocator xpointer="premis.xml#ID_00C4A75B-22BF-4384-94BB-D63B3EB66743"/>
+							<isadg:secondaryDataLocator xpointer="premis.xml#ID_94896ACC-18E8-41B9-8745-6D026578B4EF"/>
+						</isadg:additionalReference>
+						<isadg:additionalData>
+							<isadg:mdWrap>
+								<isadg:property key="CreationDatesReadable" value="Von/Bis (&gt;= x und &lt;=y): 2015.05.26 - 2019.04.15"/>
+								<isadg:property key="CreationDatesTechnical" value="&gt;=&lt;= +20150526 +20190415"/>
+								<isadg:property key="OriginalId" value="DOK311103987f7e42e6b806b3348fb16924"/>
+								<isadg:property key="AdditionalDataArray" value="Ordnerpfad: \Ordner B docx###Dokumentdatum: 26.05.2015"/>
+								<isadg:property key="NoExplicitPrivacyProtection" value="NoExplicitPrivacyProtection"/>
+							</isadg:mdWrap>
+						</isadg:additionalData>
+					</isadg:archivalDescription>
+					<isadg:archivalDescription>
+						<isadg:identity>
+							<isadg:referenceCode>TTT 246/1.2</isadg:referenceCode>
+							<isadg:title>2 Bibliographie</isadg:title>
+							<isadg:dates>
+								<isadg:fromDate>2015-05-26</isadg:fromDate>
+								<isadg:toDate>2019-04-15</isadg:toDate>
+							</isadg:dates>
+							<isadg:descriptionLevel>Teileinheit</isadg:descriptionLevel>
+						</isadg:identity>
+						<isadg:conditionsAccessUse>
+							<isadg:accessConditions>
+								<isadg:hasPrivacyProtection>false</isadg:hasPrivacyProtection>
+								<isadg:openToThePublic>undefined</isadg:openToThePublic>
+								<isadg:classification>unclassified</isadg:classification>
+							</isadg:accessConditions>
+							<isadg:physTech>digital</isadg:physTech>
+						</isadg:conditionsAccessUse>
+						<isadg:additionalReference>
+							<isadg:secondaryDataLocator xpointer="premis.xml#ID_C7A0B99F-C0BF-4DB9-B163-B64DF8BFCF89"/>
+							<isadg:secondaryDataLocator xpointer="premis.xml#ID_E5225E20-F2BB-476D-BC73-A45FE2F9F10E"/>
+						</isadg:additionalReference>
+						<isadg:additionalData>
+							<isadg:mdWrap>
+								<isadg:property key="CreationDatesReadable" value="Von/Bis (&gt;= x und &lt;=y): 2015.05.26 - 2019.04.15"/>
+								<isadg:property key="CreationDatesTechnical" value="&gt;=&lt;= +20150526 +20190415"/>
+								<isadg:property key="OriginalId" value="DOK54dd6b964ca24c8591dc92a61bfffd3c"/>
+								<isadg:property key="AdditionalDataArray" value="Ordnerpfad: \Ordner B docx###Dokumentdatum: 26.05.2015"/>
+								<isadg:property key="NoExplicitPrivacyProtection" value="NoExplicitPrivacyProtection"/>
+							</isadg:mdWrap>
+						</isadg:additionalData>
+					</isadg:archivalDescription>
+					<isadg:archivalDescription>
+						<isadg:identity>
+							<isadg:referenceCode>TTT 246/1.3</isadg:referenceCode>
+							<isadg:title>EgloffHofbrücke</isadg:title>
+							<isadg:dates>
+								<isadg:fromDate>2015-05-26</isadg:fromDate>
+								<isadg:toDate>2019-04-15</isadg:toDate>
+							</isadg:dates>
+							<isadg:descriptionLevel>Teileinheit</isadg:descriptionLevel>
+						</isadg:identity>
+						<isadg:conditionsAccessUse>
+							<isadg:accessConditions>
+								<isadg:hasPrivacyProtection>false</isadg:hasPrivacyProtection>
+								<isadg:openToThePublic>undefined</isadg:openToThePublic>
+								<isadg:classification>unclassified</isadg:classification>
+							</isadg:accessConditions>
+							<isadg:physTech>digital</isadg:physTech>
+						</isadg:conditionsAccessUse>
+						<isadg:additionalReference>
+							<isadg:secondaryDataLocator xpointer="premis.xml#ID_346F91EA-9291-4F90-845B-9870C4FCCB4B"/>
+							<isadg:secondaryDataLocator xpointer="premis.xml#ID_D5CA6508-7755-4E6E-AA7E-59E700DE3BAF"/>
+						</isadg:additionalReference>
+						<isadg:additionalData>
+							<isadg:mdWrap>
+								<isadg:property key="CreationDatesReadable" value="Von/Bis (&gt;= x und &lt;=y): 2015.05.26 - 2019.04.15"/>
+								<isadg:property key="CreationDatesTechnical" value="&gt;=&lt;= +20150526 +20190415"/>
+								<isadg:property key="OriginalId" value="DOK557ce67810fc45409f6a00d84f458752"/>
+								<isadg:property key="AdditionalDataArray" value="Ordnerpfad: \Ordner B docx###Dokumentdatum: 26.05.2015"/>
+								<isadg:property key="NoExplicitPrivacyProtection" value="NoExplicitPrivacyProtection"/>
+							</isadg:mdWrap>
+						</isadg:additionalData>
+					</isadg:archivalDescription>
+					<isadg:archivalDescription>
+						<isadg:identity>
+							<isadg:referenceCode>TTT 246/1.4</isadg:referenceCode>
+							<isadg:title>EgloffHofbrückeAbb</isadg:title>
+							<isadg:dates>
+								<isadg:fromDate>2015-05-26</isadg:fromDate>
+								<isadg:toDate>2019-04-15</isadg:toDate>
+							</isadg:dates>
+							<isadg:descriptionLevel>Teileinheit</isadg:descriptionLevel>
+						</isadg:identity>
+						<isadg:conditionsAccessUse>
+							<isadg:accessConditions>
+								<isadg:hasPrivacyProtection>false</isadg:hasPrivacyProtection>
+								<isadg:openToThePublic>undefined</isadg:openToThePublic>
+								<isadg:classification>unclassified</isadg:classification>
+							</isadg:accessConditions>
+							<isadg:physTech>digital</isadg:physTech>
+						</isadg:conditionsAccessUse>
+						<isadg:additionalReference>
+							<isadg:secondaryDataLocator xpointer="premis.xml#ID_FE347046-60D1-4A3C-B061-EC6FF955E220"/>
+							<isadg:secondaryDataLocator xpointer="premis.xml#ID_16E07929-11DA-4A2E-90CE-376D89D6256F"/>
+						</isadg:additionalReference>
+						<isadg:additionalData>
+							<isadg:mdWrap>
+								<isadg:property key="CreationDatesReadable" value="Von/Bis (&gt;= x und &lt;=y): 2015.05.26 - 2019.04.15"/>
+								<isadg:property key="CreationDatesTechnical" value="&gt;=&lt;= +20150526 +20190415"/>
+								<isadg:property key="OriginalId" value="DOK65f854d097784c1da3d5645dff5dab13"/>
+								<isadg:property key="AdditionalDataArray" value="Ordnerpfad: \Ordner B docx###Dokumentdatum: 26.05.2015"/>
+								<isadg:property key="NoExplicitPrivacyProtection" value="NoExplicitPrivacyProtection"/>
+							</isadg:mdWrap>
+						</isadg:additionalData>
+					</isadg:archivalDescription>
+					<isadg:archivalDescription>
+						<isadg:identity>
+							<isadg:referenceCode>TTT 246/1.5</isadg:referenceCode>
+							<isadg:title>1 HofbrückeText</isadg:title>
+							<isadg:dates>
+								<isadg:fromDate>2015-05-26</isadg:fromDate>
+								<isadg:toDate>2019-04-15</isadg:toDate>
+							</isadg:dates>
+							<isadg:descriptionLevel>Teileinheit</isadg:descriptionLevel>
+						</isadg:identity>
+						<isadg:conditionsAccessUse>
+							<isadg:accessConditions>
+								<isadg:hasPrivacyProtection>false</isadg:hasPrivacyProtection>
+								<isadg:openToThePublic>undefined</isadg:openToThePublic>
+								<isadg:classification>unclassified</isadg:classification>
+							</isadg:accessConditions>
+							<isadg:physTech>digital</isadg:physTech>
+						</isadg:conditionsAccessUse>
+						<isadg:additionalReference>
+							<isadg:secondaryDataLocator xpointer="premis.xml#ID_D3BA812B-2739-4F65-BBD5-050AC022962E"/>
+							<isadg:secondaryDataLocator xpointer="premis.xml#ID_AF98454C-E263-4DC7-AC13-3582D1C4EEEB"/>
+						</isadg:additionalReference>
+						<isadg:additionalData>
+							<isadg:mdWrap>
+								<isadg:property key="CreationDatesReadable" value="Von/Bis (&gt;= x und &lt;=y): 2015.05.26 - 2019.04.15"/>
+								<isadg:property key="CreationDatesTechnical" value="&gt;=&lt;= +20150526 +20190415"/>
+								<isadg:property key="OriginalId" value="DOK89eb7647821e41adba8feb7c29bd17db"/>
+								<isadg:property key="AdditionalDataArray" value="Ordnerpfad: \Ordner A pdf###Dokumentdatum: 26.05.2015"/>
+								<isadg:property key="NoExplicitPrivacyProtection" value="NoExplicitPrivacyProtection"/>
+							</isadg:mdWrap>
+						</isadg:additionalData>
+					</isadg:archivalDescription>
+					<isadg:archivalDescription>
+						<isadg:identity>
+							<isadg:referenceCode>TTT 246/1.6</isadg:referenceCode>
+							<isadg:title>2 Bibliographie</isadg:title>
+							<isadg:dates>
+								<isadg:fromDate>2015-05-26</isadg:fromDate>
+								<isadg:toDate>2019-04-15</isadg:toDate>
+							</isadg:dates>
+							<isadg:descriptionLevel>Teileinheit</isadg:descriptionLevel>
+						</isadg:identity>
+						<isadg:conditionsAccessUse>
+							<isadg:accessConditions>
+								<isadg:hasPrivacyProtection>false</isadg:hasPrivacyProtection>
+								<isadg:openToThePublic>undefined</isadg:openToThePublic>
+								<isadg:classification>unclassified</isadg:classification>
+							</isadg:accessConditions>
+							<isadg:physTech>digital</isadg:physTech>
+						</isadg:conditionsAccessUse>
+						<isadg:additionalReference>
+							<isadg:secondaryDataLocator xpointer="premis.xml#ID_DE2BBFEC-B600-4668-869B-6DD782BE45B5"/>
+							<isadg:secondaryDataLocator xpointer="premis.xml#ID_4BA86788-5EE8-45F6-9A84-35FBD7AAB04F"/>
+						</isadg:additionalReference>
+						<isadg:additionalData>
+							<isadg:mdWrap>
+								<isadg:property key="CreationDatesReadable" value="Von/Bis (&gt;= x und &lt;=y): 2015.05.26 - 2019.04.15"/>
+								<isadg:property key="CreationDatesTechnical" value="&gt;=&lt;= +20150526 +20190415"/>
+								<isadg:property key="OriginalId" value="DOK1511b010f73b4e5eb474b0a9ff61695a"/>
+								<isadg:property key="AdditionalDataArray" value="Ordnerpfad: \Ordner A pdf###Dokumentdatum: 26.05.2015"/>
+								<isadg:property key="NoExplicitPrivacyProtection" value="NoExplicitPrivacyProtection"/>
+							</isadg:mdWrap>
+						</isadg:additionalData>
+					</isadg:archivalDescription>
+					<isadg:archivalDescription>
+						<isadg:identity>
+							<isadg:referenceCode>TTT 246/1.7</isadg:referenceCode>
+							<isadg:title>EgloffHofbrücke</isadg:title>
+							<isadg:dates>
+								<isadg:fromDate>2015-05-26</isadg:fromDate>
+								<isadg:toDate>2019-04-15</isadg:toDate>
+							</isadg:dates>
+							<isadg:descriptionLevel>Teileinheit</isadg:descriptionLevel>
+						</isadg:identity>
+						<isadg:conditionsAccessUse>
+							<isadg:accessConditions>
+								<isadg:hasPrivacyProtection>false</isadg:hasPrivacyProtection>
+								<isadg:openToThePublic>undefined</isadg:openToThePublic>
+								<isadg:classification>unclassified</isadg:classification>
+							</isadg:accessConditions>
+							<isadg:physTech>digital</isadg:physTech>
+						</isadg:conditionsAccessUse>
+						<isadg:additionalReference>
+							<isadg:secondaryDataLocator xpointer="premis.xml#ID_564D2F25-B698-4210-8244-641707D51BFD"/>
+							<isadg:secondaryDataLocator xpointer="premis.xml#ID_BE868FBA-E33F-4C54-813E-524EECF97243"/>
+						</isadg:additionalReference>
+						<isadg:additionalData>
+							<isadg:mdWrap>
+								<isadg:property key="CreationDatesReadable" value="Von/Bis (&gt;= x und &lt;=y): 2015.05.26 - 2019.04.15"/>
+								<isadg:property key="CreationDatesTechnical" value="&gt;=&lt;= +20150526 +20190415"/>
+								<isadg:property key="OriginalId" value="DOK89ca2cde2c824c66997392dd872280aa"/>
+								<isadg:property key="AdditionalDataArray" value="Ordnerpfad: \Ordner A pdf###Dokumentdatum: 26.05.2015"/>
+								<isadg:property key="NoExplicitPrivacyProtection" value="NoExplicitPrivacyProtection"/>
+							</isadg:mdWrap>
+						</isadg:additionalData>
+					</isadg:archivalDescription>
+					<isadg:archivalDescription>
+						<isadg:identity>
+							<isadg:referenceCode>TTT 246/1.8</isadg:referenceCode>
+							<isadg:title>EgloffHofbrückeAbb</isadg:title>
+							<isadg:dates>
+								<isadg:fromDate>2015-05-26</isadg:fromDate>
+								<isadg:toDate>2019-04-15</isadg:toDate>
+							</isadg:dates>
+							<isadg:descriptionLevel>Teileinheit</isadg:descriptionLevel>
+						</isadg:identity>
+						<isadg:conditionsAccessUse>
+							<isadg:accessConditions>
+								<isadg:hasPrivacyProtection>false</isadg:hasPrivacyProtection>
+								<isadg:openToThePublic>undefined</isadg:openToThePublic>
+								<isadg:classification>unclassified</isadg:classification>
+							</isadg:accessConditions>
+							<isadg:physTech>digital</isadg:physTech>
+						</isadg:conditionsAccessUse>
+						<isadg:additionalReference>
+							<isadg:secondaryDataLocator xpointer="premis.xml#ID_62B84D57-9E73-4F61-84B7-75A60F6E8D6F"/>
+							<isadg:secondaryDataLocator xpointer="premis.xml#ID_69EC1FE6-78D6-45F7-83B6-8785F8323E82"/>
+						</isadg:additionalReference>
+						<isadg:additionalData>
+							<isadg:mdWrap>
+								<isadg:property key="CreationDatesReadable" value="Von/Bis (&gt;= x und &lt;=y): 2015.05.26 - 2019.04.15"/>
+								<isadg:property key="CreationDatesTechnical" value="&gt;=&lt;= +20150526 +20190415"/>
+								<isadg:property key="OriginalId" value="DOK82ab45957a774884abcebb507b9c30ce"/>
+								<isadg:property key="AdditionalDataArray" value="Ordnerpfad: \Ordner A pdf###Dokumentdatum: 26.05.2015"/>
+								<isadg:property key="NoExplicitPrivacyProtection" value="NoExplicitPrivacyProtection"/>
+							</isadg:mdWrap>
+						</isadg:additionalData>
+					</isadg:archivalDescription>
+					<isadg:archivalDescription>
+						<isadg:identity>
+							<isadg:referenceCode>TTT 246/1.9</isadg:referenceCode>
+							<isadg:title>Passivierungsreport</isadg:title>
+							<isadg:dates>
+								<isadg:fromDate>2019-04-15</isadg:fromDate>
+								<isadg:toDate>2019-04-15</isadg:toDate>
+							</isadg:dates>
+							<isadg:descriptionLevel>Teileinheit</isadg:descriptionLevel>
+						</isadg:identity>
+						<isadg:conditionsAccessUse>
+							<isadg:accessConditions>
+								<isadg:hasPrivacyProtection>false</isadg:hasPrivacyProtection>
+								<isadg:openToThePublic>undefined</isadg:openToThePublic>
+								<isadg:classification>unclassified</isadg:classification>
+							</isadg:accessConditions>
+							<isadg:physTech>digital</isadg:physTech>
+						</isadg:conditionsAccessUse>
+						<isadg:additionalReference>
+							<isadg:secondaryDataLocator xpointer="premis.xml#ID_B6E10B09-325F-4719-B623-651CEC4F69F5"/>
+						</isadg:additionalReference>
+						<isadg:additionalData>
+							<isadg:mdWrap>
+								<isadg:property key="CreationDatesReadable" value="Genau (=): 2019.04.15"/>
+								<isadg:property key="CreationDatesTechnical" value="= +20190415"/>
+								<isadg:property key="OriginalId" value="DOKc5d6665cb7e1486eafea46807484c56f"/>
+								<isadg:property key="AdditionalDataArray" value="Dokumentdatum: 15.04.2019"/>
+								<isadg:property key="NoExplicitPrivacyProtection" value="NoExplicitPrivacyProtection"/>
+							</isadg:mdWrap>
+						</isadg:additionalData>
+					</isadg:archivalDescription>
+				</isadg:archivalDescription>
+			</isadg:archivalDescription>
+		</isadg:archivalDescription>
+	</isadg:archivalDescription>
+</isadg:archivalDescription>

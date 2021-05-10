@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<isadg:archivalDescription xmlns:isadg="ISADG" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ISADG xsd/xIsadgAip/xIsadgAip_v1-10.xsd">
+	<isadg:additionalReference>
+		<isadg:secondaryDataLocator xpointer="premis.xml#ID_227FB49F-B0E9-4C16-8BC6-F04857D3C14E">
+			<isadg:additionalData>
+				<isadg:mdWrap>
+					<isadg:property key="Version" value="1"/>
+					<isadg:property key="Renderer" value="00000000000000000000000000000000"/>
+					<isadg:property key="EingechecktVon" value="Egloff Gregor; GREGOR.EGLOFF@LU.CH"/>
+					<isadg:property key="CheckInDate" value="15.04.2019 12:01:00"/>
+				</isadg:mdWrap>
+			</isadg:additionalData>
+		</isadg:secondaryDataLocator>
+		<isadg:secondaryDataLocator xpointer="premis.xml#ID_6DDFEB2A-7240-40DE-8576-48FEA9232F19"/>
+		<isadg:secondaryDataLocator xpointer="premis.xml#ID_618C5150-0B34-49FB-A527-339D2D09FC29"/>
+		<isadg:secondaryDataLocator xpointer="premis.xml#ID_E94401C6-B821-41E4-94CF-28F9E066A667"/>
+		<isadg:secondaryDataLocator xpointer="premis.xml#ID_B1079C64-651D-4FC4-B212-5C4ABF76578F"/>
+		<isadg:secondaryDataLocator xpointer="premis.xml#ID_E32CAEC6-3F53-43BC-9728-74B99952B730"/>
+		<isadg:secondaryDataLocator xpointer="premis.xml#ID_00C4A75B-22BF-4384-94BB-D63B3EB66743"/>
+		<isadg:secondaryDataLocator xpointer="premis.xml#ID_94896ACC-18E8-41B9-8745-6D026578B4EF"/>
+	</isadg:additionalReference>
+</isadg:archivalDescription>

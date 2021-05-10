@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ex-stalu="http://www.scope.ch/ex/premis/stalu" targetNamespace="http://www.scope.ch/ex/premis/stalu" elementFormDefault="qualified">
+	<xs:element name="Kompression" type="xs:string"/>
+	<xs:element name="Farbtiefe" type="xs:string"/>
+	<xs:element name="Aufloesung" type="xs:string"/>
+	<xs:element name="Farbraum" type="xs:string"/>
+</xs:schema>

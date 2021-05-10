@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dokument>
+	<titel>2 Bibliographie</titel>
+	<autor/>
+	<erscheinungsform>digital</erscheinungsform>
+	<entstehungszeitraum>
+		<von>
+			<datum>2015-05-26</datum>
+		</von>
+		<bis>
+			<datum>2019-04-15</datum>
+		</bis>
+	</entstehungszeitraum>
+	<klassifizierungskategorie>Nicht Klassifiziert</klassifizierungskategorie>
+	<datenschutz>false</datenschutz>
+	<oeffentlichkeitsstatus>Nicht geprüft</oeffentlichkeitsstatus>
+	<oeffentlichkeitsstatusBegruendung/>
+	<sonstigeBestimmungen/>
+	<bemerkung/>
+	<zusatzDaten>
+		<merkmal name="Ordnerpfad">\Ordner B docx</merkmal>
+		<merkmal name="Dokumentdatum">26.05.2015</merkmal>
+	</zusatzDaten>
+	<dateiRef typ="Repräsentation" ordnung="2019-04-15T12:01:00">d000023</dateiRef>
+	<dateiRef typ="Repräsentation" ordnung="2019-04-15T12:03:50">d000024</dateiRef>
+	
+	<dateiRef typ="Reihung" ordnung="b0001.tif">d000028</dateiRef>
+	<dateiRef typ="Reihung" ordnung="b0002.tif">d000044</dateiRef>
+	<dateiRef typ="Reihung" ordnung="b0003.tif">d000032</dateiRef>
+	<dateiRef typ="Reihung" ordnung="b0004.tif">d000031</dateiRef>
+	
+</dokument>

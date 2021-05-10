@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<premis:premis xmlns:premis="info:lc/xmlns/premis-v2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="info:lc/xmlns/premis-v2 xsd/premis/premis-v2-1.xsd">
+	<premis:object xsi:type="premis:file" xmlID="ID_227FB49F-B0E9-4C16-8BC6-F04857D3C14E">
+		<premis:objectIdentifier>
+			<premis:objectIdentifierType>xmlID</premis:objectIdentifierType>
+			<premis:objectIdentifierValue>ID_227FB49F-B0E9-4C16-8BC6-F04857D3C14E</premis:objectIdentifierValue>
+		</premis:objectIdentifier>
+		<premis:preservationLevel>
+			<premis:preservationLevelValue>0</premis:preservationLevelValue>
+		</premis:preservationLevel>
+		<premis:objectCharacteristics>
+			<premis:compositionLevel>0</premis:compositionLevel>
+			<premis:fixity>
+				<premis:messageDigestAlgorithm>MD5</premis:messageDigestAlgorithm>
+				<premis:messageDigest>2edceda08fc41bdf183dc1092560f317</premis:messageDigest>
+			</premis:fixity>
+			<premis:size>73283</premis:size>
+			<premis:format>
+				<premis:formatDesignation>
+					<premis:formatName>Microsoft Word for Windows</premis:formatName>
+					<premis:formatVersion>2007 onwards</premis:formatVersion>
+				</premis:formatDesignation>
+				<premis:formatRegistry>
+					<premis:formatRegistryName>PRONOM</premis:formatRegistryName>
+					<premis:formatRegistryKey>fmt/412</premis:formatRegistryKey>
+				</premis:formatRegistry>
+			</premis:format>
+			<premis:creatingApplication>
+				<premis:dateCreatedByApplication>2019-04-15</premis:dateCreatedByApplication>
+			</premis:creatingApplication>
+			<premis:objectCharacteristicsExtension>
+				<premis:mdWrap MDTYPE="OTHER">
+					<property key="Version" value="1"/>
+					<property key="Renderer" value="00000000000000000000000000000000"/>
+					<property key="EingechecktVon" value="Egloff Gregor; GREGOR.EGLOFF@LU.CH"/>
+					<property key="CheckInDate" value="15.04.2019 12:01:00"/>
+				</premis:mdWrap>
+			</premis:objectCharacteristicsExtension>
+		</premis:objectCharacteristics>
+		<premis:originalName>1 HofbrückeText.docx</premis:originalName>
+		<premis:storage>
+			<premis:contentLocation>
+				<premis:contentLocationType>URL</premis:contentLocationType>
+				<premis:contentLocationValue>00/00/15/1 HofbrueckeText.docx</premis:contentLocationValue>
+			</premis:contentLocation>
+		</premis:storage>
+		<premis:linkingEventIdentifier>
+			<premis:linkingEventIdentifierType>xmlID</premis:linkingEventIdentifierType>
+			<premis:linkingEventIdentifierValue>ID_53957EA2-2E34-426C-953F-5D407CAF1B42</premis:linkingEventIdentifierValue>
+		</premis:linkingEventIdentifier>
+	</premis:object>
+	<premis:event xmlID="ID_53957EA2-2E34-426C-953F-5D407CAF1B42">
+		<premis:eventIdentifier>
+			<premis:eventIdentifierType>xmlID</premis:eventIdentifierType>
+			<premis:eventIdentifierValue>ID_53957EA2-2E34-426C-953F-5D407CAF1B42</premis:eventIdentifierValue>
+		</premis:eventIdentifier>
+		<premis:eventType>ingest</premis:eventType>
+		<premis:eventDateTime>2019-10-14T11:03:27.512+02:00</premis:eventDateTime>
+		<premis:eventOutcomeInformation>
+			<premis:eventOutcomeDetail>
+				<premis:eventOutcomeDetailNote>CH-000076-6:aip-01-0001821411-0001</premis:eventOutcomeDetailNote>
+			</premis:eventOutcomeDetail>
+		</premis:eventOutcomeInformation>
+		<premis:linkingAgentIdentifier>
+			<premis:linkingAgentIdentifierType>xmlID</premis:linkingAgentIdentifierType>
+			<premis:linkingAgentIdentifierValue>ID_B13217A2-2A8B-4A5D-A8C9-A56A608E5E88</premis:linkingAgentIdentifierValue>
+			<premis:linkingAgentRole>Archivar</premis:linkingAgentRole>
+		</premis:linkingAgentIdentifier>
+		<premis:linkingObjectIdentifier>
+			<premis:linkingObjectIdentifierType>xmlID</premis:linkingObjectIdentifierType>
+			<premis:linkingObjectIdentifierValue>ID_227FB49F-B0E9-4C16-8BC6-F04857D3C14E</premis:linkingObjectIdentifierValue>
+		</premis:linkingObjectIdentifier>
+	</premis:event>
+	<premis:agent>
+		<premis:agentIdentifier>
+			<premis:agentIdentifierType>xmlID</premis:agentIdentifierType>
+			<premis:agentIdentifierValue>ID_B13217A2-2A8B-4A5D-A8C9-A56A608E5E88</premis:agentIdentifierValue>
+		</premis:agentIdentifier>
+		<premis:agentName>Lischer Markus</premis:agentName>
+		<premis:agentType>person</premis:agentType>
+		<premis:linkingEventIdentifier>
+			<premis:linkingEventIdentifierType>xmlID</premis:linkingEventIdentifierType>
+			<premis:linkingEventIdentifierValue>ID_53957EA2-2E34-426C-953F-5D407CAF1B42</premis:linkingEventIdentifierValue>
+		</premis:linkingEventIdentifier>
+	</premis:agent>
+</premis:premis>

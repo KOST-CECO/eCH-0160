@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dokument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="6.mockup.xsd">
+	<titel>2 Bibliographie</titel>
+	<autor/>
+	<erscheinungsform>digital</erscheinungsform>
+	<entstehungszeitraum>
+		<von>
+			<datum>2015-05-26</datum>
+		</von>
+		<bis>
+			<datum>2019-04-15</datum>
+		</bis>
+	</entstehungszeitraum>
+	<klassifizierungskategorie>Nicht Klassifiziert</klassifizierungskategorie>
+	<datenschutz>false</datenschutz>
+	<oeffentlichkeitsstatus>Nicht geprüft</oeffentlichkeitsstatus>
+	<oeffentlichkeitsstatusBegruendung/>
+	<sonstigeBestimmungen/>
+	<bemerkung/>
+	<zusatzDaten>
+		<merkmal name="Ordnerpfad">\Ordner B docx</merkmal>
+		<merkmal name="Parentkey"/>
+		<merkmal name="Thema"/>
+		<merkmal name="Standort"/>
+		<merkmal name="Dokumentdatum">26.05.2015</merkmal>
+		<merkmal name="Schutzstufe"/>
+		<merkmal name="ForeignDokReference"/>
+		<merkmal name="BeschlussNummer"/>
+		<merkmal name="SchluesselFremdsystem"/>
+		<merkmal name="Tags"/>
+	</zusatzDaten>
+	<dateiRef repraesentation="2019-04-15T12:01:00">d000023</dateiRef>
+	<dateiRef repraesentation="2019-04-15T12:03:50">d000024</dateiRef>
+</dokument>
