@@ -397,6 +397,8 @@
 			<xs:element name="sonstigeBestimmungen" type="sonstigeBestimmungenOrdnungssystemposition" minOccurs="0"/>
 			<xs:element name="zusatzDaten" type="zusatzDaten" minOccurs="0"/>
 		</xs:sequence>
+		<!-- Reihenfolge und Ordnung in eCH-0160 v1.2 -->
+		<xs:attribute name="order" type="orderOrdnungssystemposition" use="optional"/>
 	</xs:complexType>
 	<xs:complexType name="ordnungssystempositionGever" abstract="true">
 		<xs:complexContent>
@@ -555,6 +557,8 @@
 			<xs:element name="zusatzDaten" type="zusatzDaten" minOccurs="0"/>
 		</xs:sequence>
 		<xs:attribute name="id" type="idDossier" use="required"/>
+		<!-- Reihenfolge und Ordnung in eCH-0160 v1.2 -->
+		<xs:attribute name="order" type="orderDossier" use="optional"/>
 	</xs:complexType>
 	<xs:complexType name="dossierGever" abstract="true">
 		<xs:complexContent>
@@ -778,42 +782,30 @@
 		</xs:annotation>
 		<xs:simpleContent>
 			<xs:extension base="xs:IDREFS">
-				<xs:attribute name="version" use="optional">
-					<xs:simpleType>
-						<xs:annotation>
-							<xs:documentation xml:lang="de">Version (Version) Ordnung der Dateien nach Creation Date. Die letzte Datei nach Datum sortiert ist die finale Version</xs:documentation>
-						</xs:annotation>
-						<xs:union memberTypes="xs:integer xs:string xs:date"/>
-					</xs:simpleType>
+				<xs:attribute name="version" type="dateiVersion" use="optional">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">Version (Version) Ordnung der Dateien nach Creation Date. Die letzte Datei nach Datum sortiert ist die finale Version</xs:documentation>
+					</xs:annotation>
 				</xs:attribute>
-				<xs:attribute name="repraesentation" use="optional">
-					<xs:simpleType>
-						<xs:annotation>
-							<xs:documentation xml:lang="de">Repräsentationen (Representation) Ordnung der Dateien: Nummerierung, ordnen nach Dateinamen oder ordnen nach Creation Date. Das Ordnungselement ist also eine Zahl, ein String oder ein Datum. Datei Nummer eins ist die Original- oder Ursprungsdatei, die folgenden Dateien sind Ableitungen davon.</xs:documentation>
-						</xs:annotation>
-						<xs:union memberTypes="xs:integer xs:string xs:date"/>
-					</xs:simpleType>
+				<xs:attribute name="repraesentation" type="dateiRepraesentation" use="optional">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">Repräsentationen einer Dateien: geordnen nach Nummer, Dateinamen oder Creation Date. Das Ordnungselement ist also eine Zahl, ein String oder ein Datum. Datei Nummer eins ist die Original- oder Ursprungsdatei, die folgenden Dateien sind Ableitungen davon.</xs:documentation>
+					</xs:annotation>
 				</xs:attribute>
-				<xs:attribute name="reihung" use="optional">
-					<xs:simpleType>
-						<xs:annotation>
-							<xs:documentation xml:lang="de">Reihung (Sequence) Ordnung der Dateien: Nummerierung, Dateinamen oder Creation Date. Das Ordnungselement ist also eine Zahl, ein String oder ein Datum.</xs:documentation>
-						</xs:annotation>
-						<xs:union memberTypes="xs:integer xs:string xs:date"/>
-					</xs:simpleType>
+				<xs:attribute name="order" type="dateiOrder" use="optional">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">Reihung/Sequence Ordnung der Dateien: Nummerierung, Dateinamen oder Creation Date. Das Ordnungselement ist also eine Zahl, ein String oder ein Datum.</xs:documentation>
+					</xs:annotation>
 				</xs:attribute>
-				<xs:attribute name="aspekt" use="optional">
-					<xs:simpleType>
-						<xs:annotation>
-							<xs:documentation xml:lang="de">Aspekt (Aspect) Ordnung der Dateien: Keine weiteren in eCH-0160 spezifizierten Metadaten, alle weiteren Metadaten sind domainspezifisch.</xs:documentation>
-						</xs:annotation>
-						<xs:union memberTypes="xs:integer xs:string xs:date"/>
-					</xs:simpleType>
+				<xs:attribute name="aspekt" type="dateiAspekt" use="optional">
+					<xs:annotation>
+						<xs:documentation xml:lang="de">Aspekt einser Dateien: Keine weiteren in eCH-0160 spezifizierten Metadaten, alle weiteren Metadaten sind domainspezifisch.</xs:documentation>
+					</xs:annotation>
 				</xs:attribute>
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
-	<!-- Repräsentationen und Versionen in eCH-0160 v1.3 -->
+	<!-- Repräsentationen und Versionen in eCH-0160 v1.2 -->
 	<xs:complexType name="dokument" abstract="true">
 		<xs:sequence>
 			<xs:element name="titel" type="titelDokument"/>
@@ -846,6 +838,8 @@
 			<xs:element name="dateiRef" type="dateiRef" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:attribute name="id" type="idDokument" use="required"/>
+		<!-- Reihenfolge und Ordnung in eCH-0160 v1.2 -->
+		<xs:attribute name="order" type="orderDokument" use="optional"/>
 	</xs:complexType>
 	<xs:complexType name="dokumentGever" abstract="true">
 		<xs:complexContent>

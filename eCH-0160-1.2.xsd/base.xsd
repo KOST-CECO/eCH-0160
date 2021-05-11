@@ -59,10 +59,12 @@
     </xs:annotation>
     <xs:union memberTypes="xs:date xs:gYear keineAngabe"/>
   </xs:simpleType>
-
+  
+	<!-- zeitpunkt wird nirgends verwendet eCH-0160 v1.2 
   <xs:simpleType name="zeitpunkt">
     <xs:union memberTypes="datumTypB"/>
   </xs:simpleType>
+	-->
 
   <xs:complexType name="zeitraum">
     <xs:sequence>

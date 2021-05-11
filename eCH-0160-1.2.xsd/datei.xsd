@@ -37,6 +37,32 @@
 		</xs:annotation>
 		<xs:restriction base="xs:ID"/>
 	</xs:simpleType>
+	<!-- Repräsentationen und Versionen in eCH-0160 v1.2 -->
+	<xs:simpleType name="dateiVersion">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Version (Version) Ordnung der Dateien nach Creation Date. Die letzte Datei nach Datum sortiert ist die finale Version</xs:documentation>
+		</xs:annotation>
+		<xs:union memberTypes="xs:integer xs:string xs:date"/>
+	</xs:simpleType>
+	<xs:simpleType name="dateiRepraesentation">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Repräsentationen einer Dateien: geordnen nach Nummer, Dateinamen oder Creation Date. Das Ordnungselement ist also eine Zahl, ein String oder ein Datum. Datei Nummer eins ist die Original- oder Ursprungsdatei, die folgenden Dateien sind Ableitungen davon.</xs:documentation>
+		</xs:annotation>
+		<xs:union memberTypes="xs:integer xs:string xs:date"/>
+	</xs:simpleType>
+	<xs:simpleType name="dateiOrder">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Reihung/Sequence Ordnung der Dateien: Nummerierung, Dateinamen oder Creation Date. Das Ordnungselement ist also eine Zahl, ein String oder ein Datum.</xs:documentation>
+		</xs:annotation>
+		<xs:union memberTypes="xs:integer xs:string xs:date"/>
+	</xs:simpleType>
+	<xs:simpleType name="dateiAspekt">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Aspekt einer Dateien: Keine weiteren in eCH-0160 spezifizierten Metadaten, alle weiteren Metadaten sind domainspezifisch.</xs:documentation>
+		</xs:annotation>
+		<xs:union memberTypes="xs:integer xs:string xs:date"/>
+	</xs:simpleType>
+	<!-- Repräsentationen und Versionen in eCH-0160 v1.2 -->
 	<xs:simpleType name="pruefalgorithmus">
 		<xs:annotation>
 			<xs:documentation xml:lang="de">Bezeichnung des verwendeten Prüfalgorithmus.</xs:documentation>
