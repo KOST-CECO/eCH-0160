@@ -1,0 +1,834 @@
+<?xml version="1.0"?>
+<paket xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="paketSIP" schemaVersion="4.2" xmlns="http://bar.admin.ch/arelda/v4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://bar.admin.ch/arelda/v4 xsd\arelda.xsd">
+	<paketTyp>SIP</paketTyp>
+	<inhaltsverzeichnis>
+		<ordner>
+			<name>header</name>
+			<ordner>
+				<name>xsd</name>
+				<datei id="d000001">
+					<name>ablieferung.xsd</name>
+					<originalName>ablieferung.xsd</originalName>
+					<pruefalgorithmus>SHA-512</pruefalgorithmus>
+					<pruefsumme>fbba58a9d8d032f073419afe54d0e8e01f6b178c03a3573d71ba8f502afbbda1f75263c1690f0c7adf566d9ba6ce4895d7edef867882e61b8dc766779bf92c92</pruefsumme>
+				</datei>
+				<datei id="d000002">
+					<name>archivischeNotiz.xsd</name>
+					<originalName>archivischeNotiz.xsd</originalName>
+					<pruefalgorithmus>SHA-512</pruefalgorithmus>
+					<pruefsumme>d1441df12775988336ee1f8bbe3d057ab0d87dd0d3067c4c157742b11684dc6cd2669fbcf73eec6057c74463cfd51b806e6911d04ad2db7762eeeab5688159c0</pruefsumme>
+				</datei>
+				<datei id="d000003">
+					<name>archivischerVorgang.xsd</name>
+					<originalName>archivischerVorgang.xsd</originalName>
+					<pruefalgorithmus>SHA-512</pruefalgorithmus>
+					<pruefsumme>b4b870bab571e0193f54d140e4464ef9d2eeed9e92527b4d8a6a5db51e946816c625d3a788f284b9c8e8197924e79400f5b3b9959682c9e250621075f9833250</pruefsumme>
+				</datei>
+				<datei id="d000004">
+					<name>arelda.xsd</name>
+					<originalName>arelda.xsd</originalName>
+					<pruefalgorithmus>SHA-512</pruefalgorithmus>
+					<pruefsumme>9c17c4253ce2674b9a64b7ebebdc754046c3651cf2d9750180a9c8cdeac726ebeab6c51b5de8bdb8b2cbd1780652802813740822a577e8b2d68fb76fc279e960</pruefsumme>
+				</datei>
+				<datei id="d000005">
+					<name>base.xsd</name>
+					<originalName>base.xsd</originalName>
+					<pruefalgorithmus>SHA-512</pruefalgorithmus>
+					<pruefsumme>d60958dd850b0aba0fe8895ad3995bd42c3d0cec921aaf27eed7af0eaccddf3627dd0fd4c364f121facee039c63b7a1e3060e87692bdb0d0a3fab11ae4b1c327</pruefsumme>
+				</datei>
+				<datei id="d000006">
+					<name>datei.xsd</name>
+					<originalName>datei.xsd</originalName>
+					<pruefalgorithmus>SHA-512</pruefalgorithmus>
+					<pruefsumme>c5fda924401e3f13b161a7abf65d98d60ca1ef2881b995f1ddf3ae25549315ed9d8bacc8de8372f2cb0c8cf125deed9cbb0ddec782bd69120f32625f0957980a</pruefsumme>
+				</datei>
+				<datei id="d000007">
+					<name>dokument.xsd</name>
+					<originalName>dokument.xsd</originalName>
+					<pruefalgorithmus>SHA-512</pruefalgorithmus>
+					<pruefsumme>fb0f044653d9d12d2e846b2ac42c9dd93193b4afcaf1d2baca59b089353353a490e73b1a99c119a5d916d4ced5dfb38ac5a2da7554b0cd9e46a23b940f4176bc</pruefsumme>
+				</datei>
+				<datei id="d000008">
+					<name>dossier.xsd</name>
+					<originalName>dossier.xsd</originalName>
+					<pruefalgorithmus>SHA-512</pruefalgorithmus>
+					<pruefsumme>5cf8929120e1a9e40d5d7b7b110d208e3190d25a081cd89d0146723c4567d52aab68a414e01daa25dd7627b143fc80094164e4de195789a682037f33cfd33afb</pruefsumme>
+				</datei>
+				<datei id="d000009">
+					<name>ordner.xsd</name>
+					<originalName>ordner.xsd</originalName>
+					<pruefalgorithmus>SHA-512</pruefalgorithmus>
+					<pruefsumme>4d74828f207e1cebf9893f7c1e40b7af523fca606035edcb65b6896e952547f197adae1c00be99dd14ae51e46ba68d4b9fb5a04f1135784031dd41f3c5f6130e</pruefsumme>
+				</datei>
+				<datei id="d000010">
+					<name>ordnungssystem.xsd</name>
+					<originalName>ordnungssystem.xsd</originalName>
+					<pruefalgorithmus>SHA-512</pruefalgorithmus>
+					<pruefsumme>279586520fe540e600b6d4c0fbfae0e23af34f86a3c113e2d2a2a512ab25f61f6647eabfef84cc36cf2b1485ee1e19adbd54f6691d7155aa3400d0827af657cd</pruefsumme>
+				</datei>
+				<datei id="d000011">
+					<name>ordnungssystemposition.xsd</name>
+					<originalName>ordnungssystemposition.xsd</originalName>
+					<pruefalgorithmus>SHA-512</pruefalgorithmus>
+					<pruefsumme>2a1830e1761b1777d6043222b995f5a4eedc139968c1e0d345c55084c00753b9fb62f20a1638c2a24ddfb0760fbd44e0e8a6b0a145b378b26f336586f2ba52ac</pruefsumme>
+				</datei>
+				<datei id="d000012">
+					<name>paket.xsd</name>
+					<originalName>paket.xsd</originalName>
+					<pruefalgorithmus>SHA-512</pruefalgorithmus>
+					<pruefsumme>569a23b2add470730c2049168335e7f61cf2e223afe9bf80fb288e2d0189f2e47c14137d63c1fde74871283d53cf780133f651b113bd667b14107329d5e24d9c</pruefsumme>
+				</datei>
+				<datei id="d000013">
+					<name>provenienz.xsd</name>
+					<originalName>provenienz.xsd</originalName>
+					<pruefalgorithmus>SHA-512</pruefalgorithmus>
+					<pruefsumme>0e4cf75468765466a645fb98c7f8044730c016f7e7feed062c3f49d3ff220748c3427557f3988740d6339206cad693b67f7aa4bbe825586b0d123b12497c0ee5</pruefsumme>
+				</datei>
+				<datei id="d000014">
+					<name>zusatzDaten.xsd</name>
+					<originalName>zusatzDaten.xsd</originalName>
+					<pruefalgorithmus>SHA-512</pruefalgorithmus>
+					<pruefsumme>765e7d97ec33fedfdcc3fe03a6432e009e8c1ad6ca53a4d102d87954cb7b3f0a26f5df6aa4b99f57cfcb1b750b99496310de9352f49b022d45959ec890d5c524</pruefsumme>
+				</datei>
+			</ordner>
+		</ordner>
+		<ordner>
+			<name>content</name>
+			<ordner>
+				<name>00</name>
+				<ordner>
+					<name>00</name>
+					<ordner>
+						<name>15</name>
+						<datei id="d000015">
+							<name>1 HofbrueckeText.docx</name>
+							<originalName>1 HofbrückeText.docx</originalName>
+							<pruefalgorithmus>SHA-512</pruefalgorithmus>
+							<pruefsumme>316808539743b77e29e27009517be48afe5c0585c3e4d958e741d3dbc894baac684fdc593c58da3d9525cba9ffebee0be74a7efc0a2cd621a8f284826e0500cb</pruefsumme>
+							<eigenschaft name="Version">1</eigenschaft>
+							<eigenschaft name="Renderer">00000000000000000000000000000000</eigenschaft>
+							<eigenschaft name="EingechecktVon">Egloff Gregor; GREGOR.EGLOFF@LU.CH</eigenschaft>
+							<eigenschaft name="CheckInDate">15.04.2019 12:01:00</eigenschaft>
+						</datei>
+					</ordner>
+					<ordner>
+						<name>16</name>
+						<datei id="d000016">
+							<name>1 HofbrueckeText.pdf</name>
+							<originalName>1 HofbrückeText.pdf</originalName>
+							<pruefalgorithmus>SHA-512</pruefalgorithmus>
+							<pruefsumme>492bc70ce5e5e557d3f4c118225b487d1a0d9d43066be8396b1bd141dfd1d4a69d2b4bb11b2da1a736105a329dd0f2a43bd6b416539a0f8d7beceee03cd24058</pruefsumme>
+							<eigenschaft name="Version">1</eigenschaft>
+							<eigenschaft name="Renderer">0a150a150a150a150a150a150a150a15</eigenschaft>
+							<eigenschaft name="EingechecktVon">0a150a150a150a150a150a150a150a15</eigenschaft>
+							<eigenschaft name="CheckInDate">15.04.2019 12:03:45</eigenschaft>
+						</datei>
+					</ordner>
+					<ordner>
+						<name>17</name>
+						<datei id="d000017">
+							<name>1 HofbrueckeText.docx</name>
+							<originalName>1 HofbrückeText.docx</originalName>
+							<pruefalgorithmus>SHA-512</pruefalgorithmus>
+							<pruefsumme>49c7ce9b377705bdc3c76c83c039c8511bc556c2db39456ce0009f8811aa76bfb6061f49ef3cb45a13d9ab592950d0ccb2e91e7b2871d63153aee643e265f7df</pruefsumme>
+							<eigenschaft name="Version">2</eigenschaft>
+							<eigenschaft name="Renderer">00000000000000000000000000000000</eigenschaft>
+							<eigenschaft name="EingechecktVon">Egloff Gregor; GREGOR.EGLOFF@LU.CH</eigenschaft>
+							<eigenschaft name="CheckInDate">15.04.2019 12:02:04</eigenschaft>
+						</datei>
+					</ordner>
+					<ordner>
+						<name>18</name>
+						<datei id="d000018">
+							<name>1 HofbrueckeText.pdf</name>
+							<originalName>1 HofbrückeText.pdf</originalName>
+							<pruefalgorithmus>SHA-512</pruefalgorithmus>
+							<pruefsumme>4321043b02f73d9d8b286e481b952dae6a1c3b816e10a60d9a5f0722fc9186d284479e27e9e2ef252d6f0954ecf213d59c16367087e74dd21fe7afe3f7899d2f</pruefsumme>
+							<eigenschaft name="Version">2</eigenschaft>
+							<eigenschaft name="Renderer">0a150a150a150a150a150a150a150a15</eigenschaft>
+							<eigenschaft name="EingechecktVon">0a150a150a150a150a150a150a150a15</eigenschaft>
+							<eigenschaft name="CheckInDate">15.04.2019 12:03:47</eigenschaft>
+						</datei>
+					</ordner>
+					<ordner>
+						<name>19</name>
+						<datei id="d000019">
+							<name>1 HofbrueckeText.docx</name>
+							<originalName>1 HofbrückeText.docx</originalName>
+							<pruefalgorithmus>SHA-512</pruefalgorithmus>
+							<pruefsumme>a4fc35bb2074ff0abbcac984d70bf5d473da0ae317a8d42301f25f4e201f16be281aa6e37f5ab7e230c515e8e116e324063c78e62204c3ae64be3a6a9c0a3304</pruefsumme>
+							<eigenschaft name="Version">3</eigenschaft>
+							<eigenschaft name="Renderer">00000000000000000000000000000000</eigenschaft>
+							<eigenschaft name="EingechecktVon">Egloff Gregor; GREGOR.EGLOFF@LU.CH</eigenschaft>
+							<eigenschaft name="CheckInDate">15.04.2019 12:02:23</eigenschaft>
+						</datei>
+					</ordner>
+					<ordner>
+						<name>20</name>
+						<datei id="d000020">
+							<name>1 HofbrueckeText.pdf</name>
+							<originalName>1 HofbrückeText.pdf</originalName>
+							<pruefalgorithmus>SHA-512</pruefalgorithmus>
+							<pruefsumme>e723841509be82a092b6411f7e985c2257a89c52bc93f72493cc8e095734e04caaa645b5242b76e275d4b146847c5d316b185475738063a7ff036821134b28d6</pruefsumme>
+							<eigenschaft name="Version">3</eigenschaft>
+							<eigenschaft name="Renderer">0a150a150a150a150a150a150a150a15</eigenschaft>
+							<eigenschaft name="EingechecktVon">0a150a150a150a150a150a150a150a15</eigenschaft>
+							<eigenschaft name="CheckInDate">15.04.2019 12:03:48</eigenschaft>
+						</datei>
+					</ordner>
+					<ordner>
+						<name>21</name>
+						<datei id="d000021">
+							<name>1 HofbrueckeText.docx</name>
+							<originalName>1 HofbrückeText.docx</originalName>
+							<pruefalgorithmus>SHA-512</pruefalgorithmus>
+							<pruefsumme>72e07448ef30a7b27115f41b3084af47dcff61d1b3589a6a411c1f735cd8e8a56702ec38f929441c343ba98db7bf7a76da4753df8d2c16fe7deb5474373291c2</pruefsumme>
+							<eigenschaft name="Version">4</eigenschaft>
+							<eigenschaft name="Renderer">00000000000000000000000000000000</eigenschaft>
+							<eigenschaft name="EingechecktVon">Egloff Gregor; GREGOR.EGLOFF@LU.CH</eigenschaft>
+							<eigenschaft name="CheckInDate">15.04.2019 12:02:43</eigenschaft>
+						</datei>
+					</ordner>
+					<ordner>
+						<name>22</name>
+						<datei id="d000022">
+							<name>1 HofbrueckeText.pdf</name>
+							<originalName>1 HofbrückeText.pdf</originalName>
+							<pruefalgorithmus>SHA-512</pruefalgorithmus>
+							<pruefsumme>66aa1a81171ee41df5f6426f4fa7785d9a7df47fe0e1e21de9ac0f37ac763aaa59996b7fbb65af9686f13d65a1372964a3f0e4e3b1fdc40da3a1f4f8c198f871</pruefsumme>
+							<eigenschaft name="Version">4</eigenschaft>
+							<eigenschaft name="Renderer">0a150a150a150a150a150a150a150a15</eigenschaft>
+							<eigenschaft name="EingechecktVon">0a150a150a150a150a150a150a150a15</eigenschaft>
+							<eigenschaft name="CheckInDate">15.04.2019 12:03:49</eigenschaft>
+						</datei>
+					</ordner>
+					<ordner>
+						<name>23</name>
+						<datei id="d000023">
+							<name>2 Bibliographie.docx</name>
+							<originalName>2 Bibliographie.docx</originalName>
+							<pruefalgorithmus>SHA-512</pruefalgorithmus>
+							<pruefsumme>6e262a822c3c70680f38b1dbb3a0c486f0720242815f63c1ddaecc47b708a30c46971f46fbc4c3e2b0253393672c1e875c3aa3c09953747b5126f498f97d6d10</pruefsumme>
+							<eigenschaft name="Version">1</eigenschaft>
+							<eigenschaft name="Renderer">00000000000000000000000000000000</eigenschaft>
+							<eigenschaft name="EingechecktVon">Egloff Gregor; GREGOR.EGLOFF@LU.CH</eigenschaft>
+							<eigenschaft name="CheckInDate">15.04.2019 12:01:00</eigenschaft>
+						</datei>
+					</ordner>
+					<ordner>
+						<name>24</name>
+						<datei id="d000024">
+							<name>2 Bibliographie.pdf</name>
+							<originalName>2 Bibliographie.pdf</originalName>
+							<pruefalgorithmus>SHA-512</pruefalgorithmus>
+							<pruefsumme>93aa9e504f1017fd9b3ef3881568d5d90ae2533563a82a79f907953bf492c06dca5c19ad0ac2c9851f9fc47ca223595b89ee7f3cf881199551792c5df2a7d8e0</pruefsumme>
+							<eigenschaft name="Version">1</eigenschaft>
+							<eigenschaft name="Renderer">0a150a150a150a150a150a150a150a15</eigenschaft>
+							<eigenschaft name="EingechecktVon">0a150a150a150a150a150a150a150a15</eigenschaft>
+							<eigenschaft name="CheckInDate">15.04.2019 12:03:50</eigenschaft>
+						</datei>
+					</ordner>
+					<ordner>
+						<name>25</name>
+						<datei id="d000025">
+							<name>EgloffHofbruecke.docx</name>
+							<originalName>EgloffHofbrücke.docx</originalName>
+							<pruefalgorithmus>SHA-512</pruefalgorithmus>
+							<pruefsumme>a493879e78c8a211c78b8ecfb36e83c70136b9477609bc223ea8128678064315e5cdc2987576c913583e25cade75e42b6e733803b3892243ff60a859b2078b4c</pruefsumme>
+							<eigenschaft name="Version">1</eigenschaft>
+							<eigenschaft name="Renderer">00000000000000000000000000000000</eigenschaft>
+							<eigenschaft name="EingechecktVon">Egloff Gregor; GREGOR.EGLOFF@LU.CH</eigenschaft>
+							<eigenschaft name="CheckInDate">15.04.2019 12:01:01</eigenschaft>
+						</datei>
+					</ordner>
+					<ordner>
+						<name>26</name>
+						<datei id="d000026">
+							<name>EgloffHofbruecke.pdf</name>
+							<originalName>EgloffHofbrücke.pdf</originalName>
+							<pruefalgorithmus>SHA-512</pruefalgorithmus>
+							<pruefsumme>303c2403902aa4995db8a8bfcdba81bcd48efdd6f6730c557a05187ebbf09ae3d5c1e923801c48207a04dcaf71debd74a0f19aedf0165d47633c7b603d07a9c3</pruefsumme>
+							<eigenschaft name="Version">1</eigenschaft>
+							<eigenschaft name="Renderer">0a150a150a150a150a150a150a150a15</eigenschaft>
+							<eigenschaft name="EingechecktVon">0a150a150a150a150a150a150a150a15</eigenschaft>
+							<eigenschaft name="CheckInDate">15.04.2019 12:03:51</eigenschaft>
+						</datei>
+					</ordner>
+					<ordner>
+						<name>27</name>
+						<datei id="d000027">
+							<name>EgloffHofbrueckeAbb.docx</name>
+							<originalName>EgloffHofbrückeAbb.docx</originalName>
+							<pruefalgorithmus>SHA-512</pruefalgorithmus>
+							<pruefsumme>1ca4e0cb4fd644b3d4d96e8631753608ce82ddd9e42003af855f02c9f50f93d576efb1b0ecd3c15a9c0915df93959e75c2da9a8cbafd5a42036da66c5624906a</pruefsumme>
+							<eigenschaft name="Version">1</eigenschaft>
+							<eigenschaft name="Renderer">00000000000000000000000000000000</eigenschaft>
+							<eigenschaft name="EingechecktVon">Egloff Gregor; GREGOR.EGLOFF@LU.CH</eigenschaft>
+							<eigenschaft name="CheckInDate">15.04.2019 12:01:01</eigenschaft>
+						</datei>
+					</ordner>
+					<ordner>
+						<name>28</name>
+						<datei id="d000028">
+							<name>EgloffHofbrueckeAbb.pdf</name>
+							<originalName>EgloffHofbrückeAbb.pdf</originalName>
+							<pruefalgorithmus>SHA-512</pruefalgorithmus>
+							<pruefsumme>e145be1a6093f78c9c2405fdbc32aabcf8ffed78b113ade7f08576c7bc0f1144a1578fb272cfc92baf28daf9efbbe5e9216d7157baf5a239d43327c1c3b76801</pruefsumme>
+							<eigenschaft name="Version">1</eigenschaft>
+							<eigenschaft name="Renderer">0a150a150a150a150a150a150a150a15</eigenschaft>
+							<eigenschaft name="EingechecktVon">0a150a150a150a150a150a150a150a15</eigenschaft>
+							<eigenschaft name="CheckInDate">15.04.2019 12:03:52</eigenschaft>
+						</datei>
+					</ordner>
+					<ordner>
+						<name>29</name>
+						<datei id="d000029">
+							<name>1 HofbrueckeText.pdf</name>
+							<originalName>1 HofbrückeText.pdf</originalName>
+							<pruefalgorithmus>SHA-512</pruefalgorithmus>
+							<pruefsumme>da788d07c5db0948df4f133001bb4b3c71c44f97ef1e3f60bffe1be067f8a463482a931f20d8a5fea9ef75d088ca96fa508fa1c5905e34a33d1edd75110e2e60</pruefsumme>
+							<eigenschaft name="Version">1</eigenschaft>
+							<eigenschaft name="Renderer">00000000000000000000000000000000</eigenschaft>
+							<eigenschaft name="EingechecktVon">Egloff Gregor; GREGOR.EGLOFF@LU.CH</eigenschaft>
+							<eigenschaft name="CheckInDate">15.04.2019 12:00:59</eigenschaft>
+						</datei>
+					</ordner>
+					<ordner>
+						<name>30</name>
+						<datei id="d000030">
+							<name>1 HofbrueckeText.pdf</name>
+							<originalName>1 HofbrückeText.pdf</originalName>
+							<pruefalgorithmus>SHA-512</pruefalgorithmus>
+							<pruefsumme>d7512918c08e0cd84d6cf1642a163474cdfc2ccbbbb2f38e6bcb9e2161e24e188e7b944863bb31bcb4400554c5582f55223bce620662de975452c71c0668e1b9</pruefsumme>
+							<eigenschaft name="Version">1</eigenschaft>
+							<eigenschaft name="Renderer">0a150a150a150a150a150a150a150a15</eigenschaft>
+							<eigenschaft name="EingechecktVon">0a150a150a150a150a150a150a150a15</eigenschaft>
+							<eigenschaft name="CheckInDate">15.04.2019 12:03:43</eigenschaft>
+						</datei>
+					</ordner>
+					<ordner>
+						<name>31</name>
+						<datei id="d000031">
+							<name>2 Bibliographie.pdf</name>
+							<originalName>2 Bibliographie.pdf</originalName>
+							<pruefalgorithmus>SHA-512</pruefalgorithmus>
+							<pruefsumme>44370b8377812c6bb516d930f5e309442b89bbf3262afc045a424c7b4a4c594c6c30658ae589e100187e99af2049c934b9bb2b1a14cc78e37309275d61832a3b</pruefsumme>
+							<eigenschaft name="Version">1</eigenschaft>
+							<eigenschaft name="Renderer">00000000000000000000000000000000</eigenschaft>
+							<eigenschaft name="EingechecktVon">Egloff Gregor; GREGOR.EGLOFF@LU.CH</eigenschaft>
+							<eigenschaft name="CheckInDate">15.04.2019 12:00:59</eigenschaft>
+						</datei>
+					</ordner>
+					<ordner>
+						<name>32</name>
+						<datei id="d000032">
+							<name>2 Bibliographie.pdf</name>
+							<originalName>2 Bibliographie.pdf</originalName>
+							<pruefalgorithmus>SHA-512</pruefalgorithmus>
+							<pruefsumme>d844a5f1613a8c73da24e2a3d829bafd6c1c17b1a714e9d0f801c40d12b13ec12b6b789acd55d0a7d7821951d951aa35cd45d43ba15cf7159e48cb057a48d206</pruefsumme>
+							<eigenschaft name="Version">1</eigenschaft>
+							<eigenschaft name="Renderer">0a150a150a150a150a150a150a150a15</eigenschaft>
+							<eigenschaft name="EingechecktVon">0a150a150a150a150a150a150a150a15</eigenschaft>
+							<eigenschaft name="CheckInDate">15.04.2019 12:03:43</eigenschaft>
+						</datei>
+					</ordner>
+					<ordner>
+						<name>33</name>
+						<datei id="d000033">
+							<name>EgloffHofbruecke.pdf</name>
+							<originalName>EgloffHofbrücke.pdf</originalName>
+							<pruefalgorithmus>SHA-512</pruefalgorithmus>
+							<pruefsumme>e16406996f2af940f4471ef26469406c7252b65d8796f4246d095c03cd824b9ac2049cc8c2e70faa19377cfabe5483caad2464c60b6038f5ae80824c51e46598</pruefsumme>
+							<eigenschaft name="Version">1</eigenschaft>
+							<eigenschaft name="Renderer">00000000000000000000000000000000</eigenschaft>
+							<eigenschaft name="EingechecktVon">Egloff Gregor; GREGOR.EGLOFF@LU.CH</eigenschaft>
+							<eigenschaft name="CheckInDate">15.04.2019 12:00:59</eigenschaft>
+						</datei>
+					</ordner>
+					<ordner>
+						<name>34</name>
+						<datei id="d000034">
+							<name>EgloffHofbruecke.pdf</name>
+							<originalName>EgloffHofbrücke.pdf</originalName>
+							<pruefalgorithmus>SHA-512</pruefalgorithmus>
+							<pruefsumme>c7df7645ec374d3ce5c98f2a6e262d4244fb0dfb6ce8446df4087dbcb566a8f5e480dc628f51b9a75d71d163541f32bce5a751c4f315bfd29df00e32f058c915</pruefsumme>
+							<eigenschaft name="Version">1</eigenschaft>
+							<eigenschaft name="Renderer">0a150a150a150a150a150a150a150a15</eigenschaft>
+							<eigenschaft name="EingechecktVon">0a150a150a150a150a150a150a150a15</eigenschaft>
+							<eigenschaft name="CheckInDate">15.04.2019 12:03:44</eigenschaft>
+						</datei>
+					</ordner>
+					<ordner>
+						<name>35</name>
+						<datei id="d000035">
+							<name>EgloffHofbrueckeAbb.pdf</name>
+							<originalName>EgloffHofbrückeAbb.pdf</originalName>
+							<pruefalgorithmus>SHA-512</pruefalgorithmus>
+							<pruefsumme>de2f196a5fdf256bbc3ed9e37077ce68467510c51fe807200931a02ac4f2b0be3f0b743413d579cf5b236d6b157b512a877481039d8805f575088c57cff445ea</pruefsumme>
+							<eigenschaft name="Version">1</eigenschaft>
+							<eigenschaft name="Renderer">00000000000000000000000000000000</eigenschaft>
+							<eigenschaft name="EingechecktVon">Egloff Gregor; GREGOR.EGLOFF@LU.CH</eigenschaft>
+							<eigenschaft name="CheckInDate">15.04.2019 12:00:59</eigenschaft>
+						</datei>
+					</ordner>
+					<ordner>
+						<name>36</name>
+						<datei id="d000036">
+							<name>EgloffHofbrueckeAbb.pdf</name>
+							<originalName>EgloffHofbrückeAbb.pdf</originalName>
+							<pruefalgorithmus>SHA-512</pruefalgorithmus>
+							<pruefsumme>af651c7c2ae1d4f20f5b660b67f292c2a8fba4ff0e52d0a0bb9485ddc59bb8a1139195c4524871a57b599f28df7d1892cecf9858387d47b96e89d6941c433349</pruefsumme>
+							<eigenschaft name="Version">1</eigenschaft>
+							<eigenschaft name="Renderer">0a150a150a150a150a150a150a150a15</eigenschaft>
+							<eigenschaft name="EingechecktVon">0a150a150a150a150a150a150a150a15</eigenschaft>
+							<eigenschaft name="CheckInDate">15.04.2019 12:03:44</eigenschaft>
+						</datei>
+					</ordner>
+					<ordner>
+						<name>37</name>
+						<datei id="d000037">
+							<name>Export_e49eadcea3b24b71bb95c61c8d0fba89.pdf</name>
+							<originalName>Export_e49eadcea3b24b71bb95c61c8d0fba89.pdf</originalName>
+							<pruefalgorithmus>SHA-512</pruefalgorithmus>
+							<pruefsumme>b646031fde37c3583b367183aeea3c3fa1f449cd573f1322471c256aa6defce85b3163c75e703570e515709c5e9533b3ca834aa6f89a24792006027db1f44789</pruefsumme>
+							<eigenschaft name="Version">1</eigenschaft>
+							<eigenschaft name="Renderer">00000000000000000000000000000000</eigenschaft>
+							<eigenschaft name="EingechecktVon">Administrator</eigenschaft>
+							<eigenschaft name="CheckInDate">15.04.2019 12:03:54</eigenschaft>
+						</datei>
+					</ordner>
+				</ordner>
+			</ordner>
+		</ordner>
+	</inhaltsverzeichnis>
+	<ablieferung xsi:type="ablieferungGeverSIP">
+		<ablieferungstyp>GEVER</ablieferungstyp>
+		<ablieferndeStelle>Dienststelle Handelsregister und Staatsarchiv - QS</ablieferndeStelle>
+		<entstehungszeitraum>
+			<von>
+				<datum>2015-05-26</datum>
+			</von>
+			<bis>
+				<datum>2019-04-15</datum>
+			</bis>
+		</entstehungszeitraum>
+		<ablieferungsteile/>
+		<bemerkung/>
+		<ablieferungsnummer>31</ablieferungsnummer>
+		<provenienz>
+			<aktenbildnerName>LiMa</aktenbildnerName>
+			<systemName>CMIAXIOMA, V18.0.14.6639</systemName>
+			<systemBeschreibung/>
+			<bemerkung/>
+			<registratur>Registraturplan</registratur>
+		</provenienz>
+		<ordnungssystem>
+			<anwendungszeitraum>
+				<von>
+					<datum>2000-01-01</datum>
+				</von>
+				<bis>
+					<datum>2099-12-31</datum>
+				</bis>
+			</anwendungszeitraum>
+			<name>Registraturplan</name>
+			<ordnungssystemposition id="RPPf1c222c392594a478ee3e3f7f56fb71d">
+				<federfuehrendeOrganisationseinheit>DHS</federfuehrendeOrganisationseinheit>
+				<klassifizierungskategorie>Nicht Klassifiziert</klassifizierungskategorie>
+				<datenschutz>false</datenschutz>
+				<oeffentlichkeitsstatus>Nicht geprüft</oeffentlichkeitsstatus>
+				<oeffentlichkeitsstatusBegruendung/>
+				<sonstigeBestimmungen/>
+				<zusatzDaten>
+					<merkmal name="AufbewahrungsfristInTagen">3600</merkmal>
+					<merkmal name="Parentkey"/>
+					<merkmal name="Begriff">Allgemeines, Übergreifende und von aussen gesteuerte Aufgaben</merkmal>
+					<merkmal name="SyncGuid"/>
+				</zusatzDaten>
+				<nummer>0</nummer>
+				<titel>Allgemeines, Übergreifende und von aussen gesteuerte Aufgaben</titel>
+				<ordnungssystemposition id="RPPc2dc87661dce4d9093689367e5f0bb1f">
+					<federfuehrendeOrganisationseinheit>DHS</federfuehrendeOrganisationseinheit>
+					<klassifizierungskategorie>Nicht Klassifiziert</klassifizierungskategorie>
+					<datenschutz>false</datenschutz>
+					<oeffentlichkeitsstatus>Nicht geprüft</oeffentlichkeitsstatus>
+					<oeffentlichkeitsstatusBegruendung/>
+					<sonstigeBestimmungen/>
+					<zusatzDaten>
+						<merkmal name="AufbewahrungsfristInTagen">3600</merkmal>
+						<merkmal name="Parentkey"/>
+						<merkmal name="Begriff">Allgemeines</merkmal>
+						<merkmal name="SyncGuid"/>
+					</zusatzDaten>
+					<nummer>0.0</nummer>
+					<titel>Allgemeines</titel>
+					<ordnungssystemposition id="RPPc49db493456b44eb8917f0807112d177">
+						<federfuehrendeOrganisationseinheit>DHS</federfuehrendeOrganisationseinheit>
+						<klassifizierungskategorie>Nicht Klassifiziert</klassifizierungskategorie>
+						<datenschutz>false</datenschutz>
+						<oeffentlichkeitsstatus>Nicht geprüft</oeffentlichkeitsstatus>
+						<oeffentlichkeitsstatusBegruendung/>
+						<sonstigeBestimmungen/>
+						<zusatzDaten>
+							<merkmal name="AufbewahrungsfristInTagen">0</merkmal>
+							<merkmal name="Parentkey"/>
+							<merkmal name="Begriff">Testing Lifecycle</merkmal>
+							<merkmal name="SyncGuid"/>
+						</zusatzDaten>
+						<nummer>0.0.8</nummer>
+						<titel>Testing Lifecycle</titel>
+						<dossier id="DOS73f4df7a133042099b43b402762339b0">
+							<titel>STALU: Geschäft mit Unterordner und Check-In Kommentaren, 2019.04.15</titel>
+							<federfuehrendeOrganisationseinheit>STALU Mitarbeitende; S-M</federfuehrendeOrganisationseinheit>
+							<entstehungszeitraum>
+								<von>
+									<datum>2015-05-26</datum>
+								</von>
+								<bis>
+									<datum>2019-04-15</datum>
+								</bis>
+							</entstehungszeitraum>
+							<klassifizierungskategorie>Nicht Klassifiziert</klassifizierungskategorie>
+							<datenschutz>false</datenschutz>
+							<oeffentlichkeitsstatus>Nicht geprüft</oeffentlichkeitsstatus>
+							<oeffentlichkeitsstatusBegruendung/>
+							<sonstigeBestimmungen/>
+							<bemerkung/>
+							<zusatzDaten>
+								<merkmal name="AufbewahrungsfristInTagen">0</merkmal>
+								<merkmal name="Parentkey"/>
+								<merkmal name="Ende">15.04.2019</merkmal>
+								<merkmal name="Beginn">15.04.2019</merkmal>
+								<merkmal name="TraktandenAsText"/>
+								<merkmal name="SchluesselFremdsystem"/>
+								<merkmal name="CustomVorstossNummer"/>
+								<merkmal name="CustomRRSitzung"/>
+								<merkmal name="CustomBotschaftsNummer"/>
+								<merkmal name="CustomEroeffnungsdatum"/>
+								<merkmal name="CustomMitunterzeichner"/>
+								<merkmal name="CustomErstunterzeichner"/>
+								<merkmal name="CustomErledigungimKRDate"/>
+								<merkmal name="CustomAblageOrdner"/>
+								<merkmal name="CustomSachbereich"/>
+							</zusatzDaten>
+							<aktenzeichen>2019-9</aktenzeichen>
+							<eroeffnungsdatum>
+								<datum>2019-04-15</datum>
+							</eroeffnungsdatum>
+							<abschlussdatum>
+								<datum>2019-04-15</datum>
+							</abschlussdatum>
+							<schutzfristenBegruendung/>
+							<dokument id="DOK311103987f7e42e6b806b3348fb16924">
+								<titel>1 HofbrückeText Versionen</titel>
+								<autor/>
+								<erscheinungsform>digital</erscheinungsform>
+								<entstehungszeitraum>
+									<von>
+										<datum>2015-05-26</datum>
+									</von>
+									<bis>
+										<datum>2019-04-15</datum>
+									</bis>
+								</entstehungszeitraum>
+								<klassifizierungskategorie>Nicht Klassifiziert</klassifizierungskategorie>
+								<datenschutz>false</datenschutz>
+								<oeffentlichkeitsstatus>Nicht geprüft</oeffentlichkeitsstatus>
+								<oeffentlichkeitsstatusBegruendung/>
+								<sonstigeBestimmungen/>
+								<bemerkung/>
+								<zusatzDaten>
+									<merkmal name="Ordnerpfad">\Ordner B docx</merkmal>
+									<merkmal name="Parentkey"/>
+									<merkmal name="Thema"/>
+									<merkmal name="Standort"/>
+									<merkmal name="Dokumentdatum">26.05.2015</merkmal>
+									<merkmal name="Schutzstufe"/>
+									<merkmal name="ForeignDokReference"/>
+									<merkmal name="BeschlussNummer"/>
+									<merkmal name="SchluesselFremdsystem"/>
+									<merkmal name="Tags"/>
+								</zusatzDaten>
+								<dateiRef version="1" repraesentation="2019-04-15T12:01:00">d000015</dateiRef>
+								<dateiRef version="1" repraesentation="2019-04-15T12:03:45">d000016</dateiRef>
+								<dateiRef version="2" repraesentation="2019-04-15T12:02:04">d000017</dateiRef>
+								<dateiRef version="2" repraesentation="2019-04-15T12:03:47">d000018</dateiRef>
+								<dateiRef version="3" repraesentation="2019-04-15T12:02:23">d000019</dateiRef>
+								<dateiRef version="3" repraesentation="2019-04-15T12:03:48">d000020</dateiRef>
+								<dateiRef version="4" repraesentation="2019-04-15T12:02:43">d000021</dateiRef>
+								<dateiRef version="4" repraesentation="2019-04-15T12:03:49">d000022</dateiRef>
+							</dokument>
+							<dokument id="DOK54dd6b964ca24c8591dc92a61bfffd3c">
+								<titel>2 Bibliographie</titel>
+								<autor/>
+								<erscheinungsform>digital</erscheinungsform>
+								<entstehungszeitraum>
+									<von>
+										<datum>2015-05-26</datum>
+									</von>
+									<bis>
+										<datum>2019-04-15</datum>
+									</bis>
+								</entstehungszeitraum>
+								<klassifizierungskategorie>Nicht Klassifiziert</klassifizierungskategorie>
+								<datenschutz>false</datenschutz>
+								<oeffentlichkeitsstatus>Nicht geprüft</oeffentlichkeitsstatus>
+								<oeffentlichkeitsstatusBegruendung/>
+								<sonstigeBestimmungen/>
+								<bemerkung/>
+								<zusatzDaten>
+									<merkmal name="Ordnerpfad">\Ordner B docx</merkmal>
+									<merkmal name="Parentkey"/>
+									<merkmal name="Thema"/>
+									<merkmal name="Standort"/>
+									<merkmal name="Dokumentdatum">26.05.2015</merkmal>
+									<merkmal name="Schutzstufe"/>
+									<merkmal name="ForeignDokReference"/>
+									<merkmal name="BeschlussNummer"/>
+									<merkmal name="SchluesselFremdsystem"/>
+									<merkmal name="Tags"/>
+								</zusatzDaten>
+								<dateiRef repraesentation="2019-04-15T12:01:00">d000023</dateiRef>
+								<dateiRef repraesentation="2019-04-15T12:03:50">d000024</dateiRef>
+							</dokument>
+							<dokument id="DOK557ce67810fc45409f6a00d84f458752">
+								<titel>EgloffHofbrücke</titel>
+								<autor/>
+								<erscheinungsform>digital</erscheinungsform>
+								<entstehungszeitraum>
+									<von>
+										<datum>2015-05-26</datum>
+									</von>
+									<bis>
+										<datum>2019-04-15</datum>
+									</bis>
+								</entstehungszeitraum>
+								<klassifizierungskategorie>Nicht Klassifiziert</klassifizierungskategorie>
+								<datenschutz>false</datenschutz>
+								<oeffentlichkeitsstatus>Nicht geprüft</oeffentlichkeitsstatus>
+								<oeffentlichkeitsstatusBegruendung/>
+								<sonstigeBestimmungen/>
+								<bemerkung/>
+								<zusatzDaten>
+									<merkmal name="Ordnerpfad">\Ordner B docx</merkmal>
+									<merkmal name="Parentkey"/>
+									<merkmal name="Thema"/>
+									<merkmal name="Standort"/>
+									<merkmal name="Dokumentdatum">26.05.2015</merkmal>
+									<merkmal name="Schutzstufe"/>
+									<merkmal name="ForeignDokReference"/>
+									<merkmal name="BeschlussNummer"/>
+									<merkmal name="SchluesselFremdsystem"/>
+									<merkmal name="Tags"/>
+								</zusatzDaten>
+								<dateiRef repraesentation="2019-04-15T12:01:01">d000025</dateiRef>
+								<dateiRef repraesentation="2019-04-15T12:03:51">d000026</dateiRef>
+							</dokument>
+							<dokument id="DOK65f854d097784c1da3d5645dff5dab13">
+								<titel>EgloffHofbrückeAbb</titel>
+								<autor/>
+								<erscheinungsform>digital</erscheinungsform>
+								<entstehungszeitraum>
+									<von>
+										<datum>2015-05-26</datum>
+									</von>
+									<bis>
+										<datum>2019-04-15</datum>
+									</bis>
+								</entstehungszeitraum>
+								<klassifizierungskategorie>Nicht Klassifiziert</klassifizierungskategorie>
+								<datenschutz>false</datenschutz>
+								<oeffentlichkeitsstatus>Nicht geprüft</oeffentlichkeitsstatus>
+								<oeffentlichkeitsstatusBegruendung/>
+								<sonstigeBestimmungen/>
+								<bemerkung/>
+								<zusatzDaten>
+									<merkmal name="Ordnerpfad">\Ordner B docx</merkmal>
+									<merkmal name="Parentkey"/>
+									<merkmal name="Thema"/>
+									<merkmal name="Standort"/>
+									<merkmal name="Dokumentdatum">26.05.2015</merkmal>
+									<merkmal name="Schutzstufe"/>
+									<merkmal name="ForeignDokReference"/>
+									<merkmal name="BeschlussNummer"/>
+									<merkmal name="SchluesselFremdsystem"/>
+									<merkmal name="Tags"/>
+								</zusatzDaten>
+								<dateiRef repraesentation="2019-04-15T12:01:01">d000027</dateiRef>
+								<dateiRef repraesentation="2019-04-15T12:03:52">d000028</dateiRef>
+								<dateiRef>d000027</dateiRef>
+								<dateiRef>d000028</dateiRef>
+							</dokument>
+							<dokument id="DOK89eb7647821e41adba8feb7c29bd17db">
+								<titel>1 HofbrückeText</titel>
+								<autor/>
+								<erscheinungsform>digital</erscheinungsform>
+								<entstehungszeitraum>
+									<von>
+										<datum>2015-05-26</datum>
+									</von>
+									<bis>
+										<datum>2019-04-15</datum>
+									</bis>
+								</entstehungszeitraum>
+								<klassifizierungskategorie>Nicht Klassifiziert</klassifizierungskategorie>
+								<datenschutz>false</datenschutz>
+								<oeffentlichkeitsstatus>Nicht geprüft</oeffentlichkeitsstatus>
+								<oeffentlichkeitsstatusBegruendung/>
+								<sonstigeBestimmungen/>
+								<bemerkung/>
+								<zusatzDaten>
+									<merkmal name="Ordnerpfad">\Ordner A pdf</merkmal>
+									<merkmal name="Parentkey"/>
+									<merkmal name="Thema"/>
+									<merkmal name="Standort"/>
+									<merkmal name="Dokumentdatum">26.05.2015</merkmal>
+									<merkmal name="Schutzstufe"/>
+									<merkmal name="ForeignDokReference"/>
+									<merkmal name="BeschlussNummer"/>
+									<merkmal name="SchluesselFremdsystem"/>
+									<merkmal name="Tags"/>
+								</zusatzDaten>
+								<dateiRef repraesentation="2019-04-15T12:00:59">d000029</dateiRef>
+								<dateiRef repraesentation="2019-04-15T12:03:43">d000030</dateiRef>
+							</dokument>
+							<dokument id="DOK1511b010f73b4e5eb474b0a9ff61695a">
+								<titel>2 Bibliographie</titel>
+								<autor/>
+								<erscheinungsform>digital</erscheinungsform>
+								<entstehungszeitraum>
+									<von>
+										<datum>2015-05-26</datum>
+									</von>
+									<bis>
+										<datum>2019-04-15</datum>
+									</bis>
+								</entstehungszeitraum>
+								<klassifizierungskategorie>Nicht Klassifiziert</klassifizierungskategorie>
+								<datenschutz>false</datenschutz>
+								<oeffentlichkeitsstatus>Nicht geprüft</oeffentlichkeitsstatus>
+								<oeffentlichkeitsstatusBegruendung/>
+								<sonstigeBestimmungen/>
+								<bemerkung/>
+								<zusatzDaten>
+									<merkmal name="Ordnerpfad">\Ordner A pdf</merkmal>
+									<merkmal name="Parentkey"/>
+									<merkmal name="Thema"/>
+									<merkmal name="Standort"/>
+									<merkmal name="Dokumentdatum">26.05.2015</merkmal>
+									<merkmal name="Schutzstufe"/>
+									<merkmal name="ForeignDokReference"/>
+									<merkmal name="BeschlussNummer"/>
+									<merkmal name="SchluesselFremdsystem"/>
+									<merkmal name="Tags"/>
+								</zusatzDaten>
+								<dateiRef repraesentation="2019-04-15T12:00:59">d000031</dateiRef>
+								<dateiRef repraesentation="2019-04-15T12:03:43">d000032</dateiRef>
+							</dokument>
+							<dokument id="DOK89ca2cde2c824c66997392dd872280aa">
+								<titel>EgloffHofbrücke</titel>
+								<autor/>
+								<erscheinungsform>digital</erscheinungsform>
+								<entstehungszeitraum>
+									<von>
+										<datum>2015-05-26</datum>
+									</von>
+									<bis>
+										<datum>2019-04-15</datum>
+									</bis>
+								</entstehungszeitraum>
+								<klassifizierungskategorie>Nicht Klassifiziert</klassifizierungskategorie>
+								<datenschutz>false</datenschutz>
+								<oeffentlichkeitsstatus>Nicht geprüft</oeffentlichkeitsstatus>
+								<oeffentlichkeitsstatusBegruendung/>
+								<sonstigeBestimmungen/>
+								<bemerkung/>
+								<zusatzDaten>
+									<merkmal name="Ordnerpfad">\Ordner A pdf</merkmal>
+									<merkmal name="Parentkey"/>
+									<merkmal name="Thema"/>
+									<merkmal name="Standort"/>
+									<merkmal name="Dokumentdatum">26.05.2015</merkmal>
+									<merkmal name="Schutzstufe"/>
+									<merkmal name="ForeignDokReference"/>
+									<merkmal name="BeschlussNummer"/>
+									<merkmal name="SchluesselFremdsystem"/>
+									<merkmal name="Tags"/>
+								</zusatzDaten>
+								<dateiRef repraesentation="2019-04-15T12:00:59">d000033</dateiRef>
+								<dateiRef repraesentation="2019-04-15T12:03:44">d000034</dateiRef>
+								<dateiRef>d000033</dateiRef>
+								<dateiRef>d000034</dateiRef>
+							</dokument>
+							<dokument id="DOK82ab45957a774884abcebb507b9c30ce">
+								<titel>EgloffHofbrückeAbb</titel>
+								<autor/>
+								<erscheinungsform>digital</erscheinungsform>
+								<entstehungszeitraum>
+									<von>
+										<datum>2015-05-26</datum>
+									</von>
+									<bis>
+										<datum>2019-04-15</datum>
+									</bis>
+								</entstehungszeitraum>
+								<klassifizierungskategorie>Nicht Klassifiziert</klassifizierungskategorie>
+								<datenschutz>false</datenschutz>
+								<oeffentlichkeitsstatus>Nicht geprüft</oeffentlichkeitsstatus>
+								<oeffentlichkeitsstatusBegruendung/>
+								<sonstigeBestimmungen/>
+								<bemerkung/>
+								<zusatzDaten>
+									<merkmal name="Ordnerpfad">\Ordner A pdf</merkmal>
+									<merkmal name="Parentkey"/>
+									<merkmal name="Thema"/>
+									<merkmal name="Standort"/>
+									<merkmal name="Dokumentdatum">26.05.2015</merkmal>
+									<merkmal name="Schutzstufe"/>
+									<merkmal name="ForeignDokReference"/>
+									<merkmal name="BeschlussNummer"/>
+									<merkmal name="SchluesselFremdsystem"/>
+									<merkmal name="Tags"/>
+								</zusatzDaten>
+								<dateiRef repraesentation="2019-04-15T12:00:59">d000035</dateiRef>
+								<dateiRef repraesentation="2019-04-15T12:03:44">d000036</dateiRef>
+							</dokument>
+							<dokument id="DOKc5d6665cb7e1486eafea46807484c56f">
+								<titel>Passivierungsreport</titel>
+								<autor/>
+								<erscheinungsform>digital</erscheinungsform>
+								<entstehungszeitraum>
+									<von>
+										<datum>2019-04-15</datum>
+									</von>
+									<bis>
+										<datum>2019-04-15</datum>
+									</bis>
+								</entstehungszeitraum>
+								<klassifizierungskategorie>Nicht Klassifiziert</klassifizierungskategorie>
+								<datenschutz>false</datenschutz>
+								<oeffentlichkeitsstatus>Nicht geprüft</oeffentlichkeitsstatus>
+								<oeffentlichkeitsstatusBegruendung/>
+								<sonstigeBestimmungen/>
+								<bemerkung/>
+								<zusatzDaten>
+									<merkmal name="Ordnerpfad"/>
+									<merkmal name="Parentkey"/>
+									<merkmal name="Thema"/>
+									<merkmal name="Standort"/>
+									<merkmal name="Dokumentdatum">15.04.2019</merkmal>
+									<merkmal name="Schutzstufe"/>
+									<merkmal name="ForeignDokReference"/>
+									<merkmal name="BeschlussNummer"/>
+									<merkmal name="SchluesselFremdsystem"/>
+									<merkmal name="Tags"/>
+								</zusatzDaten>
+								<dateiRef repraesentation="2019-04-15T12:03:54">d000037</dateiRef>
+							</dokument>
+						</dossier>
+					</ordnungssystemposition>
+				</ordnungssystemposition>
+			</ordnungssystemposition>
+		</ordnungssystem>
+	</ablieferung>
+</paket>
