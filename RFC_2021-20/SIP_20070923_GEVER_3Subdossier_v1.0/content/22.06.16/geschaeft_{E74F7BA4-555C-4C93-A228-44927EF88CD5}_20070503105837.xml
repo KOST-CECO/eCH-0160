@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<risexport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\master_data_20070620203000.transfered\geschaeft.xsd">
+	<geschaeft>
+		<id>{E74F7BA4-555C-4C93-A228-44927EF88CD5}</id>
+		<deleted>false</deleted>
+		<command>update</command>
+		<public>true</public>
+		<ziel>1</ziel>
+		<gremium>Erziehungsdepartement</gremium>
+		<bezeichnung>XII. Nachtrag zum Gesetz über die Besoldung der Volksschullehrer</bezeichnung>
+		<kurzbezeichnung>XII. N G Lehrerbesoldung</kurzbezeichnung>
+		<nummer>22.06.16</nummer>
+		<datum/>
+		<eroeffnet>14.12.2006</eroeffnet>
+		<art>
+			<referenz id="{57B7EC7C-9B76-4391-9E8E-AC691808760C}" ziel="code"/>
+		</art>
+		<vorstoss>false</vorstoss>
+		<aktenplan>8910465585691065172:11449852:1120210416004#1364911288086339918:1542984:1120212887754</aktenplan>
+		<beteiligte>
+			<referenz art="{988DDC3C-8C8B-4935-A77C-91C952A0C6E3}" id="{93B8078C-74BE-4CAD-B2B9-B88BF8E7A1DA}" ziel="gruppe"/>
+		</beteiligte>
+		<laufweg>
+			<schritt bezeichnung="Geschäft eröffnen" erledigt="14.12.2006" meilenstein=""/>
+			<schritt bezeichnung="KRGE 1 KR-Geschäft anmelden" erledigt="14.12.2006" meilenstein=""/>
+			<schritt bezeichnung="KRGE 2 Sitzung der Regierung (Nulllesung)" erledigt="19.12.2006" meilenstein=""/>
+			<schritt bezeichnung="KRGE 3 Nachbereitung der Regierungssitzung" erledigt="22.12.2006" meilenstein=""/>
+			<schritt bezeichnung="KRGE 9 Botschaft und Entwurf ausfertigen" erledigt="10.01.2007" meilenstein=""/>
+			<schritt bezeichnung="KRGE 10 Session des Kantonsrates (Kommissionsbestellung)" erledigt="26.02.2007" meilenstein=""/>
+			<schritt bezeichnung="KRGE 11 Nachbereitung Kommissionsbestellung" erledigt="26.02.2007" meilenstein="GE_M3.GIF"/>
+			<schritt bezeichnung="KRGE 12 Vorbereitung der Sitzung der vorberatenden Kommission" erledigt="27.02.2007" meilenstein=""/>
+			<schritt bezeichnung="KRGE 13 Sitzung der vorberatenden Kommission (erste Lesung)" erledigt="16.03.2007" meilenstein=""/>
+			<schritt bezeichnung="KRGE 14 Nachbereitung der Sitzung der vorberatenden Kommission (erste Lesung)" erledigt="19.03.2007" meilenstein=""/>
+			<schritt bezeichnung="KRGE 15 KR-Geschäft anmelden" erledigt="19.03.2007" meilenstein=""/>
+			<schritt bezeichnung="KRGE 16 Sitzung der Regierung (Antrag)" erledigt="20.03.2007" meilenstein=""/>
+			<schritt bezeichnung="KRGE 17 Anträge ausfertigen (chamois und rosa)" erledigt="22.03.2007" meilenstein="GE_M4.GIF"/>
+			<schritt bezeichnung="KRGE 18 Session des Kantonsrates (erste Lesung / Gesamtabstimmung)" erledigt="02.05.2007" meilenstein=""/>
+			<schritt bezeichnung="KRGE 19 Anträge ausfertigen (grau)" erledigt="03.05.2007" meilenstein=""/>
+			<schritt bezeichnung="KRGE 20 Ergebnis erster Lesung ausfertigen " erledigt="" meilenstein="GE_M5.GIF"/>
+			<schritt bezeichnung="KRGE 21 Vorbereitung der Sitzung der vorberatenden Kommission" erledigt="" meilenstein=""/>
+			<schritt bezeichnung="KRGE 22 Sitzung der vorberatenden Kommission (zweite Lesung)" erledigt="" meilenstein=""/>
+			<schritt bezeichnung="KRGE 23 Nachbereitung der Sitzung der vorberatenden Kommission (zweite Lesung)" erledigt="" meilenstein=""/>
+			<schritt bezeichnung="KRGE 24 Sitzung der Regierung (Antrag)" erledigt="" meilenstein=""/>
+			<schritt bezeichnung="KRGE 25 Anträge ausfertigen (chamois und rosa)" erledigt="" meilenstein="GE_M6.GIF"/>
+			<schritt bezeichnung="KRGE 26 Session des Kantonsrates (zweite Lesung / Schlussabstimmung / Gesamtabstimmung)" erledigt="" meilenstein=""/>
+			<schritt bezeichnung="KRGE 27 Anträge ausfertigen (grau und grün)" erledigt="" meilenstein=""/>
+			<schritt bezeichnung="KRGE 28 Sitzung der Regierung (Vollzugsbeschluss)" erledigt="" meilenstein=""/>
+			<schritt bezeichnung="KRGE 29 Veröffentlichung der Referendumsvorlage" erledigt="" meilenstein="RV_M1.GIF"/>
+			<schritt bezeichnung="KRGE 30 Regierungsgeschäft vorbereiten" erledigt="" meilenstein=""/>
+			<schritt bezeichnung="KRGE 31 Sitzung der Regierung (ReVoBe)" erledigt="" meilenstein=""/>
+			<schritt bezeichnung="KRGE 32 In der Gesetzessammlung veröffentlichen" erledigt="" meilenstein=""/>
+			<schritt bezeichnung="Ende" erledigt="" meilenstein=""/>
+		</laufweg>
+		<geschaeftsreferenzen/>
+		<dokumente>
+			<referenz id="{4CE991F8-CA5D-489F-975B-6CCB4EA86091}" ziel="dokument"/>
+			<referenz id="{CBDCFF70-DA6C-42EC-9117-AC26249EC88D}" ziel="dokument"/>
+			<referenz id="{A913311A-0C41-47D0-8F3F-D3AF48879232}" ziel="dokument"/>
+			<referenz id="{2965A3BB-C42D-480F-9BA7-548331FB0A2C}" ziel="dokument"/>
+		</dokumente>
+	</geschaeft>
+	<dokumente>
+		<dokument>
+			<id>{E4942C47-7237-4654-B554-BFE587452720}</id>
+			<public>false</public>
+		</dokument>
+		<dokument checkindatum="2007-01-10 11:48:46">
+			<id>{4CE991F8-CA5D-489F-975B-6CCB4EA86091}</id>
+			<public>true</public>
+			<parent>{E74F7BA4-555C-4C93-A228-44927EF88CD5}</parent>
+			<title>Botschaft und Entwurf der Regierung vom 19. Dezember 2006</title>
+			<art>
+				<referenz id="{B1F3C72C-9C76-418E-90E3-1F407DC0268A}" ziel="code"/>
+			</art>
+			<id-datei>{4CE991F8-CA5D-489F-975B-6CCB4EA86091}.pdf</id-datei>
+		</dokument>
+		<dokument>
+			<id>{CBCDE39B-33D8-4FD1-AD93-B89D62254C95}</id>
+			<public>false</public>
+		</dokument>
+		<dokument>
+			<id>{3818904E-49CB-40E6-AA1A-CDF7C3CB9517}</id>
+			<public>false</public>
+		</dokument>
+		<dokument checkindatum="2007-04-25 11:57:25">
+			<id>{CBDCFF70-DA6C-42EC-9117-AC26249EC88D}</id>
+			<public>true</public>
+			<parent>{E74F7BA4-555C-4C93-A228-44927EF88CD5}</parent>
+			<title>Antrag SVP-Fraktion vom 23. April 2007</title>
+			<art>
+				<referenz id="{B80977D2-B287-4588-8A10-3692A60322CC}" ziel="code"/>
+			</art>
+			<id-datei>{CBDCFF70-DA6C-42EC-9117-AC26249EC88D}.pdf</id-datei>
+		</dokument>
+		<dokument checkindatum="2007-04-25 11:58:09">
+			<id>{A913311A-0C41-47D0-8F3F-D3AF48879232}</id>
+			<public>true</public>
+			<parent>{E74F7BA4-555C-4C93-A228-44927EF88CD5}</parent>
+			<title>Antrag SP-Fraktion zu Art. 4bis vom 23. April 2007</title>
+			<art>
+				<referenz id="{B80977D2-B287-4588-8A10-3692A60322CC}" ziel="code"/>
+			</art>
+			<id-datei>{A913311A-0C41-47D0-8F3F-D3AF48879232}.pdf</id-datei>
+		</dokument>
+		<dokument checkindatum="2007-04-25 08:34:05">
+			<id>{2965A3BB-C42D-480F-9BA7-548331FB0A2C}</id>
+			<public>true</public>
+			<parent>{E74F7BA4-555C-4C93-A228-44927EF88CD5}</parent>
+			<title>Aktuelle Mitgliederliste</title>
+			<art>
+				<referenz id="{A0E64E1F-C433-41B7-BCB7-5E79D0D3A25E}" ziel="code"/>
+			</art>
+			<id-datei>{2965A3BB-C42D-480F-9BA7-548331FB0A2C}.pdf</id-datei>
+		</dokument>
+	</dokumente>
+</risexport>

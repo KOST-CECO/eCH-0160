@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<risexport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\master_data_20070620203000.transfered\geschaeft.xsd">
+	<geschaeft>
+		<id>{AA830A6E-E5D0-4881-8810-E2ABF837E345}</id>
+		<deleted>false</deleted>
+		<command>update</command>
+		<public>true</public>
+		<ziel>1</ziel>
+		<gremium>Finanzdepartement</gremium>
+		<bezeichnung>Gesetz über die Umsetzung der Neugestaltung des Finanzausgleichs und der Aufgabenteilung zwischen Bund und Kantonen</bezeichnung>
+		<kurzbezeichnung>G Umsetzung NFA</kurzbezeichnung>
+		<nummer>22.07.01</nummer>
+		<datum/>
+		<eroeffnet>07.02.2007</eroeffnet>
+		<art>
+			<referenz id="{57B7EC7C-9B76-4391-9E8E-AC691808760C}" ziel="code"/>
+		</art>
+		<vorstoss>false</vorstoss>
+		<aktenplan>8910465585691065172:11449852:1120210416004#4416000785329772406:11595609:1122570923892</aktenplan>
+		<beteiligte>
+			<referenz art="{988DDC3C-8C8B-4935-A77C-91C952A0C6E3}" id="{79BCECD2-834D-474B-BE58-9352A929E4BB}" ziel="gruppe"/>
+		</beteiligte>
+		<laufweg>
+			<schritt bezeichnung="Geschäft eröffnen" erledigt="07.02.2007" meilenstein=""/>
+			<schritt bezeichnung="KRGE 1 KR-Geschäft anmelden" erledigt="08.02.2007" meilenstein=""/>
+			<schritt bezeichnung="KRGE 2 Sitzung der Regierung (Nulllesung)" erledigt="13.02.2007" meilenstein=""/>
+			<schritt bezeichnung="KRGE 3 Nachbereitung der Regierungssitzung" erledigt="14.02.2007" meilenstein=""/>
+			<schritt bezeichnung="KRGE 9 Botschaft und Entwurf ausfertigen" erledigt="15.02.2007" meilenstein="GE_M2.GIF"/>
+			<schritt bezeichnung="KRGE 10 Session des Kantonsrates (Kommissionsbestellung)" erledigt="26.02.2007" meilenstein=""/>
+			<schritt bezeichnung="KRGE 11 Nachbereitung Kommissionsbestellung" erledigt="26.02.2007" meilenstein="GE_M3.GIF"/>
+			<schritt bezeichnung="KRGE 12 Vorbereitung der Sitzung der vorberatenden Kommission" erledigt="27.02.2007" meilenstein=""/>
+			<schritt bezeichnung="KRGE 13 Sitzung der vorberatenden Kommission (erste Lesung)" erledigt="16.03.2007" meilenstein=""/>
+			<schritt bezeichnung="KRGE 14 Nachbereitung der Sitzung der vorberatenden Kommission (erste Lesung)" erledigt="16.03.2007" meilenstein=""/>
+			<schritt bezeichnung="KRGE 15 KR-Geschäft anmelden" erledigt="16.03.2007" meilenstein=""/>
+			<schritt bezeichnung="KRGE 16 Sitzung der Regierung (Antrag)" erledigt="20.03.2007" meilenstein=""/>
+			<schritt bezeichnung="KRGE 17 Anträge ausfertigen (chamois und rosa)" erledigt="22.03.2007" meilenstein="GE_M4.GIF"/>
+			<schritt bezeichnung="KRGE 18 Session des Kantonsrates (erste Lesung / Gesamtabstimmung)" erledigt="04.05.2007" meilenstein=""/>
+			<schritt bezeichnung="KRGE 19 Anträge ausfertigen (grau)" erledigt="04.05.2007" meilenstein=""/>
+			<schritt bezeichnung="KRGE 20 Ergebnis erster Lesung ausfertigen " erledigt="04.05.2007" meilenstein="GE_M5.GIF"/>
+			<schritt bezeichnung="KRGE 26 Session des Kantonsrates (zweite Lesung / Schlussabstimmung / Gesamtabstimmung)" erledigt="" meilenstein=""/>
+			<schritt bezeichnung="KRGE 27 Anträge ausfertigen (grau und grün)" erledigt="" meilenstein=""/>
+			<schritt bezeichnung="KRGE 28 Sitzung der Regierung (Vollzugsbeschluss)" erledigt="" meilenstein=""/>
+			<schritt bezeichnung="KRGE 29 Veröffentlichung der Referendumsvorlage" erledigt="" meilenstein="RV_M1.GIF"/>
+			<schritt bezeichnung="KRGE 30 Regierungsgeschäft vorbereiten" erledigt="" meilenstein=""/>
+			<schritt bezeichnung="KRGE 31 Sitzung der Regierung (ReVoBe)" erledigt="" meilenstein=""/>
+			<schritt bezeichnung="KRGE 32 In der Gesetzessammlung veröffentlichen" erledigt="" meilenstein=""/>
+			<schritt bezeichnung="Ende" erledigt="" meilenstein=""/>
+		</laufweg>
+		<geschaeftsreferenzen>
+			<referenz art="{8A4E93D0-8244-4672-AAA3-10D633CF209E}" id="{314F2F1F-BB48-46BA-BC0C-16AA8BCDD7D8}" ziel="geschaeft"/>
+			<referenz art="{8A4E93D0-8244-4672-AAA3-10D633CF209E}" id="{0EDC1129-F0C0-43F7-B056-1154973C7E4C}" ziel="geschaeft"/>
+			<referenz art="{66C0927D-3ACC-483E-8493-25E0C393FDD9}" id="{060DE778-913A-4FF3-8403-96D162A5940A}" ziel="geschaeft"/>
+		</geschaeftsreferenzen>
+		<dokumente>
+			<referenz id="{63669F88-901C-46F9-ACCA-916642777C8D}" ziel="dokument"/>
+			<referenz id="{F45FA446-118A-4520-8864-B0CA80418DC4}" ziel="dokument"/>
+			<referenz id="{7DC1EF71-9DE7-421F-810C-3C4683A8122F}" ziel="dokument"/>
+			<referenz id="{546E9770-0E7F-4A9B-A439-55522916DBD0}" ziel="dokument"/>
+			<referenz id="{90E72247-267C-42C2-88C3-94BF5A62CCF6}" ziel="dokument"/>
+			<referenz id="{7DAF74EC-788B-4475-BFB6-409D3BE8EBDB}" ziel="dokument"/>
+			<referenz id="{F1BEE9A7-DDD2-4CB0-9D75-12AB2729CB65}" ziel="dokument"/>
+		</dokumente>
+	</geschaeft>
+	<dokumente>
+		<dokument>
+			<id>{9EBAA79A-3F71-4F1A-BC43-1B410FDA6EFD}</id>
+			<public>false</public>
+		</dokument>
+		<dokument checkindatum="2007-02-20 10:39:56">
+			<id>{63669F88-901C-46F9-ACCA-916642777C8D}</id>
+			<public>true</public>
+			<parent>{AA830A6E-E5D0-4881-8810-E2ABF837E345}</parent>
+			<title>Aktuelle Mitgliederliste</title>
+			<art>
+				<referenz id="{A0E64E1F-C433-41B7-BCB7-5E79D0D3A25E}" ziel="code"/>
+			</art>
+			<id-datei>{63669F88-901C-46F9-ACCA-916642777C8D}.pdf</id-datei>
+		</dokument>
+		<dokument checkindatum="2007-03-22 10:31:55">
+			<id>{F45FA446-118A-4520-8864-B0CA80418DC4}</id>
+			<public>true</public>
+			<parent>{AA830A6E-E5D0-4881-8810-E2ABF837E345}</parent>
+			<title>Anträge der vorberatenden Kommission vom 12. März 2007</title>
+			<art>
+				<referenz id="{B80977D2-B287-4588-8A10-3692A60322CC}" ziel="code"/>
+			</art>
+			<id-datei>{F45FA446-118A-4520-8864-B0CA80418DC4}.pdf</id-datei>
+		</dokument>
+		<dokument checkindatum="2007-02-15 08:00:14">
+			<id>{7DC1EF71-9DE7-421F-810C-3C4683A8122F}</id>
+			<public>true</public>
+			<parent>{AA830A6E-E5D0-4881-8810-E2ABF837E345}</parent>
+			<title>Botschaft und Entwurf der Regierung vom 13. Februar 2007</title>
+			<art>
+				<referenz id="{B1F3C72C-9C76-418E-90E3-1F407DC0268A}" ziel="code"/>
+			</art>
+			<id-datei>{7DC1EF71-9DE7-421F-810C-3C4683A8122F}.pdf</id-datei>
+		</dokument>
+		<dokument>
+			<id>{5E33782F-B849-4A61-B3D0-7A79ADA43D70}</id>
+			<public>false</public>
+		</dokument>
+		<dokument>
+			<id>{6D315940-ED0F-431F-8747-EBCFC9039C00}</id>
+			<public>false</public>
+		</dokument>
+		<dokument checkindatum="2007-05-04 11:07:13">
+			<id>{546E9770-0E7F-4A9B-A439-55522916DBD0}</id>
+			<public>true</public>
+			<parent>{AA830A6E-E5D0-4881-8810-E2ABF837E345}</parent>
+			<title>Ergebnis der 1. Lesung des Kantonsrates vom 24. April 2007</title>
+			<art>
+				<referenz id="{60982AEA-5672-4EFB-A069-3A2B88CC68A7}" ziel="code"/>
+			</art>
+			<id-datei>{546E9770-0E7F-4A9B-A439-55522916DBD0}.pdf</id-datei>
+		</dokument>
+		<dokument checkindatum="2007-04-25 11:59:39">
+			<id>{90E72247-267C-42C2-88C3-94BF5A62CCF6}</id>
+			<public>true</public>
+			<parent>{AA830A6E-E5D0-4881-8810-E2ABF837E345}</parent>
+			<title>Antrag SP-Fraktion zu Art. 36ter vom 23. April 2007</title>
+			<art>
+				<referenz id="{B80977D2-B287-4588-8A10-3692A60322CC}" ziel="code"/>
+			</art>
+			<id-datei>{90E72247-267C-42C2-88C3-94BF5A62CCF6}.pdf</id-datei>
+		</dokument>
+		<dokument checkindatum="2007-04-25 12:01:27">
+			<id>{7DAF74EC-788B-4475-BFB6-409D3BE8EBDB}</id>
+			<public>true</public>
+			<parent>{AA830A6E-E5D0-4881-8810-E2ABF837E345}</parent>
+			<title>Antrag Denoth-St.Gallen vom 23. April 2007</title>
+			<art>
+				<referenz id="{B80977D2-B287-4588-8A10-3692A60322CC}" ziel="code"/>
+			</art>
+			<id-datei>{7DAF74EC-788B-4475-BFB6-409D3BE8EBDB}.pdf</id-datei>
+		</dokument>
+		<dokument checkindatum="2007-04-25 12:02:07">
+			<id>{F1BEE9A7-DDD2-4CB0-9D75-12AB2729CB65}</id>
+			<public>true</public>
+			<parent>{AA830A6E-E5D0-4881-8810-E2ABF837E345}</parent>
+			<title>Antrag Frei-Diepoldsau zu Art. 36ter vom 23. April 2007</title>
+			<art>
+				<referenz id="{B80977D2-B287-4588-8A10-3692A60322CC}" ziel="code"/>
+			</art>
+			<id-datei>{F1BEE9A7-DDD2-4CB0-9D75-12AB2729CB65}.pdf</id-datei>
+		</dokument>
+	</dokumente>
+</risexport>

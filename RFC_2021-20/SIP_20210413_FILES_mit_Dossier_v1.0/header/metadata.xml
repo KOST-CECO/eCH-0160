@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paket xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://bar.admin.ch/arelda/v4" xsi:schemaLocation="http://bar.admin.ch/arelda/v4 xsd/arelda.xsd" xsi:type="paketSIP" schemaVersion="4.0">
+	<paketTyp>SIP</paketTyp>
+	<inhaltsverzeichnis>
+		<ordner>
+			<name>header</name>
+			<originalName>header</originalName>
+			<ordner>
+				<name>xsd</name>
+				<originalName>xsd</originalName>
+				<datei id="_asbBgZwcEeugYO7zUkufmw">
+					<name>ablieferung.xsd</name>
+					<originalName>ablieferung.xsd</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>aa1f7ad13064e1643ac85478296165af</pruefsumme>
+				</datei>
+				<datei id="_asujgJwcEeugYO7zUkufmw">
+					<name>archivischeNotiz.xsd</name>
+					<originalName>archivischeNotiz.xsd</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>847911efbac472d0ecc6fe1e99873799</pruefsumme>
+				</datei>
+				<datei id="_as3tcJwcEeugYO7zUkufmw">
+					<name>archivischerVorgang.xsd</name>
+					<originalName>archivischerVorgang.xsd</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>4a237563fd2d40be9a9ecbf4c0bf946e</pruefsumme>
+				</datei>
+				<datei id="_ateKYJwcEeugYO7zUkufmw">
+					<name>arelda.xsd</name>
+					<originalName>arelda.xsd</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>ecf22660f4bcf86fdfd14f3a84b4fc5a</pruefsumme>
+				</datei>
+				<datei id="_atxFUJwcEeugYO7zUkufmw">
+					<name>base.xsd</name>
+					<originalName>base.xsd</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>cb30854883c6d5640b0965dae5f34afd</pruefsumme>
+				</datei>
+				<datei id="_auNxQJwcEeugYO7zUkufmw">
+					<name>datei.xsd</name>
+					<originalName>datei.xsd</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>a4276f0c798ce6c497f0a03660ead0d9</pruefsumme>
+				</datei>
+				<datei id="_augsMJwcEeugYO7zUkufmw">
+					<name>dokument.xsd</name>
+					<originalName>dokument.xsd</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>721965e5224766040bf0bcd03978809e</pruefsumme>
+				</datei>
+				<datei id="_au0OMJwcEeugYO7zUkufmw">
+					<name>dossier.xsd</name>
+					<originalName>dossier.xsd</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>f3f1141d95e92a291e84cfb30bb30e9a</pruefsumme>
+				</datei>
+				<datei id="_avQ6IJwcEeugYO7zUkufmw">
+					<name>ordner.xsd</name>
+					<originalName>ordner.xsd</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>83e0f91d1a232c7bdd7416970844af1c</pruefsumme>
+				</datei>
+				<datei id="_avs_AJwcEeugYO7zUkufmw">
+					<name>ordnungssystem.xsd</name>
+					<originalName>ordnungssystem.xsd</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>4b64247b25362382d6c648ba8ff76ad6</pruefsumme>
+				</datei>
+				<datei id="_awAhAJwcEeugYO7zUkufmw">
+					<name>ordnungssystemposition.xsd</name>
+					<originalName>ordnungssystemposition.xsd</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>1e7f0a9b914c8baf1235740b133ec90e</pruefsumme>
+				</datei>
+				<datei id="_awcl4JwcEeugYO7zUkufmw">
+					<name>paket.xsd</name>
+					<originalName>paket.xsd</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>9920c66b7066f645390e922ba803aadb</pruefsumme>
+				</datei>
+				<datei id="_awwH4JwcEeugYO7zUkufmw">
+					<name>provenienz.xsd</name>
+					<originalName>provenienz.xsd</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>2d6dbc4665cb5169d62549dbbc3f19a7</pruefsumme>
+				</datei>
+				<datei id="_aw5R0JwcEeugYO7zUkufmw">
+					<name>zusatzDaten.xsd</name>
+					<originalName>zusatzDaten.xsd</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>a685887b7ad673ea2deac6f96cf3fb4f</pruefsumme>
+				</datei>
+			</ordner>
+		</ordner>
+		<ordner>
+			<name>content</name>
+			<originalName>content</originalName>
+			<ordner>
+				<name>d00001</name>
+				<originalName>d00001</originalName>
+				<datei id="__MCOMK2sEeuQk60EJC-XSw">
+					<name>Test23.ili</name>
+					<originalName>Test23.ili</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>e0e58b0907e98b56b4e00780c4707bb0</pruefsumme>
+				</datei>
+				<datei id="__MEqcK2sEeuQk60EJC-XSw">
+					<name>AbstractSymbology.ili</name>
+					<originalName>AbstractSymbology.ili</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>be66beba06650e6083ea009aca792ecb</pruefsumme>
+				</datei>
+				<datei id="__MHGsK2sEeuQk60EJC-XSw">
+					<name>readme.txt</name>
+					<originalName>readme.txt</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>344ac6afc436d5b51a9f9a80d8073852</pruefsumme>
+				</datei>
+				<datei id="__MIU0K2sEeuQk60EJC-XSw">
+					<name>StandardSymbology.xml</name>
+					<originalName>StandardSymbology.xml</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>de16bf90fc2709007d1c4fb8fac7fac0</pruefsumme>
+				</datei>
+				<datei id="_Fq8yYK2tEeuQk60EJC-XSw">
+					<name>Test23_erweitert.ili</name>
+					<originalName>Test23_erweitert.ili</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>19e790f8f718fbf4896b914282b47bc9</pruefsumme>
+				</datei>
+				<datei id="_Fq-nkK2tEeuQk60EJC-XSw">
+					<name>Test23_erweitert.xml</name>
+					<originalName>Test23_erweitert.xml</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>d8a6119dd4434aeb6358b077e358e1c7</pruefsumme>
+				</datei>
+				<datei id="_G6aPIK2tEeuQk60EJC-XSw">
+					<name>Test23.pdf</name>
+					<originalName>Test23.pdf</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>4a440a98044720698a861f8b0e91d9a7</pruefsumme>
+				</datei>
+			</ordner>
+			<ordner>
+				<name>d00002</name>
+				<originalName>d00002</originalName>
+				<datei id="_kRsAQK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_FLUESSE_L.dbf</name>
+					<originalName>GEN_A4_FLUESSE_L.dbf</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>e0561e93ef7be11c370bc3b219536b09</pruefsumme>
+				</datei>
+				<datei id="_kR1KMK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_GEMEINDEBESCHRIFTUNG_A.dbf</name>
+					<originalName>GEN_A4_GEMEINDEBESCHRIFTUNG_A.dbf</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>72d9f4e9b6d703861687b9ba0d137475</pruefsumme>
+				</datei>
+				<datei id="_kR734K2vEeuotNSfSyGGSw">
+					<name>GEN_A4_GEMEINDEN_L.dbf</name>
+					<originalName>GEN_A4_GEMEINDEN_L.dbf</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>b34fe4250e0c4a7964b9ede793b3b035</pruefsumme>
+				</datei>
+				<datei id="_kSFB0K2vEeuotNSfSyGGSw">
+					<name>GEN_A4_GEMEINDEN_SEEN_F.dbf</name>
+					<originalName>GEN_A4_GEMEINDEN_SEEN_F.dbf</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>b755cbaae3bbffef3bfc92e7a6fe16a7</pruefsumme>
+				</datei>
+				<datei id="_kSJTQK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_KANTONSMASKE_F.dbf</name>
+					<originalName>GEN_A4_KANTONSMASKE_F.dbf</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>481f51a0f6b6b5d71bd7917a56017ab5</pruefsumme>
+				</datei>
+				<datei id="_kSMWkK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_SEEN_F.dbf</name>
+					<originalName>GEN_A4_SEEN_F.dbf</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>a45e7edb7eb7dca3f85467472d0dc236</pruefsumme>
+				</datei>
+				<datei id="_kSQA8K2vEeuotNSfSyGGSw">
+					<name>Gemeinden_ZH_fuer_A4_Darstellungen.pdf</name>
+					<originalName>Gemeinden_ZH_fuer_A4_Darstellungen.pdf</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>d14e37ccb6a842a370af41b50af15da3</pruefsumme>
+				</datei>
+				<datei id="_kSUSYK2vEeuotNSfSyGGSw">
+					<name>Gewaesser_ZH_fuer_A4_Darstellungen.pdf</name>
+					<originalName>Gewaesser_ZH_fuer_A4_Darstellungen.pdf</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>c4bc401ed0146af7f644ff165ed1870b</pruefsumme>
+				</datei>
+				<datei id="_kSXVsK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_FLUESSE_L.prj</name>
+					<originalName>GEN_A4_FLUESSE_L.prj</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>e05db6e5456b77a49623a9aebf4d11b6</pruefsumme>
+				</datei>
+				<datei id="_kScOMK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_GEMEINDEBESCHRIFTUNG_A.prj</name>
+					<originalName>GEN_A4_GEMEINDEBESCHRIFTUNG_A.prj</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>e05db6e5456b77a49623a9aebf4d11b6</pruefsumme>
+				</datei>
+				<datei id="_kSf4kK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_GEMEINDEN_L.prj</name>
+					<originalName>GEN_A4_GEMEINDEN_L.prj</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>e05db6e5456b77a49623a9aebf4d11b6</pruefsumme>
+				</datei>
+				<datei id="_kSi74K2vEeuotNSfSyGGSw">
+					<name>GEN_A4_GEMEINDEN_SEEN_F.prj</name>
+					<originalName>GEN_A4_GEMEINDEN_SEEN_F.prj</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>e05db6e5456b77a49623a9aebf4d11b6</pruefsumme>
+				</datei>
+				<datei id="_kSlYIK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_KANTONSMASKE_F.prj</name>
+					<originalName>GEN_A4_KANTONSMASKE_F.prj</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>e05db6e5456b77a49623a9aebf4d11b6</pruefsumme>
+				</datei>
+				<datei id="_kSn0YK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_SEEN_F.prj</name>
+					<originalName>GEN_A4_SEEN_F.prj</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>e05db6e5456b77a49623a9aebf4d11b6</pruefsumme>
+				</datei>
+				<datei id="_kSsF0K2vEeuotNSfSyGGSw">
+					<name>GEN_A4_FLUESSE_L.sbn</name>
+					<originalName>GEN_A4_FLUESSE_L.sbn</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>6647444fbcfdc7a477c52686a72ba0ee</pruefsumme>
+				</datei>
+				<datei id="_kSvJIK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_GEMEINDEBESCHRIFTUNG_A.sbn</name>
+					<originalName>GEN_A4_GEMEINDEBESCHRIFTUNG_A.sbn</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>ce79aa1debd35c654f764bd8460eb49f</pruefsumme>
+				</datei>
+				<datei id="_kSzakK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_GEMEINDEN_L.sbn</name>
+					<originalName>GEN_A4_GEMEINDEN_L.sbn</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>d32b4dce74b66ea5f2f04a21bd33d252</pruefsumme>
+				</datei>
+				<datei id="_kS3sAK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_GEMEINDEN_SEEN_F.sbn</name>
+					<originalName>GEN_A4_GEMEINDEN_SEEN_F.sbn</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>ced4083c165796aa803be4d62d99574e</pruefsumme>
+				</datei>
+				<datei id="_kS6vUK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_KANTONSMASKE_F.sbn</name>
+					<originalName>GEN_A4_KANTONSMASKE_F.sbn</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>4b044ee812ba05272e2ae94258404823</pruefsumme>
+				</datei>
+				<datei id="_kS_AwK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_SEEN_F.sbn</name>
+					<originalName>GEN_A4_SEEN_F.sbn</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>629c8c7e1ccffaff28008e7ba87a2902</pruefsumme>
+				</datei>
+				<datei id="_kTDSMK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_FLUESSE_L.sbx</name>
+					<originalName>GEN_A4_FLUESSE_L.sbx</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>9fcfd03f7c8761d0b767e47c9ab2fba5</pruefsumme>
+				</datei>
+				<datei id="_kTG8kK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_GEMEINDEBESCHRIFTUNG_A.sbx</name>
+					<originalName>GEN_A4_GEMEINDEBESCHRIFTUNG_A.sbx</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>4becceb53a691d6c26e7f011f268eb9a</pruefsumme>
+				</datei>
+				<datei id="_kTJ_4K2vEeuotNSfSyGGSw">
+					<name>GEN_A4_GEMEINDEN_L.sbx</name>
+					<originalName>GEN_A4_GEMEINDEN_L.sbx</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>4fc9800746c70e77ca4251e5c3b3d8f8</pruefsumme>
+				</datei>
+				<datei id="_kTORUK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_GEMEINDEN_SEEN_F.sbx</name>
+					<originalName>GEN_A4_GEMEINDEN_SEEN_F.sbx</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>5e68952456c0ca127b0df212ccdcffbf</pruefsumme>
+				</datei>
+				<datei id="_kTR7sK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_KANTONSMASKE_F.sbx</name>
+					<originalName>GEN_A4_KANTONSMASKE_F.sbx</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>22477056fe78b4bf90b33f3d55fc82d1</pruefsumme>
+				</datei>
+				<datei id="_kTU_AK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_SEEN_F.sbx</name>
+					<originalName>GEN_A4_SEEN_F.sbx</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>b445b522bb7b1632b3b44d7468b4db46</pruefsumme>
+				</datei>
+				<datei id="_kTYpYK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_FLUESSE_L.shp</name>
+					<originalName>GEN_A4_FLUESSE_L.shp</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>7d76f1f4976c698ed74389bdad156091</pruefsumme>
+				</datei>
+				<datei id="_kTc60K2vEeuotNSfSyGGSw">
+					<name>GEN_A4_GEMEINDEBESCHRIFTUNG_A.shp</name>
+					<originalName>GEN_A4_GEMEINDEBESCHRIFTUNG_A.shp</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>4e1f2f99c3736abd9d19cb55c04d0f45</pruefsumme>
+				</datei>
+				<datei id="_kTglMK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_GEMEINDEN_L.shp</name>
+					<originalName>GEN_A4_GEMEINDEN_L.shp</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>61a43800295a025bdabc2557863048cf</pruefsumme>
+				</datei>
+				<datei id="_kTldsK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_GEMEINDEN_SEEN_F.shp</name>
+					<originalName>GEN_A4_GEMEINDEN_SEEN_F.shp</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>b9e73d00d29714a4fcf50ee32721485f</pruefsumme>
+				</datei>
+				<datei id="_kTpvIK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_KANTONSMASKE_F.shp</name>
+					<originalName>GEN_A4_KANTONSMASKE_F.shp</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>525069f8ddb3256de34b89f8face6321</pruefsumme>
+				</datei>
+				<datei id="_kTv1wK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_SEEN_F.shp</name>
+					<originalName>GEN_A4_SEEN_F.shp</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>c52545d154a8d1d186c3b0d2801cdba1</pruefsumme>
+				</datei>
+				<datei id="_kTy5EK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_FLUESSE_L.shx</name>
+					<originalName>GEN_A4_FLUESSE_L.shx</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>36b7fd4b57afc87be4e97971087ec9b4</pruefsumme>
+				</datei>
+				<datei id="_kT2jcK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_GEMEINDEBESCHRIFTUNG_A.shx</name>
+					<originalName>GEN_A4_GEMEINDEBESCHRIFTUNG_A.shx</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>e43af0c4119c17e88955cfdd5ba9415b</pruefsumme>
+				</datei>
+				<datei id="_kT5mwK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_GEMEINDEN_L.shx</name>
+					<originalName>GEN_A4_GEMEINDEN_L.shx</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>04ee0e81533dda4c9e4bbd8b3d1ff308</pruefsumme>
+				</datei>
+				<datei id="_kT9RIK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_GEMEINDEN_SEEN_F.shx</name>
+					<originalName>GEN_A4_GEMEINDEN_SEEN_F.shx</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>04b01e199ac6f9329936cdf08f427ed8</pruefsumme>
+				</datei>
+				<datei id="_kUBikK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_KANTONSMASKE_F.shx</name>
+					<originalName>GEN_A4_KANTONSMASKE_F.shx</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>0dbf97a73b0c04f7979a7f4fa5c4ab3f</pruefsumme>
+				</datei>
+				<datei id="_kUFM8K2vEeuotNSfSyGGSw">
+					<name>GEN_A4_SEEN_F.shx</name>
+					<originalName>GEN_A4_SEEN_F.shx</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>609107735034b973be9ff19fe1d04812</pruefsumme>
+				</datei>
+				<datei id="_kUIQQK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_FLUESSE_L.shp.xml</name>
+					<originalName>GEN_A4_FLUESSE_L.shp.xml</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>5af38ecbf1f9e62458081042a4e50f3c</pruefsumme>
+				</datei>
+				<datei id="_kUKsgK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_GEMEINDEBESCHRIFTUNG_A.shp.xml</name>
+					<originalName>GEN_A4_GEMEINDEBESCHRIFTUNG_A.shp.xml</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>53e82f2c5bc5ee19e3eaa5f0640c6d00</pruefsumme>
+				</datei>
+				<datei id="_kUOW4K2vEeuotNSfSyGGSw">
+					<name>GEN_A4_GEMEINDEN_L.shp.xml</name>
+					<originalName>GEN_A4_GEMEINDEN_L.shp.xml</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>e14f802a0a8eec7fefdc8fc2a9bb6d00</pruefsumme>
+				</datei>
+				<datei id="_kUQzIK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_GEMEINDEN_SEEN_F.shp.xml</name>
+					<originalName>GEN_A4_GEMEINDEN_SEEN_F.shp.xml</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>795fce815b936403ead655d5ff96f470</pruefsumme>
+				</datei>
+				<datei id="_kUT2cK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_KANTONSMASKE_F.shp.xml</name>
+					<originalName>GEN_A4_KANTONSMASKE_F.shp.xml</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>089139acfdf77bc54fe7f5c48f1db634</pruefsumme>
+				</datei>
+				<datei id="_kUW5wK2vEeuotNSfSyGGSw">
+					<name>GEN_A4_SEEN_F.shp.xml</name>
+					<originalName>GEN_A4_SEEN_F.shp.xml</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>9a780d11b4c2d984e5502d7d8c356702</pruefsumme>
+				</datei>
+				<datei id="_8QzEwK2vEeuotNSfSyGGSw">
+					<name>Kanton_Zuerich_A4.pdf</name>
+					<originalName>Kanton_Zuerich_A4.pdf</originalName>
+					<pruefalgorithmus>MD5</pruefalgorithmus>
+					<pruefsumme>66343740308853b99340601e09b87636</pruefsumme>
+				</datei>
+			</ordner>
+		</ordner>
+	</inhaltsverzeichnis>
+	<ablieferung xsi:type="ablieferungFilesSIP">
+		<ablieferungstyp>FILES</ablieferungstyp>
+		<ablieferndeStelle>Bundesamt für Beispiele</ablieferndeStelle>
+		<ablieferungsnummer>2021/4</ablieferungsnummer>
+		<provenienz>
+			<aktenbildnerName>Bundesamt für Beispiele</aktenbildnerName>
+		</provenienz>
+		<ordnungssystem>
+			<name>Projekt GEO SIP</name>
+			<ordnungssystemposition id="_icFb4JwcEeugYO7zUkufmw">
+				<nummer>1</nummer>
+				<titel>INTERLIS II</titel>
+				<dossier id="_ZoGn4K2uEeuotNSfSyGGSw">
+					<titel>readme</titel>
+					<entstehungszeitraum>
+						<von>
+							<datum>2012</datum>
+						</von>
+						<bis>
+							<datum>2013</datum>
+						</bis>
+					</entstehungszeitraum>
+					<dateiRef>__MHGsK2sEeuQk60EJC-XSw</dateiRef>
+				</dossier>
+				<dossier id="_nNShEJwcEeugYO7zUkufmw">
+					<titel>interlis Dateien</titel>
+					<erscheinungsform>digital</erscheinungsform>
+					<entstehungszeitraum>
+						<von>
+							<datum>2012</datum>
+						</von>
+						<bis>
+							<datum>2013</datum>
+						</bis>
+					</entstehungszeitraum>
+					<dateiRef>__MEqcK2sEeuQk60EJC-XSw</dateiRef>
+					<dateiRef>__MIU0K2sEeuQk60EJC-XSw</dateiRef>
+					<dateiRef>__MCOMK2sEeuQk60EJC-XSw</dateiRef>
+					<dateiRef>_Fq8yYK2tEeuQk60EJC-XSw</dateiRef>
+					<dateiRef>_Fq-nkK2tEeuQk60EJC-XSw</dateiRef>
+				</dossier>
+				<dossier id="_tCufcK2sEeuQk60EJC-XSw">
+					<titel>PDF Repräsentation</titel>
+					<entstehungszeitraum>
+						<von>
+							<datum>2012</datum>
+						</von>
+						<bis>
+							<datum>2013</datum>
+						</bis>
+					</entstehungszeitraum>
+					<dateiRef>_G6aPIK2tEeuQk60EJC-XSw</dateiRef>
+				</dossier>
+			</ordnungssystemposition>
+			<ordnungssystemposition id="_j-hUAK2sEeuQk60EJC-XSw">
+				<nummer>2</nummer>
+				<titel>ESRI ShapeFile</titel>
+				<dossier id="_nc1toK2vEeuotNSfSyGGSw">
+					<titel>readme</titel>
+					<entstehungszeitraum>
+						<von>
+							<datum>2012</datum>
+						</von>
+						<bis>
+							<datum>2013</datum>
+						</bis>
+					</entstehungszeitraum>
+					<dateiRef>_kSQA8K2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kSUSYK2vEeuotNSfSyGGSw</dateiRef>
+				</dossier>
+				<dossier id="_uTAUMK2vEeuotNSfSyGGSw">
+					<titel>ShapeFile</titel>
+					<entstehungszeitraum>
+						<von>
+							<datum>2012</datum>
+						</von>
+						<bis>
+							<datum>2013</datum>
+						</bis>
+					</entstehungszeitraum>
+					<dateiRef>_kRsAQK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kSXVsK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kSsF0K2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kTDSMK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kTYpYK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kUIQQK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kTy5EK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kR1KMK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kScOMK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kSvJIK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kTG8kK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kTc60K2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kUKsgK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kT2jcK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kR734K2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kSf4kK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kSzakK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kTJ_4K2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kTglMK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kUOW4K2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kT5mwK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kSFB0K2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kSi74K2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kS3sAK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kTORUK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kTldsK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kUQzIK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kT9RIK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kSJTQK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kSlYIK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kS6vUK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kTR7sK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kTpvIK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kUT2cK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kUBikK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kSMWkK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kSn0YK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kS_AwK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kTU_AK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kTv1wK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kUW5wK2vEeuotNSfSyGGSw</dateiRef>
+					<dateiRef>_kUFM8K2vEeuotNSfSyGGSw</dateiRef>
+				</dossier>
+				<dossier id="_1KfJYK2vEeuotNSfSyGGSw">
+					<titel>PDF Repräsentation</titel>
+					<entstehungszeitraum>
+						<von>
+							<datum>2012</datum>
+						</von>
+						<bis>
+							<datum>2013</datum>
+						</bis>
+					</entstehungszeitraum>
+					<dateiRef>_8QzEwK2vEeuotNSfSyGGSw</dateiRef>
+				</dossier>
+			</ordnungssystemposition>
+		</ordnungssystem>
+	</ablieferung>
+</paket>

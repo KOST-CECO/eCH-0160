@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="base.xsd"/>
+	<xs:simpleType name="titelMappe">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Bezeichnung des Dossiers.
+        GEVER: Kurzbeschreibung des Geschäftsfalls (bei Seriendossierbildung) oder des Sachbetreffs (bei Sachdossierbildung) zu welchem Dokumente im Dossier abgelegt werden. 
+        FILES: Kurzbeschreibung des Inhalts der Datensammlung und der Dokumentation (falls vorhanden)</xs:documentation>
+			<xs:documentation xml:lang="en">"Designation of the dossier.
+        GEVER: Brief description of the business event (when creating serial dossiers) or matter (when creating dossiers for specific matters) in respect of which documents are archived in the dossier. 
+        FILES: Brief description of the content of the data collection and the documentation (if present)"</xs:documentation>
+			<xs:documentation xml:lang="fr">"Désignation du dossier ou du groupe de documents.
+        GEVER: brève description de l'affaire (dans le cas de la formation des dossiers en série) ou des objets (dans le cas de la formation de dossiers) auxquels appartiennent les documents classés dans le dossier.
+        FILES: brève description du contenu de la collection de données et de la documentation (si elle existe)."</xs:documentation>
+			<xs:documentation xml:lang="it"/>
+		</xs:annotation>
+		<xs:restriction base="text4"/>
+	</xs:simpleType>
+	<xs:simpleType name="idMappe">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Paketweit eindeutige ID. Sie wird im AIS im Modul Verzeichnungseinheiten auf Dossierstufe verzeichnet.</xs:documentation>
+			<xs:documentation xml:lang="en">Unambiguous ID for the whole package. It is described in the units of description module of the AIS at dossier level.</xs:documentation>
+			<xs:documentation xml:lang="fr">ID univoque pour tout le paquet. Elle est enregistrée dans AIS dans le module Unité de description au niveau des dossiers.</xs:documentation>
+			<xs:documentation xml:lang="it"/>
+		</xs:annotation>
+		<xs:restriction base="xs:ID">
+			<xs:minLength value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- Reihenfolge in eCH-0160 v1.2 -->
+	<xs:simpleType name="orderMappe">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Reihenfolge, Ordnung der Dossier nach fortlaufender Zahl oder Creation Date</xs:documentation>
+		</xs:annotation>
+		<xs:union memberTypes="xs:integer xs:date"/>
+	</xs:simpleType>
+	<xs:simpleType name="bemerkungMappe">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Zusätzliche Informationen, welche das Dossier oder die Datensammlung betreffen. Hier können nähere Angaben zur Sprache und zu speziellen technischen Anforderungen eingetragen werden, welche den Zugang der Daten einschränken könnten.</xs:documentation>
+			<xs:documentation xml:lang="en">Additional information relating to the dossier or the data collection. Further information on the language and special technical requirements that may restrict access to the data may be entered here.</xs:documentation>
+			<xs:documentation xml:lang="fr">Informations complémentaires qui concernent le dossier ou la collection de données. Ici peuvent être reportées les précisions sur la langue et sur les exigences techniques qui peuvent limiter l'accès aux données.</xs:documentation>
+			<xs:documentation xml:lang="it"/>
+		</xs:annotation>
+		<xs:restriction base="text4"/>
+	</xs:simpleType>
+</xs:schema>
