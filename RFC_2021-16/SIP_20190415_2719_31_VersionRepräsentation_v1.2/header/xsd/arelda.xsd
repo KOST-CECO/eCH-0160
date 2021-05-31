@@ -541,8 +541,11 @@
 	<xs:complexType name="mappe" abstract="true">
 		<xs:sequence>
 			<xs:element name="titel" type="titelMappe"/>
-			<xs:element name="bemerkung" type="bemerkungMappe" minOccurs="0"/>
+			<xs:element name="inhalt" type="inhalt" minOccurs="0"/>
+			<xs:element name="eroeffnungsdatum" type="historischerZeitpunkt" minOccurs="0"/>
+			<xs:element name="erscheinungsform" type="erscheinungsformDossier" minOccurs="0"/>
 			<xs:element name="umfang" type="umfang" minOccurs="0"/>
+			<xs:element name="bemerkung" type="bemerkungMappe" minOccurs="0"/>
 			<xs:element name="zusatzDaten" type="zusatzDaten" minOccurs="0"/>
 		</xs:sequence>
 		<xs:attribute name="id" type="idMappe" use="required"/>
@@ -813,7 +816,9 @@
 			<xs:element name="zusatzDaten" type="zusatzDaten" minOccurs="0"/>
 			<xs:element name="aktivitaet" type="aktivitaet" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
+		<!-- Reihung statt Order eCH-0160 v1.2 -->
 		<xs:attribute name="order" type="orderVorgang" use="optional"/>
+		<xs:attribute name="reihung" type="orderVorgang" use="optional"/>
 	</xs:complexType>
 	<xs:complexType name="aktivitaet">
 		<xs:sequence>
@@ -827,7 +832,9 @@
 				<xs:element name="zusatzDaten" type="zusatzDaten" minOccurs="0"/>
 			</xs:sequence>
 		</xs:sequence>
+		<!-- Reihung statt Order eCH-0160 v1.2 -->
 		<xs:attribute name="order" type="orderAktivitaet" use="optional"/>
+		<xs:attribute name="reihung" type="orderAktivitaet" use="optional"/>
 	</xs:complexType>
 	<!-- Repräsentationen und Versionen in eCH-0160 v1.2 -->
 	<xs:complexType name="dateiRef">

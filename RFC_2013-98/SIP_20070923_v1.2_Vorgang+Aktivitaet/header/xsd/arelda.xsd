@@ -541,8 +541,11 @@
 	<xs:complexType name="mappe" abstract="true">
 		<xs:sequence>
 			<xs:element name="titel" type="titelMappe"/>
-			<xs:element name="bemerkung" type="bemerkungMappe" minOccurs="0"/>
+			<xs:element name="inhalt" type="inhalt" minOccurs="0"/>
+			<xs:element name="eroeffnungsdatum" type="historischerZeitpunkt" minOccurs="0"/>
+			<xs:element name="erscheinungsform" type="erscheinungsformDossier" minOccurs="0"/>
 			<xs:element name="umfang" type="umfang" minOccurs="0"/>
+			<xs:element name="bemerkung" type="bemerkungMappe" minOccurs="0"/>
 			<xs:element name="zusatzDaten" type="zusatzDaten" minOccurs="0"/>
 		</xs:sequence>
 		<xs:attribute name="id" type="idMappe" use="required"/>
