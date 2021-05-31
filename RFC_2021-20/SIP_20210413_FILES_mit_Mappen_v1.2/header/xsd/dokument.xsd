@@ -21,13 +21,6 @@
 			<xs:minLength value="1"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<!-- Reihenfolge in eCH-0160 v1.2 -->
-	<xs:simpleType name="orderDokument">
-		<xs:annotation>
-			<xs:documentation xml:lang="de">Reihenfolge, Ordnung der Dokumente nach fortlaufender Zahl oder Creation Date</xs:documentation>
-		</xs:annotation>
-		<xs:union memberTypes="xs:integer xs:date"/>
-	</xs:simpleType>
 	<xs:simpleType name="autor">
 		<xs:annotation>
 			<xs:documentation xml:lang="de">Verfasser eines Dokuments.</xs:documentation>

@@ -72,13 +72,6 @@
 			<xs:minLength value="1"/>
 		</xs:restriction>
 	</xs:simpleType>
-		<!-- Reihenfolge in eCH-0160 v1.2 -->
-	<xs:simpleType name="orderDossier">
-		<xs:annotation>
-			<xs:documentation xml:lang="de">Reihenfolge, Ordnung der Dossier nach fortlaufender Zahl oder Creation Date</xs:documentation>
-		</xs:annotation>
-		<xs:union memberTypes="xs:integer xs:date"/>
-	</xs:simpleType>
 
 	<xs:simpleType name="erscheinungsformDossier">
 		<xs:annotation>
@@ -211,7 +204,7 @@
 			<xs:documentation xml:lang="fr">Numéro qui définit l'ordre des activités au sein d'un dossier. Doit être univoque au sein du même dossier.</xs:documentation>
 			<xs:documentation xml:lang="it"/>
 		</xs:annotation>
-		<xs:restriction base="xs:integer"/>
+		<xs:union memberTypes="xs:integer xs:string xs:date"/>
 	</xs:simpleType>
 	<xs:simpleType name="titelVorgang">
 		<xs:annotation>
@@ -265,7 +258,7 @@
 			<xs:documentation xml:lang="fr">Numéro qui définit l'ordre des activités au sein d'un processus. Doit être univoque au sein du même processus.</xs:documentation>
 			<xs:documentation xml:lang="it"/>
 		</xs:annotation>
-		<xs:restriction base="xs:integer"/>
+		<xs:union memberTypes="xs:integer xs:string xs:date"/>
 	</xs:simpleType>
 	<xs:simpleType name="vorschreibungAktivitaet">
 		<xs:annotation>

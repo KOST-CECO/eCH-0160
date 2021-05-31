@@ -28,13 +28,6 @@
 		</xs:annotation>
 		<xs:restriction base="xs:ID"/>
 	</xs:simpleType>
-	<!-- Reihenfolge in eCH-0160 v1.2 -->
-	<xs:simpleType name="orderOrdnungssystemposition">
-		<xs:annotation>
-			<xs:documentation xml:lang="de">Reihenfolge, Ordnung der Ordnungssystemposition/Rubriken nach fortlaufender Zahl oder Creation Date</xs:documentation>
-		</xs:annotation>
-		<xs:union memberTypes="xs:integer xs:date"/>
-	</xs:simpleType>
 	<xs:simpleType name="federfuehrendeOrganisationseinheitOrdnungssystemposition">
 		<xs:annotation>
 			<xs:documentation xml:lang="de">Bestimmung der für die Erledigung des Geschäftes zuständigen federführenden Organisationseinheit.</xs:documentation>
