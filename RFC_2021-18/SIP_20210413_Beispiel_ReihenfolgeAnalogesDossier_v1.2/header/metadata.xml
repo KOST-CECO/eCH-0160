@@ -231,7 +231,7 @@
 								<datum>2013</datum>
 							</bis>
 						</entstehungszeitraum>
-						<dossier order="2" id="_HaqngJwdEeugYO7zUkufmw">
+						<dossier reihung="2" id="_HaqngJwdEeugYO7zUkufmw">
 							<titel>Subdossier_0000002</titel>
 							<erscheinungsform>digital</erscheinungsform>
 							<entstehungszeitraum>
@@ -245,7 +245,7 @@
 							<zusatzDaten>
 								<merkmal name="ReihenfolgeAnalogesDossier">000002</merkmal>
 							</zusatzDaten>
-							<dokument order="3" id="_SVNCcJwdEeugYO7zUkufmw">
+							<dokument reihung="3" id="_SVNCcJwdEeugYO7zUkufmw">
 								<titel>Dokument_0000003</titel>
 								<erscheinungsform>digital</erscheinungsform>
 								<zusatzDaten>
@@ -254,7 +254,7 @@
 								<dateiRef>_YCHQAJwfEeugYO7zUkufmw</dateiRef>
 								<dateiRef>_YC224JwfEeugYO7zUkufmw</dateiRef>
 							</dokument>
-							<dokument order="4" id="_SVNCcZwdEeugYO7zUkufmw">
+							<dokument reihung="4" id="_SVNCcZwdEeugYO7zUkufmw">
 								<titel>Dokument_0000004</titel>
 								<erscheinungsform>digital</erscheinungsform>
 								<zusatzDaten>
@@ -263,7 +263,7 @@
 								<dateiRef>_YDnE0JwfEeugYO7zUkufmw</dateiRef>
 							</dokument>
 						</dossier>
-						<dossier order="7" id="_xC0mUJwdEeugYO7zUkufmw">
+						<dossier reihung="7" id="_xC0mUJwdEeugYO7zUkufmw">
 							<titel>Subdossier_0000007</titel>
 							<erscheinungsform>digital</erscheinungsform>
 							<entstehungszeitraum>
@@ -277,7 +277,7 @@
 							<zusatzDaten>
 								<merkmal name="ReihenfolgeAnalogesDossier">000005</merkmal>
 							</zusatzDaten>
-							<dossier order="8" id="_4gVgwJwdEeugYO7zUkufmw">
+							<dossier reihung="8" id="_4gVgwJwdEeugYO7zUkufmw">
 								<titel>Subdossier_0000008</titel>
 								<erscheinungsform>digital</erscheinungsform>
 								<entstehungszeitraum>
@@ -291,7 +291,7 @@
 								<zusatzDaten>
 									<merkmal name="ReihenfolgeAnalogesDossier">000005.000001</merkmal>
 								</zusatzDaten>
-								<dokument order="9" id="_-s04MJwdEeugYO7zUkufmw">
+								<dokument reihung="9" id="_-s04MJwdEeugYO7zUkufmw">
 									<titel>Dokument_0000009</titel>
 									<erscheinungsform>digital</erscheinungsform>
 									<zusatzDaten>
@@ -299,7 +299,7 @@
 									</zusatzDaten>
 									<dateiRef>_YHCMQJwfEeugYO7zUkufmw</dateiRef>
 								</dokument>
-								<dokument order="10" id="_-s04MZwdEeugYO7zUkufmw">
+								<dokument reihung="10" id="_-s04MZwdEeugYO7zUkufmw">
 									<titel>Dokument_0000010</titel>
 									<erscheinungsform>digital</erscheinungsform>
 									<zusatzDaten>
@@ -308,7 +308,7 @@
 									<dateiRef>_YHoCIJwfEeugYO7zUkufmw</dateiRef>
 								</dokument>
 							</dossier>
-							<dossier order="11" id="_IPGfsJweEeugYO7zUkufmw">
+							<dossier reihung="11" id="_IPGfsJweEeugYO7zUkufmw">
 								<titel>Subdossier_0000011</titel>
 								<erscheinungsform>digital</erscheinungsform>
 								<entstehungszeitraum>
@@ -322,7 +322,7 @@
 								<zusatzDaten>
 									<merkmal name="ReihenfolgeAnalogesDossier">000005.000002</merkmal>
 								</zusatzDaten>
-								<dokument order="12" id="_SkYRcJweEeugYO7zUkufmw">
+								<dokument reihung="12" id="_SkYRcJweEeugYO7zUkufmw">
 									<titel>Dokument_0000012</titel>
 									<erscheinungsform>digital</erscheinungsform>
 									<zusatzDaten>
@@ -330,7 +330,7 @@
 									</zusatzDaten>
 									<dateiRef>_YIrLAJwfEeugYO7zUkufmw</dateiRef>
 								</dokument>
-								<dokument order="13" id="_SkYRcZweEeugYO7zUkufmw">
+								<dokument reihung="13" id="_SkYRcZweEeugYO7zUkufmw">
 									<titel>Dokument_0000013</titel>
 									<erscheinungsform>digital</erscheinungsform>
 									<zusatzDaten>
@@ -339,7 +339,7 @@
 									<dateiRef>_YJax4JwfEeugYO7zUkufmw</dateiRef>
 								</dokument>
 							</dossier>
-							<dokument order="14" id="_gTu9YJweEeugYO7zUkufmw">
+							<dokument reihung="14" id="_gTu9YJweEeugYO7zUkufmw">
 								<titel>Dokument_0000014</titel>
 								<erscheinungsform>digital</erscheinungsform>
 								<zusatzDaten>
@@ -347,7 +347,7 @@
 								</zusatzDaten>
 								<dateiRef>_YKIjkJwfEeugYO7zUkufmw</dateiRef>
 							</dokument>
-							<dokument order="15" id="_gTu9YZweEeugYO7zUkufmw">
+							<dokument reihung="15" id="_gTu9YZweEeugYO7zUkufmw">
 								<titel>Dokument_0000015</titel>
 								<erscheinungsform>digital</erscheinungsform>
 								<zusatzDaten>
@@ -356,7 +356,7 @@
 								<dateiRef>_khndoJwfEeugYO7zUkufmw</dateiRef>
 							</dokument>
 						</dossier>
-						<dokument order="1" id="_p-gEcJwcEeugYO7zUkufmw">
+						<dokument reihung="1" id="_p-gEcJwcEeugYO7zUkufmw">
 							<titel>Dokument_0000001</titel>
 							<erscheinungsform>digital</erscheinungsform>
 							<zusatzDaten>
@@ -364,7 +364,7 @@
 							</zusatzDaten>
 							<dateiRef>_YBascJwfEeugYO7zUkufmw</dateiRef>
 						</dokument>
-						<dokument order="5" id="_foA8UJwdEeugYO7zUkufmw">
+						<dokument reihung="5" id="_foA8UJwdEeugYO7zUkufmw">
 							<titel>Dokument_0000005</titel>
 							<erscheinungsform>digital</erscheinungsform>
 							<zusatzDaten>
@@ -372,7 +372,7 @@
 							</zusatzDaten>
 							<dateiRef>_YEWrsJwfEeugYO7zUkufmw</dateiRef>
 						</dokument>
-						<dokument order="6" id="_o_YUUJwdEeugYO7zUkufmw">
+						<dokument reihung="6" id="_o_YUUJwdEeugYO7zUkufmw">
 							<titel>Dokument_0000006</titel>
 							<erscheinungsform>digital</erscheinungsform>
 							<zusatzDaten>
@@ -381,7 +381,7 @@
 							<dateiRef>_YFGSkJwfEeugYO7zUkufmw</dateiRef>
 							<dateiRef>_YGSlYJwfEeugYO7zUkufmw</dateiRef>
 						</dokument>
-						<dokument order="16" id="_pjIsMJweEeugYO7zUkufmw">
+						<dokument reihung="16" id="_pjIsMJweEeugYO7zUkufmw">
 							<titel>Dokument_0000016</titel>
 							<erscheinungsform>digital</erscheinungsform>
 							<zusatzDaten>

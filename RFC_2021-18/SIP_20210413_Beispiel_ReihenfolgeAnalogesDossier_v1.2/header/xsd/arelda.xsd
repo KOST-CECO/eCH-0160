@@ -401,7 +401,7 @@
 			<xs:element name="sonstigeBestimmungen" type="sonstigeBestimmungenOrdnungssystemposition" minOccurs="0"/>
 			<xs:element name="zusatzDaten" type="zusatzDaten" minOccurs="0"/>
 		</xs:sequence>
-		<xs:attribute name="order" type="reihungElemente" use="optional"/>
+		<xs:attribute name="reihung" type="reihungElemente" use="optional"/>
 		<!-- Reihenfolge und Ordnung in eCH-0160 v1.2 -->
 	</xs:complexType>
 	<xs:complexType name="ordnungssystempositionGever" abstract="true">
@@ -546,7 +546,7 @@
 			<xs:element name="zusatzDaten" type="zusatzDaten" minOccurs="0"/>
 		</xs:sequence>
 		<xs:attribute name="id" type="idMappe" use="required"/>
-		<xs:attribute name="order" type="reihungElemente" use="optional"/>
+		<xs:attribute name="reihung" type="reihungElemente" use="optional"/>
 		<!-- Reihenfolge und Ordnung in eCH-0160 v1.2 -->
 	</xs:complexType>
 	<xs:complexType name="mappeGever">
@@ -605,7 +605,7 @@
 			<xs:element name="zusatzDaten" type="zusatzDaten" minOccurs="0"/>
 		</xs:sequence>
 		<xs:attribute name="id" type="idDossier" use="required"/>
-		<xs:attribute name="order" type="reihungElemente" use="optional"/>
+		<xs:attribute name="reihung" type="reihungElemente" use="optional"/>
 		<!-- Reihenfolge und Ordnung in eCH-0160 v1.2 -->
 	</xs:complexType>
 	<xs:complexType name="dossierGever" abstract="true">
@@ -846,14 +846,9 @@
 						<xs:documentation xml:lang="de">Repräsentationen einer Dateien: geordnen nach Nummer, Dateinamen oder Creation Date. Das Ordnungselement ist also eine Zahl, ein String oder ein Datum. Datei Nummer eins ist die Original- oder Ursprungsdatei, die folgenden Dateien sind Ableitungen davon.</xs:documentation>
 					</xs:annotation>
 				</xs:attribute>
-				<xs:attribute name="order" type="dateiReihung" use="optional">
+				<xs:attribute name="reihung" type="dateiReihung" use="optional">
 					<xs:annotation>
 						<xs:documentation xml:lang="de">Reihung/Sequence Ordnung der Dateien: Nummerierung, Dateinamen oder Creation Date. Das Ordnungselement ist also eine Zahl, ein String oder ein Datum.</xs:documentation>
-					</xs:annotation>
-				</xs:attribute>
-				<xs:attribute name="aspekt" type="dateiAspekt" use="optional">
-					<xs:annotation>
-						<xs:documentation xml:lang="de">Aspekt einser Dateien: Keine weiteren in eCH-0160 spezifizierten Metadaten, alle weiteren Metadaten sind domainspezifisch.</xs:documentation>
 					</xs:annotation>
 				</xs:attribute>
 			</xs:extension>
@@ -893,7 +888,7 @@
 			<xs:element name="dateiRef" type="dateiRef" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:attribute name="id" type="idDokument" use="required"/>
-		<xs:attribute name="order" type="reihungElemente" use="optional"/>
+		<xs:attribute name="reihung" type="reihungElemente" use="optional"/>
 		<!-- Reihenfolge und Ordnung in eCH-0160 v1.2 -->
 	</xs:complexType>
 	<xs:complexType name="dokumentGever" abstract="true">

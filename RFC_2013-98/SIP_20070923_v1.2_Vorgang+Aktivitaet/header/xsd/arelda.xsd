@@ -6,6 +6,7 @@
 	<xs:include schemaLocation="ordnungssystem.xsd"/>
 	<xs:include schemaLocation="ordnungssystemposition.xsd"/>
 	<xs:include schemaLocation="dossier.xsd"/>
+	<xs:include schemaLocation="mappe.xsd"/>
 	<xs:include schemaLocation="dokument.xsd"/>
 	<xs:include schemaLocation="ordner.xsd"/>
 	<xs:include schemaLocation="datei.xsd"/>
@@ -362,7 +363,8 @@
 		<xs:complexContent>
 			<xs:extension base="ordnungssystemFiles">
 				<xs:sequence>
-					<xs:element name="ordnungssystemposition" type="ordnungssystempositionFilesSIP" maxOccurs="unbounded"/>
+					<xs:element name="ordnungssystemposition" type="ordnungssystempositionFilesSIP" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="mappe" type="mappeFiles" minOccurs="0" maxOccurs="unbounded"/>
 					<xs:element name="archivischeNotiz" type="archivischeNotiz" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:sequence>
 			</xs:extension>
@@ -373,6 +375,7 @@
 			<xs:extension base="ordnungssystemFiles">
 				<xs:sequence>
 					<xs:element name="ordnungssystemposition" type="ordnungssystempositionFilesAIP" maxOccurs="unbounded"/>
+					<xs:element name="mappe" type="mappeFiles" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
@@ -382,6 +385,7 @@
 			<xs:extension base="ordnungssystemFiles">
 				<xs:sequence>
 					<xs:element name="ordnungssystemposition" type="ordnungssystempositionFilesDIP" maxOccurs="unbounded"/>
+					<xs:element name="mappe" type="mappeFiles" minOccurs="0" maxOccurs="unbounded"/>
 					<xs:element name="archivischeNotiz" type="archivischeNotiz" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:sequence>
 			</xs:extension>
@@ -397,8 +401,8 @@
 			<xs:element name="sonstigeBestimmungen" type="sonstigeBestimmungenOrdnungssystemposition" minOccurs="0"/>
 			<xs:element name="zusatzDaten" type="zusatzDaten" minOccurs="0"/>
 		</xs:sequence>
+		<xs:attribute name="reihung" type="reihungElemente" use="optional"/>
 		<!-- Reihenfolge und Ordnung in eCH-0160 v1.2 -->
-		<xs:attribute name="order" type="orderOrdnungssystemposition" use="optional"/>
 	</xs:complexType>
 	<xs:complexType name="ordnungssystempositionGever" abstract="true">
 		<xs:complexContent>
@@ -480,6 +484,7 @@
 							<xs:field xpath="."/>
 						</xs:unique>
 					</xs:element>
+					<xs:element name="mappe" type="mappeFiles" minOccurs="0" maxOccurs="unbounded"/>
 					<xs:element name="archivischeNotiz" type="archivischeNotiz" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:sequence>
 			</xs:extension>
@@ -505,6 +510,7 @@
 							<xs:field xpath="."/>
 						</xs:unique>
 					</xs:element>
+					<xs:element name="mappe" type="mappeFiles" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
@@ -526,7 +532,49 @@
 							<xs:field xpath="."/>
 						</xs:unique>
 					</xs:element>
+					<xs:element name="mappe" type="mappeFiles" minOccurs="0" maxOccurs="unbounded"/>
 					<xs:element name="archivischeNotiz" type="archivischeNotiz" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="mappe" abstract="true">
+		<xs:sequence>
+			<xs:element name="titel" type="titelMappe"/>
+			<xs:element name="bemerkung" type="bemerkungMappe" minOccurs="0"/>
+			<xs:element name="umfang" type="umfang" minOccurs="0"/>
+			<xs:element name="zusatzDaten" type="zusatzDaten" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="id" type="idMappe" use="required"/>
+		<xs:attribute name="reihung" type="reihungElemente" use="optional"/>
+		<!-- Reihenfolge und Ordnung in eCH-0160 v1.2 -->
+	</xs:complexType>
+	<xs:complexType name="mappeGever">
+		<xs:complexContent>
+			<xs:extension base="mappe">
+				<xs:sequence>
+					<xs:element name="entstehungszeitraum" type="historischerZeitraum" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation xml:lang="de">Der Entstehungszeitraum des Dossiers wird aus dem ältesten Entstehungsdatum und dem jüngsten (Änderungs)datum aller dem Dossier zugeordneten Dokumente oder Dateien ermittelt. Der Zeitraum kann auch geschätzt sein.</xs:documentation>
+							<xs:documentation xml:lang="en">The creation period of the dossier is calculated from the earliest creation date and the most recent (change) date of all the documents or files allocated to the dossier. The period may also be estimated.</xs:documentation>
+							<xs:documentation xml:lang="fr">La période de création du dossier est déterminée par la date de création la plus ancienne et par la date (de modification) la plus récente de tous les documents ou fichiers attribués au dossier. La période peut aussi être estimée.</xs:documentation>
+							<xs:documentation xml:lang="it"/>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="entstehungszeitraumAnmerkung" type="entstehungszeitraumAnmerkung" minOccurs="0"/>
+					<xs:element name="mappe" type="mappeGever" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dokument" type="dokumentGeverSIP" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="mappeFiles">
+		<xs:complexContent>
+			<xs:extension base="mappe">
+				<xs:sequence>
+					<xs:element name="mappe" type="mappeFiles" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dokument" type="dokumentGever" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="dateiRef" type="dateiRef" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
@@ -557,8 +605,8 @@
 			<xs:element name="zusatzDaten" type="zusatzDaten" minOccurs="0"/>
 		</xs:sequence>
 		<xs:attribute name="id" type="idDossier" use="required"/>
+		<xs:attribute name="reihung" type="reihungElemente" use="optional"/>
 		<!-- Reihenfolge und Ordnung in eCH-0160 v1.2 -->
-		<xs:attribute name="order" type="orderDossier" use="optional"/>
 	</xs:complexType>
 	<xs:complexType name="dossierGever" abstract="true">
 		<xs:complexContent>
@@ -601,6 +649,7 @@
 					<xs:element name="schutzfrist" type="schutzfristDossier" minOccurs="0"/>
 					<xs:element name="schutzfristenBegruendung" type="schutzfristenBegruendungDossier" minOccurs="0"/>
 					<xs:element name="dossier" type="dossierGeverSIP" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="mappe" type="mappeGever" minOccurs="0" maxOccurs="unbounded"/>
 					<xs:element name="dokument" type="dokumentGeverSIP" minOccurs="0" maxOccurs="unbounded"/>
 					<xs:element name="archivischeNotiz" type="archivischeNotiz" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:sequence>
@@ -615,6 +664,7 @@
 					<xs:element name="schutzfrist" type="schutzfristDossier" minOccurs="0"/>
 					<xs:element name="schutzfristenBegruendung" type="schutzfristenBegruendungDossier" minOccurs="0"/>
 					<xs:element name="dossier" type="dossierGeverAIP" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="mappe" type="mappeGever" minOccurs="0" maxOccurs="unbounded"/>
 					<xs:element name="dokument" type="dokumentGeverAIP" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:sequence>
 			</xs:extension>
@@ -625,6 +675,7 @@
 			<xs:extension base="dossierGever">
 				<xs:sequence>
 					<xs:element name="dossier" type="dossierGeverDIP" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="mappe" type="mappeGever" minOccurs="0" maxOccurs="unbounded"/>
 					<xs:element name="dokument" type="dokumentGeverDIP" minOccurs="0" maxOccurs="unbounded"/>
 					<xs:element name="archivischeNotiz" type="archivischeNotiz" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:sequence>
@@ -659,6 +710,7 @@
 							<xs:field xpath="."/>
 						</xs:unique>
 					</xs:element>
+					<xs:element name="mappe" type="mappeGever" minOccurs="0" maxOccurs="unbounded"/>
 					<xs:element name="dokument" type="dokumentFilesSIP" minOccurs="0" maxOccurs="unbounded">
 						<xs:unique name="uniqueDateiRefDokumentFilesSIP">
 							<xs:annotation>
@@ -697,6 +749,7 @@
 							<xs:field xpath="."/>
 						</xs:unique>
 					</xs:element>
+					<xs:element name="mappe" type="mappeGever" minOccurs="0" maxOccurs="unbounded"/>
 					<xs:element name="dokument" type="dokumentFilesAIP" minOccurs="0" maxOccurs="unbounded">
 						<xs:unique name="uniqueDateiRefDokumentFilesAIP">
 							<xs:annotation>
@@ -731,6 +784,7 @@
 							<xs:field xpath="."/>
 						</xs:unique>
 					</xs:element>
+					<xs:element name="mappe" type="mappeGever" minOccurs="0" maxOccurs="unbounded"/>
 					<xs:element name="dokument" type="dokumentFilesDIP" minOccurs="0" maxOccurs="unbounded">
 						<xs:unique name="uniqueDateiRefDokumentFilesDIP">
 							<xs:annotation>
@@ -759,7 +813,9 @@
 			<xs:element name="zusatzDaten" type="zusatzDaten" minOccurs="0"/>
 			<xs:element name="aktivitaet" type="aktivitaet" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
+		<!-- Reihung statt Order eCH-0160 v1.2 -->
 		<xs:attribute name="order" type="orderVorgang" use="optional"/>
+		<xs:attribute name="reihung" type="orderVorgang" use="optional"/>
 	</xs:complexType>
 	<xs:complexType name="aktivitaet">
 		<xs:sequence>
@@ -773,7 +829,9 @@
 				<xs:element name="zusatzDaten" type="zusatzDaten" minOccurs="0"/>
 			</xs:sequence>
 		</xs:sequence>
+		<!-- Reihung statt Order eCH-0160 v1.2 -->
 		<xs:attribute name="order" type="orderAktivitaet" use="optional"/>
+		<xs:attribute name="reihung" type="orderAktivitaet" use="optional"/>
 	</xs:complexType>
 	<!-- Repräsentationen und Versionen in eCH-0160 v1.2 -->
 	<xs:complexType name="dateiRef">
@@ -792,17 +850,13 @@
 						<xs:documentation xml:lang="de">Repräsentationen einer Dateien: geordnen nach Nummer, Dateinamen oder Creation Date. Das Ordnungselement ist also eine Zahl, ein String oder ein Datum. Datei Nummer eins ist die Original- oder Ursprungsdatei, die folgenden Dateien sind Ableitungen davon.</xs:documentation>
 					</xs:annotation>
 				</xs:attribute>
-				<xs:attribute name="order" type="dateiOrder" use="optional">
+				<xs:attribute name="reihung" type="dateiReihung" use="optional">
 					<xs:annotation>
 						<xs:documentation xml:lang="de">Reihung/Sequence Ordnung der Dateien: Nummerierung, Dateinamen oder Creation Date. Das Ordnungselement ist also eine Zahl, ein String oder ein Datum.</xs:documentation>
 					</xs:annotation>
 				</xs:attribute>
-				<xs:attribute name="aspekt" type="dateiAspekt" use="optional">
-					<xs:annotation>
-						<xs:documentation xml:lang="de">Aspekt einser Dateien: Keine weiteren in eCH-0160 spezifizierten Metadaten, alle weiteren Metadaten sind domainspezifisch.</xs:documentation>
-					</xs:annotation>
-				</xs:attribute>
 			</xs:extension>
+			<!-- Repräsentationen und Versionen in eCH-0160 v1.2 -->
 		</xs:simpleContent>
 	</xs:complexType>
 	<!-- Repräsentationen und Versionen in eCH-0160 v1.2 -->
@@ -838,8 +892,8 @@
 			<xs:element name="dateiRef" type="dateiRef" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:attribute name="id" type="idDokument" use="required"/>
+		<xs:attribute name="reihung" type="reihungElemente" use="optional"/>
 		<!-- Reihenfolge und Ordnung in eCH-0160 v1.2 -->
-		<xs:attribute name="order" type="orderDokument" use="optional"/>
 	</xs:complexType>
 	<xs:complexType name="dokumentGever" abstract="true">
 		<xs:complexContent>
@@ -1052,4 +1106,10 @@
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
+	<xs:simpleType name="reihungElemente">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Ordnung, Reihenfolge einer Sequence von Elementen (Dateien, Dokumente, Dossiers, Mappen, Ordnungsystemposiotionen, Vorgang und Aktivität: Wert ist eine Nummerierung,  ein Dateinamen oder das Creation Date. Das Ordnungselement ist also eine Zahl, ein String oder ein Datum.</xs:documentation>
+		</xs:annotation>
+		<xs:union memberTypes="xs:integer xs:string xs:date"/>
+	</xs:simpleType>
 </xs:schema>

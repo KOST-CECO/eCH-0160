@@ -50,15 +50,9 @@
 		</xs:annotation>
 		<xs:union memberTypes="xs:integer xs:string xs:date"/>
 	</xs:simpleType>
-	<xs:simpleType name="dateiOrder">
+	<xs:simpleType name="dateiReihung">
 		<xs:annotation>
 			<xs:documentation xml:lang="de">Reihung/Sequence Ordnung der Dateien: Nummerierung, Dateinamen oder Creation Date. Das Ordnungselement ist also eine Zahl, ein String oder ein Datum.</xs:documentation>
-		</xs:annotation>
-		<xs:union memberTypes="xs:integer xs:string xs:date"/>
-	</xs:simpleType>
-	<xs:simpleType name="dateiAspekt">
-		<xs:annotation>
-			<xs:documentation xml:lang="de">Aspekt einer Dateien: Keine weiteren in eCH-0160 spezifizierten Metadaten, alle weiteren Metadaten sind domainspezifisch.</xs:documentation>
 		</xs:annotation>
 		<xs:union memberTypes="xs:integer xs:string xs:date"/>
 	</xs:simpleType>
