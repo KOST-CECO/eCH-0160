@@ -27,13 +27,6 @@
 			<xs:minLength value="1"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<!-- Reihenfolge in eCH-0160 v1.2 -->
-	<xs:simpleType name="orderMappe">
-		<xs:annotation>
-			<xs:documentation xml:lang="de">Reihenfolge, Ordnung der Dossier nach fortlaufender Zahl oder Creation Date</xs:documentation>
-		</xs:annotation>
-		<xs:union memberTypes="xs:integer xs:date"/>
-	</xs:simpleType>
 	<xs:simpleType name="bemerkungMappe">
 		<xs:annotation>
 			<xs:documentation xml:lang="de">Zusätzliche Informationen, welche das Dossier oder die Datensammlung betreffen. Hier können nähere Angaben zur Sprache und zu speziellen technischen Anforderungen eingetragen werden, welche den Zugang der Daten einschränken könnten.</xs:documentation>
